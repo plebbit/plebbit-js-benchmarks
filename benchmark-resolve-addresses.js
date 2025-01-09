@@ -15,7 +15,6 @@ import {fileURLToPath} from 'url'
 import path from 'path'
 const rootPath = path.dirname(fileURLToPath(import.meta.url))
 const reportPath = path.join(rootPath, 'report.json')
-import {fetchJson} from '../lib/utils.js'
 import Plebbit from '@plebbit/plebbit-js'
 import fs from 'fs-extra'
 import util from 'util'

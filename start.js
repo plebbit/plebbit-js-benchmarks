@@ -35,6 +35,14 @@ let resolveAddressesBenchmarkOptions = [
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
   },
   {
+    name: 'https://ethrpc.xyz, viem, ethers.js', 
+    plebbitOptions: {
+      chainProviders: {eth: {urls: ['https://ethrpc.xyz', 'viem', 'ethers.js'], chainId: 1}},
+      resolveAuthorAddresses: false
+    },
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+  },
+  {
     name: 'viem', 
     plebbitOptions: {
       chainProviders: {eth: {urls: ['viem'], chainId: 1}},
@@ -46,14 +54,6 @@ let resolveAddressesBenchmarkOptions = [
     name: 'ethers.js', 
     plebbitOptions: {
       chainProviders: {eth: {urls: ['ethers.js'], chainId: 1}},
-      resolveAuthorAddresses: false
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-  },
-  {
-    name: 'https://ethrpc.xyz, viem, ethers.js', 
-    plebbitOptions: {
-      chainProviders: {eth: {urls: ['https://ethrpc.xyz', 'viem', 'ethers.js'], chainId: 1}},
       resolveAuthorAddresses: false
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))

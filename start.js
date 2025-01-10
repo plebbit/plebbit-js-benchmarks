@@ -1,3 +1,4 @@
+import './modify-plebbit-js.js'
 import {spawn} from 'node:child_process'
 import fs from 'fs-extra'
 import {fileURLToPath} from 'url'
@@ -16,7 +17,15 @@ const benchmark = (benchmarkPath, benchmarkOptions) => new Promise(resolve => {
   benchmarkProcess.on('close', (code) => resolve())
 })
 
-const resolveAddressesBenchmarkOptions = [
+let resolveAddressesBenchmarkOptions = [
+  {
+    name: 'wss://ethrpc.xyz', 
+    plebbitOptions: {
+      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      resolveAuthorAddresses: false
+    },
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+  },
   {
     name: 'https://ethrpc.xyz', 
     plebbitOptions: {
@@ -50,6 +59,33 @@ const resolveAddressesBenchmarkOptions = [
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
   }
 ]
+
+// resolveAddressesBenchmarkOptions = [{
+//   name: 'wss://ethrpc.xyz', 
+//   plebbitOptions: {
+//     chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+//     resolveAuthorAddresses: false
+//   },
+//   subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+// }]
+
+// resolveAddressesBenchmarkOptions = [{
+//   name: 'ws://127.0.0.1:8000', 
+//   plebbitOptions: {
+//     chainProviders: {eth: {urls: ['ws://127.0.0.1:8000'], chainId: 1}},
+//     resolveAuthorAddresses: false
+//   },
+//   subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+// }]
+
+// resolveAddressesBenchmarkOptions = [{
+//   name: 'http://127.0.0.1:8000', 
+//   plebbitOptions: {
+//     chainProviders: {eth: {urls: ['http://127.0.0.1:8000'], chainId: 1}},
+//     resolveAuthorAddresses: false
+//   },
+//   subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+// }]
 
 // reset report
 fs.removeSync(reportPath)

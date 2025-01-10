@@ -44,7 +44,7 @@ if (process.env.DEBUG_HTTP_TIME) {
   const originalHttpRequest = http.request
   http.request = function (...args) {
     const req = originalHttpRequest.apply(this, args)
-    if (!args[0].startsWith(failUrl)) {
+    if (!args[0].startsWith?.(failUrl)) {
       const startTime = Date.now()
       req.on('response', (res) => {
         const durationSeconds = (Date.now() - startTime) / 1000
@@ -57,7 +57,7 @@ if (process.env.DEBUG_HTTP_TIME) {
   const originalHttpsRequest = https.request
   https.request = function (...args) {
     const req = originalHttpsRequest.apply(this, args)
-    if (!args[0].startsWith(failUrl)) {
+    if (!args[0].startsWith?.(failUrl)) {
       const startTime = Date.now()
       req.on('response', (res) => {
         const durationSeconds = (Date.now() - startTime) / 1000

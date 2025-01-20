@@ -1,96 +1,48 @@
-import './modify-plebbit-js.js'
+import './lib/modify-plebbit-js.js'
 import {spawn} from 'node:child_process'
 import fs from 'fs-extra'
 import {fileURLToPath} from 'url'
 import path from 'path'
 const rootPath = path.dirname(fileURLToPath(import.meta.url))
 const reportPath = path.join(rootPath, 'report.json')
-const benchmarkResolveAddressesPath = path.join(rootPath, 'benchmark-resolve-addresses.js')
+import benchmarkOptionsFile from './benchmark-options.js'
+const {resolveAddressesBenchmarkOptions} = benchmarkOptionsFile
 
-// subplebbits
-import defaultSubplebbits080125 from './multisubs/default-subplebbits-08-01-25.json' assert {type: 'json'}
-
-const benchmark = (benchmarkPath, benchmarkOptions) => new Promise(resolve => {
-  const benchmarkProcess = spawn('node', [benchmarkPath, JSON.stringify(benchmarkOptions)]);
+const benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
+  const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'lib/' + benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])
   benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
   benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
   benchmarkProcess.on('close', (code) => resolve())
 })
 
-let resolveAddressesBenchmarkOptions = [
-  {
-    name: 'wss://ethrpc.xyz', 
-    plebbitOptions: {
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-      resolveAuthorAddresses: false
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-  },
-  {
-    name: 'https://ethrpc.xyz', 
-    plebbitOptions: {
-      chainProviders: {eth: {urls: ['https://ethrpc.xyz'], chainId: 1}},
-      resolveAuthorAddresses: false
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-  },
-  {
-    name: 'https://ethrpc.xyz, viem, ethers.js', 
-    plebbitOptions: {
-      chainProviders: {eth: {urls: ['https://ethrpc.xyz', 'viem', 'ethers.js'], chainId: 1}},
-      resolveAuthorAddresses: false
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-  },
-  {
-    name: 'viem', 
-    plebbitOptions: {
-      chainProviders: {eth: {urls: ['viem'], chainId: 1}},
-      resolveAuthorAddresses: false
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-  },
-  {
-    name: 'ethers.js', 
-    plebbitOptions: {
-      chainProviders: {eth: {urls: ['ethers.js'], chainId: 1}},
-      resolveAuthorAddresses: false
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-  }
-]
+const benchmarkChrome = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
+  const benchmarkProcess = spawn('npm', ['run', 'benchmark:browser', '--', '--file', benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])
+  benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
+  benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
+  benchmarkProcess.on('close', (code) => resolve())
+})
 
-// resolveAddressesBenchmarkOptions = [{
-//   name: 'wss://ethrpc.xyz', 
-//   plebbitOptions: {
-//     chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-//     resolveAuthorAddresses: false
-//   },
-//   subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-// }]
-
-// resolveAddressesBenchmarkOptions = [{
-//   name: 'ws://127.0.0.1:8000', 
-//   plebbitOptions: {
-//     chainProviders: {eth: {urls: ['ws://127.0.0.1:8000'], chainId: 1}},
-//     resolveAuthorAddresses: false
-//   },
-//   subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-// }]
-
-// resolveAddressesBenchmarkOptions = [{
-//   name: 'http://127.0.0.1:8000', 
-//   plebbitOptions: {
-//     chainProviders: {eth: {urls: ['http://127.0.0.1:8000'], chainId: 1}},
-//     resolveAuthorAddresses: false
-//   },
-//   subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-// }]
+const printReport = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
+  const benchmarkProcess = spawn('npm', ['run', 'print-report'])
+  benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
+  benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
+  benchmarkProcess.on('close', (code) => resolve())
+})
 
 // reset report
 fs.removeSync(reportPath)
 
+console.log(resolveAddressesBenchmarkOptions)
+
 // benchmark resolve addresses
 for (const benchmarkOptions of resolveAddressesBenchmarkOptions) {
-  await benchmark(benchmarkResolveAddressesPath, benchmarkOptions)
+  fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+  const benchmarkFile = 'benchmark-resolve-addresses.js'
+  await benchmarkNode(benchmarkFile, benchmarkOptions)
 }
+for (const benchmarkOptions of resolveAddressesBenchmarkOptions) {
+  const benchmarkFile = 'benchmark-resolve-addresses.js'
+  await benchmarkChrome(benchmarkFile, benchmarkOptions)
+}
+
+await printReport()

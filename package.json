@@ -1,20 +1,17 @@
 {
-  "name": "plebbit-uptime-monitor",
+  "name": "plebbit-js-benchmark",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "start": "node ./monitor"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/plebbit/plebbit-uptime-monitor.git"
+    "benchmark:browser": "CHROME_BIN=$(which chrome || which chromium) karma start config/karma.conf.cjs",
+    "benchmark:node": "mocha --config config/.mocharc.json",
+    "benchmark:server": "nodemon lib/server.js",
+    "print-report": "node lib/print-report",
+    "webpack": "webpack --mode development --config config/webpack.config.js",
+    "webpack:watch": "webpack watch --mode development --config config/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/plebbit/plebbit-uptime-monitor/issues"
-  },
-  "homepage": "https://github.com/plebbit/plebbit-uptime-monitor#readme",
   "dependencies": {
     "@plebbit/plebbit-js": "https://github.com/plebbit/plebbit-js.git#5ff48e9b9a906a098a51b474a52692eebfb6561d",
     "cborg": "1.9.6",
@@ -29,6 +26,7 @@
     "javascript-time-ago": "2.5.10",
     "kubo-rpc-client": "5.0.2",
     "node-fetch": "3.3.2",
+    "nodemon": "3.1.9",
     "p-queue": "8.0.1",
     "p-timeout": "6.1.3",
     "peer-id": "0.16.0",
@@ -37,5 +35,16 @@
     "string-strip-html": "13.4.8",
     "tcp-port-used": "1.0.2",
     "yargs": "17.7.1"
+  },
+  "devDependencies": {
+    "karma": "6.3.20",
+    "karma-chrome-launcher": "3.1.1",
+    "karma-firefox-launcher": "2.1.2",
+    "karma-mocha": "2.0.1",
+    "karma-spec-reporter": "0.0.34",
+    "mocha": "10.2.0",
+    "webpack": "5.72.1",
+    "webpack-cli": "4.9.2",
+    "string-replace-loader": "3.1.0"
   }
 }

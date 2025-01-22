@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
+    "start:": "node start",
     "benchmark:browser": "CHROME_BIN=$(which chrome || which chromium) karma start config/karma.conf.cjs",
     "benchmark:node": "mocha --config config/.mocharc.json",
     "benchmark:server": "nodemon lib/server.js",
@@ -45,6 +46,9 @@
     "mocha": "10.2.0",
     "webpack": "5.72.1",
     "webpack-cli": "4.9.2",
-    "string-replace-loader": "3.1.0"
+    "string-replace-loader": "3.1.0",
+    "@babel/core": "7.23.7",
+    "@babel/preset-env": " 7.23.9",
+    "babel-loader": "9.1.3 "
   }
 }

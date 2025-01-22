@@ -2,12 +2,15 @@ import path from 'path'
 import fs from 'fs-extra'
 import {fileURLToPath} from 'url'
 
-const rootFolder = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
+const rootFolder = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const outputFolder = path.resolve(rootFolder, 'webpacked')
+const benchmarkFolder = path.resolve(rootFolder, 'benchmark')
 
-const entries = {
-  'benchmark-resolve-addresses': './lib/benchmark-resolve-addresses.js',
+const entries = {}
+for (const benchmarkFile of fs.readdirSync(benchmarkFolder)) {
+  entries[benchmarkFile] = path.resolve(benchmarkFolder, benchmarkFile)
 }
+console.log(entries)
 
 export default {
   // each file is its own entry
@@ -15,7 +18,7 @@ export default {
 
   output: {
     // output each test entry to its own file name
-    filename: '[name].js',
+    filename: '[name]',
     path: outputFolder,
 
     // clean the dist folder on each rebuild

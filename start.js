@@ -27,6 +27,10 @@ const benchmarkChrome = (benchmarkFile, benchmarkOptions) => new Promise(resolve
 })
 
 const printReport = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
+  if (!fs.existsSync(reportPath)) {
+    console.log(`can't print report, no file '${reportPath}'`)
+    return
+  }
   const benchmarkProcess = spawn('npm', ['run', 'print-report'])
   benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
   benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))

@@ -50,10 +50,13 @@ cd /home/plebbit-js-benchmark
 # npm install
 npm run webpack
 
+# kill port 3000 so benchmark server can start
+pkill benchmark:server
+
 # wait on benchmark server
 npm run benchmark:server & sleep 1
 
-node start
+node start --only chrome
 "
 
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"

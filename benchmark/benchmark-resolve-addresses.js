@@ -1,3 +1,4 @@
+const benchmarkOptionsType = 'resolveAddressesBenchmarkOptions'
 const benchmarkServerUrl = 'http://127.0.0.1:3000'
 const failUrl = 'http://127.0.0.2'
 
@@ -29,7 +30,7 @@ it('benchmark', async function() {
   if (!benchmarkOptionsName) {
     throw Error('missing benchmarkOptionsName')
   }
-  const benchmarkOptions = await fetch(`${benchmarkServerUrl}/benchmark-options?benchmarkOptionsName=${benchmarkOptionsName}&benchmarkOptionsType=resolveAddressesBenchmarkOptions`).then(res => res.json())
+  const benchmarkOptions = await fetch(`${benchmarkServerUrl}/benchmark-options?benchmarkOptionsName=${benchmarkOptionsName}&benchmarkOptionsType=${benchmarkOptionsType}`).then(res => res.json())
   if (!benchmarkOptions) {
     throw Error('failed fetching benchmarkOptions')
   }
@@ -72,12 +73,13 @@ it('benchmark', async function() {
   const writeReport = async () => {
     const report = {
       name: benchmarkOptions.name,
+      type: benchmarkOptionsType,
       runtime,
       subplebbits: reportSubplebbits
     }
     const res = await fetch(`${benchmarkServerUrl}/report`, {
-      method: 'POST', 
-      body: JSON.stringify(report), 
+      method: 'POST',
+      body: JSON.stringify(report),
       headers: {'Content-Type': 'application/json'}
     })
     if (res.status !== 200) {

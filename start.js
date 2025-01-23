@@ -10,7 +10,7 @@ console.log({argv})
 const rootPath = path.dirname(fileURLToPath(import.meta.url))
 const reportPath = path.join(rootPath, 'report.json')
 import benchmarkOptionsFile from './benchmark-options.js'
-const {resolveAddressesBenchmarkOptions} = benchmarkOptionsFile
+const {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions} = benchmarkOptionsFile
 
 const benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
   const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])
@@ -60,14 +60,14 @@ if (isOnly('resolve-addresses')) {
 // benchmark fetch ipns
 if (isOnly('fetch-ipns')) {
   if (isOnly('node')) {
-    for (const benchmarkOptions of resolveAddressesBenchmarkOptions) {
+    for (const benchmarkOptions of fetchIpnsBenchmarkOptions) {
       fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
       const benchmarkFile = 'benchmark-fetch-ipns.js'
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }
   if (isOnly('chrome')) {
-    for (const benchmarkOptions of resolveAddressesBenchmarkOptions) {
+    for (const benchmarkOptions of fetchIpnsBenchmarkOptions) {
       const benchmarkFile = 'benchmark-fetch-ipns.js'
       await benchmarkChrome(benchmarkFile, benchmarkOptions)
     }

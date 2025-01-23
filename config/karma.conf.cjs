@@ -30,13 +30,13 @@ if (process.env.CI) {
 // possible to add flags when launching the browser
 const CustomChrome = {
   base: 'ChromeHeadless',
-  flags: ['--disable-web-security'],
+  flags: ['--disable-web-security', '--no-sandbox'],
   debug: true,
 }
 
 const DebugChrome = {
   base: 'Chrome',
-  flags: ['--disable-web-security', '--auto-open-devtools-for-tabs', '--window-size=800,600'],
+  flags: ['--disable-web-security', '--auto-open-devtools-for-tabs', '--window-size=800,600', '--no-sandbox'],
   debug: true,
 }
 

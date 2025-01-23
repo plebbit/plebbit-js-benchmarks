@@ -6,7 +6,8 @@
     "start:": "node start",
     "benchmark:browser": "CHROME_BIN=$(which chrome || which chromium) karma start config/karma.conf.cjs",
     "benchmark:node": "mocha --config config/.mocharc.json",
-    "benchmark:server": "nodemon lib/server.js",
+    "benchmark:server": "node lib/server.js",
+    "benchmark:server:dev": "nodemon lib/server.js",
     "print-report": "node lib/print-report",
     "webpack": "webpack --mode development --config config/webpack.config.js",
     "webpack:watch": "webpack watch --mode development --config config/webpack.config.js"

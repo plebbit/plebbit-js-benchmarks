@@ -48,15 +48,14 @@ echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"
 SCRIPT="
 cd /home/plebbit-js-benchmark
 # npm install
-npm run webpack
+# npm run webpack
 
-# kill port 3000 so benchmark server can start
-pkill benchmark:server
-
-# wait on benchmark server
-npm run benchmark:server & sleep 1
-
-node start --only chrome
+node start --only chrome --only fetch-ipns
 "
+
+# SCRIPT="
+# # kill benchmark server
+# kill \$(ps aux | grep 'node lib/server.js' | grep -v 'grep' | awk '{print \$2}' | tr '\n' ' ')
+# "
 
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"

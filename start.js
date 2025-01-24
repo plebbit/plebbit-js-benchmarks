@@ -12,6 +12,10 @@ const reportPath = path.join(rootPath, 'report.json')
 import benchmarkOptionsFile from './benchmark-options.js'
 const {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions} = benchmarkOptionsFile
 
+// benchmark server is needed to send data to/from browser
+import startServer from './lib/server.js'
+const server = await startServer()
+
 const benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
   const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])
   benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
@@ -26,16 +30,18 @@ const benchmarkChrome = (benchmarkFile, benchmarkOptions) => new Promise(resolve
   benchmarkProcess.on('close', (code) => resolve())
 })
 
-const printReport = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
+const printReport = (benchmarkFile, benchmarkOptions) => {
   if (!fs.existsSync(reportPath)) {
     console.log(`can't print report, no file '${reportPath}'`)
     return
   }
-  const benchmarkProcess = spawn('npm', ['run', 'print-report'])
-  benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
-  benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
-  benchmarkProcess.on('close', (code) => resolve())
-})
+  return new Promise(resolve => {
+    const benchmarkProcess = spawn('npm', ['run', 'print-report'])
+    benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
+    benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
+    benchmarkProcess.on('close', (code) => resolve())
+  })
+}
 
 // reset report
 fs.removeSync(reportPath)
@@ -79,3 +85,4 @@ if (isOnly('fetch-ipns')) {
 }
 
 await printReport()
+server.close()

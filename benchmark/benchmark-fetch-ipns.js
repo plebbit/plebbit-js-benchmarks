@@ -61,7 +61,7 @@ it('benchmark', async function() {
         subplebbit.stop()
         resolve()
       }
-      if (updatingState === 'failed') {
+      if (updatingState === 'failed' || updatingState === 'waiting-retry') {
         console.log(`failed fetching ipns ${subplebbitAddress}`)
         subplebbit.stop()
         resolve()

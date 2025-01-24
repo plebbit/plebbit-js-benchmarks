@@ -75,7 +75,7 @@ if (process.env.DEBUG) {
 
 // import webpacked node_modules and a custom file from CLI arg --file
 const files = [
-  'webpacked/**/node_modules*.js',
+  'webpacked/**/node_modules*',
   'webpacked/' + file
 ]
 

@@ -10,7 +10,6 @@ console.log({argv})
 const rootPath = path.dirname(fileURLToPath(import.meta.url))
 const reportPath = path.join(rootPath, 'report.json')
 import benchmarkOptionsFile from './benchmark-options.js'
-const {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions} = benchmarkOptionsFile
 
 // benchmark server is needed to send data to/from browser
 import startServer from './lib/server.js'
@@ -46,39 +45,55 @@ const printReport = (benchmarkFile, benchmarkOptions) => {
 // reset report
 fs.removeSync(reportPath)
 
-console.log(resolveAddressesBenchmarkOptions)
-
-const isOnly = (name) => argv.only === name || (argv.only?.length || 0) < 1 || argv.only.includes(name)
+const isRuntime = (name) => argv.runtime === name || (argv.runtime?.length || 0) < 1 || argv.runtime.find?.(name)
+const isBenchmark = (name) => argv.benchmark === name || (argv.benchmark?.length || 0) < 1 || argv.benchmark.find?.(name)
 
 // benchmark resolve addresses
-if (isOnly('resolve-addresses')) {
-  if (isOnly('node')) {
-    for (const benchmarkOptions of resolveAddressesBenchmarkOptions) {
+if (isBenchmark('resolve-addresses')) {
+  console.log('benchmarking resolve-addresses...')
+  const benchmarkFile = 'benchmark-resolve-addresses.js'
+  if (isRuntime('node')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.resolveAddressesBenchmarkOptions) {
       fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
-      const benchmarkFile = 'benchmark-resolve-addresses.js'
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }
-  if (isOnly('chrome')) {
-    for (const benchmarkOptions of resolveAddressesBenchmarkOptions) {
-      const benchmarkFile = 'benchmark-resolve-addresses.js'
+  if (isRuntime('chrome')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.resolveAddressesBenchmarkOptions) {
       await benchmarkChrome(benchmarkFile, benchmarkOptions)
     }
   }
 }
 
 // benchmark fetch ipns
-if (isOnly('fetch-ipns')) {
-  if (isOnly('node')) {
-    for (const benchmarkOptions of fetchIpnsBenchmarkOptions) {
+if (isBenchmark('fetch-ipns')) {
+  console.log('benchmarking fetch-ipns...')
+  const benchmarkFile = 'benchmark-fetch-ipns.js'
+  if (isRuntime('node')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.fetchIpnsBenchmarkOptions) {
       fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
-      const benchmarkFile = 'benchmark-fetch-ipns.js'
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }
-  if (isOnly('chrome')) {
-    for (const benchmarkOptions of fetchIpnsBenchmarkOptions) {
-      const benchmarkFile = 'benchmark-fetch-ipns.js'
+  if (isRuntime('chrome')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.fetchIpnsBenchmarkOptions) {
+      await benchmarkChrome(benchmarkFile, benchmarkOptions)
+    }
+  }
+}
+
+// benchmark gateway fetch ipns
+if (isBenchmark('gateway-fetch-ipns')) {
+  console.log('benchmarking gateway-fetch-ipns...')
+  const benchmarkFile = 'benchmark-gateway-fetch-ipns.js'
+  if (isRuntime('node')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.gatewayFetchIpnsBenchmarkOptions) {
+      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      await benchmarkNode(benchmarkFile, benchmarkOptions)
+    }
+  }
+  if (isRuntime('chrome')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.gatewayFetchIpnsBenchmarkOptions) {
       await benchmarkChrome(benchmarkFile, benchmarkOptions)
     }
   }

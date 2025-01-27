@@ -1,4 +1,4 @@
-const benchmarkOptionsType = 'fetchIpnsBenchmarkOptions'
+const benchmarkOptionsType = 'gatewayFetchIpnsBenchmarkOptions'
 const benchmarkServerUrl = 'http://127.0.0.1:3000'
 
 // debug node
@@ -15,6 +15,20 @@ try {
 } catch (e) {}
 
 import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
+
+import {fromString as uint8ArrayFromString} from 'uint8arrays/from-string'
+import {toString as uint8ArrayToString} from 'uint8arrays/to-string'
+import {create as createMultihash} from 'multiformats/hashes/digest'
+const protobufPublicKeyPrefix = new Uint8Array([8, 1, 18, 32])
+const multihashIdentityCode = 0
+export const getPlebbitAddressFromPublicKey = (publicKeyBase64) => {
+  const publicKeyBuffer = uint8ArrayFromString(publicKeyBase64, 'base64')
+  const publicKeyBufferWithPrefix = new Uint8Array(protobufPublicKeyPrefix.length + publicKeyBuffer.length)
+  publicKeyBufferWithPrefix.set(protobufPublicKeyPrefix, 0)
+  publicKeyBufferWithPrefix.set(publicKeyBuffer, protobufPublicKeyPrefix.length)
+  const multihash = createMultihash(multihashIdentityCode, publicKeyBufferWithPrefix).bytes
+  return uint8ArrayToString(multihash, 'base58btc')
+}
 
 it('benchmark', async function() {
   let benchmarkOptionsName, runtime
@@ -40,24 +54,33 @@ it('benchmark', async function() {
   const plebbit = await Plebbit(plebbitOptions)
   plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent', plebbitErrorEvent.message))
 
+  const gatewayUrl = plebbitOptions.ipfsGatewayUrls?.[0]
+  if (!gatewayUrl) {
+    throw Error(`no plebbitOptions.ipfsGatewayUrls`)
+  }
+
   const reportSubplebbits = {}
 
   const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
     reportSubplebbits[subplebbitAddress] = {}
-    let beforeResolvingAddressTimestamp
     const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
     subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent', subplebbitAddress, subplebbitErrorEvent.message))
-    subplebbit.on('updatingstatechange', updatingState => {
-      if (updatingState === 'resolving-address') {
-        beforeResolvingAddressTimestamp = Date.now()
-      }
-      if (updatingState === 'fetching-ipns') {
-        reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
-        console.log(`resolved address ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds}s`)
-      }
+    subplebbit.on('updatingstatechange', async updatingState => {
       if (updatingState === 'succeeded') {
-        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
-        console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+        await new Promise(r => setTimeout(r, 10)) // wait for props to be defined on subplebbit, bug, shouldn't be needed
+
+        try {
+          const ipnsName = getPlebbitAddressFromPublicKey(subplebbit.signature.publicKey)
+          const before = Date.now()
+          const subplebbitUpdate = await fetch(`${gatewayUrl}/ipns/${ipnsName}`).then(res => res.json())
+          if (subplebbitUpdate.signature) {
+            reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - before) / 1000
+            console.log(`gateway fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+          }
+        }
+        catch (e) {
+          console.log(`failed fetching ipns ${subplebbitAddress}: ${e.message}`)
+        }
         subplebbit.stop()
         resolve()
       }

@@ -159,4 +159,37 @@ let fetchIpnsBenchmarkOptions = [
   }
 ]
 
-export default {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions}
+let gatewayFetchIpnsBenchmarkOptions = [
+  {
+    name: 'https://ipfsgateway.xyz (gateway fetch only)',
+    plebbitOptions: {
+      ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
+      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      resolveAuthorAddresses: false,
+      dataPath
+    },
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+  },
+  {
+    name: 'https://gateway.plebpubsub.xyz (gateway fetch only)',
+    plebbitOptions: {
+      ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz'],
+      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      resolveAuthorAddresses: false,
+      dataPath
+    },
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+  },
+  {
+    name: 'https://gateway.forumindex.com (gateway fetch only)',
+    plebbitOptions: {
+      ipfsGatewayUrls: ['https://gateway.forumindex.com'],
+      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      resolveAuthorAddresses: false,
+      dataPath
+    },
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+  }
+]
+
+export default {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions, gatewayFetchIpnsBenchmarkOptions}

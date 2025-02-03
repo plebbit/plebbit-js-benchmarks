@@ -30,6 +30,19 @@ export const getPlebbitAddressFromPublicKey = (publicKeyBase64) => {
   return uint8ArrayToString(multihash, 'base58btc')
 }
 
+async function fetchWithTimeout(url, options = {}) {
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), 1000 * 120)
+  try {
+    const response = await fetch(url, {...options, signal: controller.signal})
+    clearTimeout(timeout)
+    return response
+  } catch (error) {
+    clearTimeout(timeout)
+    throw error
+  }
+}
+
 it('benchmark', async function() {
   let benchmarkOptionsName, runtime
   try {
@@ -61,37 +74,33 @@ it('benchmark', async function() {
 
   const reportSubplebbits = {}
 
-  const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
+  const fetchSubplebbit = async (subplebbitAddress) => {
     reportSubplebbits[subplebbitAddress] = {}
-    const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
-    subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent', subplebbitAddress, subplebbitErrorEvent.message))
-    subplebbit.on('updatingstatechange', async updatingState => {
-      if (updatingState === 'succeeded') {
-        await new Promise(r => setTimeout(r, 10)) // wait for props to be defined on subplebbit, bug, shouldn't be needed
+    let subplebbit, error
+    try {
+      subplebbit = await fetch(`${benchmarkServerUrl}/subplebbit?subplebbitAddress=${subplebbitAddress}`).then(res => res.json())
+    }
+    catch (e) {
+      error = e
+    }
+    if (!subplebbit || subplebbit.error) {
+      console.log(`failed fetching ${subplebbitAddress} from benchmark server with error: ${error?.message || subplebbit?.error?.message}`)
+      return
+    }
 
-        try {
-          const ipnsName = getPlebbitAddressFromPublicKey(subplebbit.signature.publicKey)
-          const before = Date.now()
-          const subplebbitUpdate = await fetch(`${gatewayUrl}/ipns/${ipnsName}`).then(res => res.json())
-          if (subplebbitUpdate.signature) {
-            reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - before) / 1000
-            console.log(`gateway fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
-          }
-        }
-        catch (e) {
-          console.log(`failed fetching ipns ${subplebbitAddress}: ${e.message}`)
-        }
-        subplebbit.stop()
-        resolve()
+    const ipnsName = getPlebbitAddressFromPublicKey(subplebbit.signature.publicKey)
+    const before = Date.now()
+    try {
+      const subplebbitUpdate = await fetchWithTimeout(`${gatewayUrl}/ipns/${ipnsName}`).then(res => res.json())
+      if (subplebbitUpdate.signature) {
+        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - before) / 1000
+        console.log(`gateway fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
       }
-      if (updatingState === 'failed' || updatingState === 'waiting-retry') {
-        console.log(`failed fetching ipns ${subplebbitAddress}`)
-        subplebbit.stop()
-        resolve()
-      }
-    })
-    subplebbit.update()
-  })
+    }
+    catch (e) {
+      console.log(`failed gateway fetched ipns ${subplebbitAddress}: ${e.message}`)
+    }
+  }
 
   const fetchSubplebbits = async () => {
     console.log('fetching subplebbits...')

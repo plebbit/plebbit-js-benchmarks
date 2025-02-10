@@ -34,7 +34,11 @@ async function fetchWithTimeout(url, options = {}) {
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), 1000 * 120)
   try {
-    const response = await fetch(url, {...options, signal: controller.signal})
+    const response = await fetch(url, {
+      ...options, 
+      signal: controller.signal, 
+      cache: 'no-cache' // test that the provider should cache even when using no-cache
+    })
     clearTimeout(timeout)
     return response
   } catch (error) {

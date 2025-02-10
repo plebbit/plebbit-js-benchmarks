@@ -11,6 +11,9 @@ const rootPath = path.dirname(fileURLToPath(import.meta.url))
 const reportPath = path.join(rootPath, 'report.json')
 import benchmarkOptionsFile from './benchmark-options.js'
 
+// reset report before starting server
+fs.removeSync(reportPath)
+
 // benchmark server is needed to send data to/from browser
 import startServer from './lib/server.js'
 const server = await startServer()
@@ -41,9 +44,6 @@ const printReport = (benchmarkFile, benchmarkOptions) => {
     benchmarkProcess.on('close', (code) => resolve())
   })
 }
-
-// reset report
-fs.removeSync(reportPath)
 
 const isRuntime = (name) => argv.runtime === name || (argv.runtime?.length || 0) < 1 || argv.runtime.find?.(name)
 const isBenchmark = (name) => argv.benchmark === name || (argv.benchmark?.length || 0) < 1 || argv.benchmark.find?.(name)

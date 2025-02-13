@@ -7,7 +7,8 @@
     "benchmark:browser": "CHROME_BIN=$(which chrome || which chromium) karma start config/karma.conf.cjs",
     "benchmark:node": "mocha --config config/.mocharc.json",
     "benchmark:server": "nodemon scripts/start-server.js",
-    "print-report": "node lib/print-report",
+    "report": "node lib/print-report",
+    "report:inline": "node lib/print-report --inline",
     "webpack": "webpack --mode development --config config/webpack.config.js",
     "webpack:watch": "webpack watch --mode development --config config/webpack.config.js"
   },

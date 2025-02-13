@@ -14,8 +14,6 @@ try {
   }
 } catch (e) {}
 
-import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
-
 import {fromString as uint8ArrayFromString} from 'uint8arrays/from-string'
 import {toString as uint8ArrayToString} from 'uint8arrays/to-string'
 import {create as createMultihash} from 'multiformats/hashes/digest'
@@ -68,9 +66,6 @@ it('benchmark', async function() {
   const plebbitOptions = {
     ...benchmarkOptions.plebbitOptions,
   }
-  const plebbit = await Plebbit(plebbitOptions)
-  plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent', plebbitErrorEvent.message))
-
   const gatewayUrl = plebbitOptions.ipfsGatewayUrls?.[0]
   if (!gatewayUrl) {
     throw Error(`no plebbitOptions.ipfsGatewayUrls`)

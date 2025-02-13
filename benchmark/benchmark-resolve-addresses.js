@@ -40,7 +40,7 @@ it('benchmark', async function() {
     ipfsGatewayUrls: [failUrl],
   }
   const plebbit = await Plebbit(plebbitOptions)
-  plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent', plebbitErrorEvent.message))
+  plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent:', plebbitErrorEvent.message))
 
   const reportSubplebbits = {}
 
@@ -48,7 +48,7 @@ it('benchmark', async function() {
     reportSubplebbits[subplebbitAddress] = {}
     let beforeResolvingAddressTimestamp
     const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
-    subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent', subplebbitAddress, subplebbitErrorEvent.message))
+    subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent:', subplebbitAddress, subplebbitErrorEvent.message))
     subplebbit.on('updatingstatechange', updatingState => {
       if (updatingState === 'resolving-address') {
         beforeResolvingAddressTimestamp = Date.now()

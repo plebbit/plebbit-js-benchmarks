@@ -101,3 +101,4 @@ if (isBenchmark('gateway-fetch-ipns')) {
 
 await printReport()
 server.close()
+process.exit()

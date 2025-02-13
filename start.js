@@ -38,7 +38,7 @@ const printReport = (benchmarkFile, benchmarkOptions) => {
     return
   }
   return new Promise(resolve => {
-    const benchmarkProcess = spawn('npm', ['run', 'print-report'])
+    const benchmarkProcess = spawn('npm', ['run', 'report'])
     benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
     benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
     benchmarkProcess.on('close', (code) => resolve())

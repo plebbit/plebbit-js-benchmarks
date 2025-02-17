@@ -34,9 +34,9 @@ npm run webpack:watch
 ### how it all works
 
 - 1. `npm run webpack` bundles `./benchmark` folder with all the benchmark scripts `resolve-addresses|fetch-ipns|gateway-fetch-ipns`
-- 2. `npm start` launches `node ./start`
-- 3. `node start` launches:
+- 2. `npm start` launches `node ./start` (with optional arguments `--runtime <runtime> --benchmark <benchmark>`)
+- 3. `node ./start` launches:
   - 1. `./lib/server` which is needed to communicate with the browser benchmarks
-  - 2. it reads `./benchmark-options` and iterates over all the benchmarks to do
-  - 3. for each benchmark to do, it launches either node or karma (browser) to execute it in an isolated environment (no plebbit-js caching)
+  - 2. it reads `./benchmark-options.js` and iterates over all the benchmarks to do
+  - 3. for each benchmark to do, it launches either node or karma (browser) to execute it in an isolated environment (i.e. no plebbit-js caching)
   - 4. it launches `npm run report` to print the last report (saved to `./report.json`)

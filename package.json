@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "start:": "node start",
+    "start": "node start",
     "benchmark:browser": "CHROME_BIN=$(which chrome || which chromium) karma start config/karma.conf.cjs",
     "benchmark:node": "mocha --config config/.mocharc.json",
     "benchmark:server": "nodemon scripts/start-server.js",

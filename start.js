@@ -1,4 +1,4 @@
-import './lib/modify-plebbit-js.js'
+// import './lib/modify-plebbit-js.js'
 import {spawn} from 'node:child_process'
 import fs from 'fs-extra'
 import {fileURLToPath} from 'url'
@@ -18,12 +18,25 @@ fs.removeSync(reportPath)
 import startServer from './lib/server.js'
 const server = await startServer()
 
-const benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
+let benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
   const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])
   benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
   benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
   benchmarkProcess.on('close', (code) => resolve())
 })
+
+// very hacky but can be used to manually debug plebbit-js
+if (argv.debugPlebbitJs) {
+  let seconds = 0
+  setInterval(() => {console.log(`\n\n${seconds++}s\n\n`)}, 1000)
+  benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
+    seconds = 0
+    const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name], {
+      env: {...process.env, DEBUG: 'plebbit*', FORCE_COLOR: '1'}, stdio: 'inherit'
+    })
+    benchmarkProcess.on('close', (code) => resolve())
+  })
+}
 
 const benchmarkChrome = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
   const benchmarkProcess = spawn('npm', ['run', 'benchmark:browser', '--', '--file', benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])

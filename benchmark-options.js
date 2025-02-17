@@ -159,6 +159,32 @@ let fetchIpnsBenchmarkOptions = [
   }
 ]
 
+// fetchIpnsBenchmarkOptions = [
+//   {
+//     name: 'https://ipfsgateway.xyz',
+//     plebbitOptions: {
+//       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
+//       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+//       resolveAuthorAddresses: false,
+//       dataPath
+//     },
+//     subplebbitAddresses: ['business-and-finance.eth']
+//   }
+// ]
+
+// fetchIpnsBenchmarkOptions = [
+//   {
+//     name: 'http://localhost:8000',
+//     plebbitOptions: {
+//       ipfsGatewayUrls: ['http://localhost:8000'],
+//       chainProviders: {eth: {urls: ['http://localhost:8000'], chainId: 1}},
+//       resolveAuthorAddresses: false,
+//       dataPath
+//     },
+//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+//   }
+// ]
+
 let gatewayFetchIpnsBenchmarkOptions = [
   {
     name: 'https://ipfsgateway.xyz (gateway fetch only)',

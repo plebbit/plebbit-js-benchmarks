@@ -59,10 +59,18 @@ it('benchmark', async function() {
         subplebbit.stop()
         resolve()
       }
-      if (updatingState === 'failed' || updatingState === 'waiting-retry') {
-        console.log(`${updatingState === 'failed' ? 'failed' : 'failed (waiting retry)'} resolving address ${subplebbitAddress}`)
+      if (updatingState === 'failed') {
+        console.log(`failed resolving address ${subplebbitAddress}`)
         resolve()
         subplebbit.stop().catch(console.log)
+      }
+      if (updatingState === 'waiting-retry') {
+        // wait retry for 10s
+        setTimeout(() => {
+          console.log(`failed (waiting retry more than 10s)' resolving address ${subplebbitAddress}`)
+          resolve()
+          subplebbit.stop().catch(console.log)
+        }, 10000)
       }
     })
     subplebbit.update()

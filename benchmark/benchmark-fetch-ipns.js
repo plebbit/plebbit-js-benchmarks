@@ -61,10 +61,18 @@ it('benchmark', async function() {
         resolve()
         subplebbit.stop().catch(console.log)
       }
-      if (updatingState === 'failed' || updatingState === 'waiting-retry') {
-        console.log(`${updatingState === 'failed' ? 'failed' : 'failed (waiting retry)'} fetching ipns ${subplebbitAddress}`)
+      if (updatingState === 'failed') {
+        console.log(`failed fetching ipns ${subplebbitAddress}`)
         resolve()
         subplebbit.stop().catch(console.log)
+      }
+      if (updatingState === 'waiting-retry') {
+        // wait retry for 10s
+        setTimeout(() => {
+          console.log(`failed (waiting retry more than 10s)' fetching ipns ${subplebbitAddress}`)
+          resolve()
+          subplebbit.stop().catch(console.log)
+        }, 10000)
       }
     })
     subplebbit.update()

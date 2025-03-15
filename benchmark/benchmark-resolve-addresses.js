@@ -59,6 +59,11 @@ it('benchmark', async function() {
         subplebbit.stop()
         resolve()
       }
+      if (updatingState === 'failed' || updatingState === 'waiting-retry') {
+        console.log(`${updatingState === 'failed' ? 'failed' : 'failed (waiting retry)'} resolving address ${subplebbitAddress}`)
+        resolve()
+        subplebbit.stop().catch(console.log)
+      }
     })
     subplebbit.update()
   })

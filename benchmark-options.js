@@ -8,6 +8,7 @@ let resolveAddressesBenchmarkOptions = [
     plebbitOptions: {
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -17,6 +18,7 @@ let resolveAddressesBenchmarkOptions = [
     plebbitOptions: {
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -26,6 +28,7 @@ let resolveAddressesBenchmarkOptions = [
     plebbitOptions: {
       chainProviders: {eth: {urls: ['https://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -35,6 +38,7 @@ let resolveAddressesBenchmarkOptions = [
     plebbitOptions: {
       chainProviders: {eth: {urls: ['https://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -44,6 +48,7 @@ let resolveAddressesBenchmarkOptions = [
     plebbitOptions: {
       chainProviders: {eth: {urls: ['https://ethrpc.xyz', 'viem', 'ethers.js'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -53,6 +58,7 @@ let resolveAddressesBenchmarkOptions = [
     plebbitOptions: {
       chainProviders: {eth: {urls: ['viem'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -62,6 +68,7 @@ let resolveAddressesBenchmarkOptions = [
     plebbitOptions: {
       chainProviders: {eth: {urls: ['ethers.js'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -74,6 +81,7 @@ let resolveAddressesBenchmarkOptions = [
 //     plebbitOptions: {
 //       chainProviders: {eth: {urls: ['ws://127.0.0.1:8000'], chainId: 1}},
 //       resolveAuthorAddresses: false,
+//       validatePages: false,
 //       dataPath
 //     },
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -86,6 +94,7 @@ let resolveAddressesBenchmarkOptions = [
 //     plebbitOptions: {
 //       chainProviders: {eth: {urls: ['ws://212.232.23.194'], chainId: 1}},
 //       resolveAuthorAddresses: false,
+//       validatePages: false,
 //       dataPath
 //     },
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -98,6 +107,7 @@ let resolveAddressesBenchmarkOptions = [
 //     plebbitOptions: {
 //       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
 //       resolveAuthorAddresses: false,
+//       validatePages: false,
 //       dataPath
 //     },
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -110,6 +120,7 @@ let resolveAddressesBenchmarkOptions = [
 //     plebbitOptions: {
 //       chainProviders: {eth: {urls: ['wss://mainnet.infura.io/ws/v3/f122e8b2aba04cf99a2e01eccd50d237'], chainId: 1}},
 //       resolveAuthorAddresses: false,
+//       validatePages: false,
 //       dataPath
 //     },
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -123,6 +134,7 @@ let fetchIpnsBenchmarkOptions = [
       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -133,6 +145,7 @@ let fetchIpnsBenchmarkOptions = [
       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -143,6 +156,7 @@ let fetchIpnsBenchmarkOptions = [
       ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz'],
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -153,6 +167,7 @@ let fetchIpnsBenchmarkOptions = [
       ipfsGatewayUrls: ['https://gateway.forumindex.com'],
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -166,6 +181,7 @@ let fetchIpnsBenchmarkOptions = [
 //       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
 //       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
 //       resolveAuthorAddresses: false,
+//       validatePages: false,
 //       dataPath
 //     },
 //     subplebbitAddresses: ['business-and-finance.eth']
@@ -179,6 +195,7 @@ let fetchIpnsBenchmarkOptions = [
 //       ipfsGatewayUrls: ['http://localhost:8000'],
 //       chainProviders: {eth: {urls: ['http://localhost:8000'], chainId: 1}},
 //       resolveAuthorAddresses: false,
+//       validatePages: false,
 //       dataPath
 //     },
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -192,6 +209,7 @@ let gatewayFetchIpnsBenchmarkOptions = [
       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -202,6 +220,7 @@ let gatewayFetchIpnsBenchmarkOptions = [
       ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz'],
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -212,6 +231,7 @@ let gatewayFetchIpnsBenchmarkOptions = [
       ipfsGatewayUrls: ['https://gateway.forumindex.com'],
       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
+      validatePages: false,
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
@@ -225,6 +245,7 @@ let gatewayFetchIpnsBenchmarkOptions = [
 //       ipfsGatewayUrls: ['http://localhost:8000'],
 //       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
 //       resolveAuthorAddresses: false,
+//       validatePages: false,
 //       dataPath
 //     },
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))

@@ -52,6 +52,10 @@ it('benchmark', async function() {
         beforeResolvingAddressTimestamp = Date.now()
       }
       if (updatingState === 'fetching-ipns') {
+        if (reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds) {
+          // already logged this once, might log again if waiting retry
+          return
+        }
         reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
         console.log(`resolved address ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds}s`)
       }

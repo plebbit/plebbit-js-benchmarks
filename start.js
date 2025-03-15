@@ -61,23 +61,6 @@ const printReport = (benchmarkFile, benchmarkOptions) => {
 const isRuntime = (name) => argv.runtime === name || (argv.runtime?.length || 0) < 1 || argv.runtime.find?.(name)
 const isBenchmark = (name) => argv.benchmark === name || (argv.benchmark?.length || 0) < 1 || argv.benchmark.find?.(name)
 
-// benchmark resolve addresses
-if (isBenchmark('resolve-addresses')) {
-  console.log('benchmarking resolve-addresses...')
-  const benchmarkFile = 'benchmark-resolve-addresses.js'
-  if (isRuntime('node')) {
-    for (const benchmarkOptions of benchmarkOptionsFile.resolveAddressesBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
-      await benchmarkNode(benchmarkFile, benchmarkOptions)
-    }
-  }
-  if (isRuntime('chrome')) {
-    for (const benchmarkOptions of benchmarkOptionsFile.resolveAddressesBenchmarkOptions) {
-      await benchmarkChrome(benchmarkFile, benchmarkOptions)
-    }
-  }
-}
-
 // benchmark fetch ipns
 if (isBenchmark('fetch-ipns')) {
   console.log('benchmarking fetch-ipns...')
@@ -90,6 +73,23 @@ if (isBenchmark('fetch-ipns')) {
   }
   if (isRuntime('chrome')) {
     for (const benchmarkOptions of benchmarkOptionsFile.fetchIpnsBenchmarkOptions) {
+      await benchmarkChrome(benchmarkFile, benchmarkOptions)
+    }
+  }
+}
+
+// benchmark resolve addresses
+if (isBenchmark('resolve-addresses')) {
+  console.log('benchmarking resolve-addresses...')
+  const benchmarkFile = 'benchmark-resolve-addresses.js'
+  if (isRuntime('node')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.resolveAddressesBenchmarkOptions) {
+      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      await benchmarkNode(benchmarkFile, benchmarkOptions)
+    }
+  }
+  if (isRuntime('chrome')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.resolveAddressesBenchmarkOptions) {
       await benchmarkChrome(benchmarkFile, benchmarkOptions)
     }
   }

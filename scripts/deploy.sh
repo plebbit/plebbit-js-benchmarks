@@ -51,7 +51,7 @@ cd /home/plebbit-js-benchmark
 # npm install
 npm run webpack
 
-node start
+node start --benchmark fetch-ipns
 "
 
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"

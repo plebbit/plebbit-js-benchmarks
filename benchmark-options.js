@@ -171,6 +171,23 @@ let fetchIpnsBenchmarkOptions = [
       dataPath
     },
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+  },
+  {
+    name: 'libp2pJsClientsOptions',
+    plebbitOptions: {
+      libp2pJsClientsOptions: [{key: 'libp2pJsClient', libp2pOptions: {}, heliaOptions: {}}],
+      httpRoutersOptions: [
+        'https://routing.lol',
+        'https://peers.pleb.bot',
+        'https://peers.plebpubsub.xyz',
+        'https://peers.forumindex.com'
+      ],
+      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      resolveAuthorAddresses: false,
+      validatePages: false,
+      dataPath
+    },
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
   }
 ]
 
@@ -201,6 +218,27 @@ let fetchIpnsBenchmarkOptions = [
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
 //   }
 // ]
+
+fetchIpnsBenchmarkOptions = [
+  {
+    name: 'libp2pJsClientsOptions',
+    plebbitOptions: {
+      libp2pJsClientsOptions: [{key: 'libp2pJsClient', libp2pOptions: {}, heliaOptions: {}}],
+      httpRoutersOptions: [
+        'https://routing.lol',
+        'https://peers.pleb.bot',
+        'https://peers.plebpubsub.xyz',
+        'https://peers.forumindex.com'
+      ],
+      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      resolveAuthorAddresses: false,
+      validatePages: false,
+      dataPath
+    },
+    // subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    subplebbitAddresses: ['business-and-finance.eth']
+  }
+]
 
 let gatewayFetchIpnsBenchmarkOptions = [
   {

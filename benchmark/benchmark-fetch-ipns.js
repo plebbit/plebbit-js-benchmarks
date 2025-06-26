@@ -63,19 +63,19 @@ it('benchmark', async function() {
         reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
         console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
         resolve()
-        subplebbit.stop().catch(console.log)
+        subplebbit.stop().catch(() => {})
       }
       if (updatingState === 'failed') {
         console.log(`failed fetching ipns ${subplebbitAddress}`)
         resolve()
-        subplebbit.stop().catch(console.log)
+        subplebbit.stop().catch(() => {})
       }
       if (updatingState === 'waiting-retry') {
         // wait retry for 10s
         setTimeout(() => {
           console.log(`failed (waiting retry more than 10s)' fetching ipns ${subplebbitAddress}`)
           resolve()
-          subplebbit.stop().catch(console.log)
+          subplebbit.stop().catch(() => {})
         }, 10000)
       }
     })

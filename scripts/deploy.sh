@@ -28,25 +28,26 @@ git log -1
 # install deps on first run
 # SCRIPT="
 # sudo apt update && sudo apt install nodejs node chromium-browser
-# sudo npm install -g n && n 18
+# sudo npm install -g n && n 20
 # "
 
 # execute script over ssh
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"
 
 # copy files
-# FILE_NAMES=(
-#   # ".env"
-#   "config.js"
-# )
+FILE_NAMES=(
+  # ".env"
+  # "config.js"
+  "benchmark-options.js"
+)
 
-# # copy files
-# for FILE_NAME in ${FILE_NAMES[@]}; do
-#   sshpass -p "$DEPLOY_PASSWORD" scp $FILE_NAME "$DEPLOY_USER"@"$DEPLOY_HOST":/home/plebbit-uptime-monitor
-# done
+# copy files
+for FILE_NAME in ${FILE_NAMES[@]}; do
+  sshpass -p "$DEPLOY_PASSWORD" scp $FILE_NAME "$DEPLOY_USER"@"$DEPLOY_HOST":/home/plebbit-js-benchmark
+done
 
 SCRIPT="
-kill -9 \$(lsof -t -i:3000) # in case the server didn't close properly
+kill -9 \$(lsof -t -i:3000) 2>/dev/null # in case the server didn't close properly
 cd /home/plebbit-js-benchmark
 # npm install
 npm run webpack

@@ -7,7 +7,9 @@ const benchmarkOptions = {
     libp2pJsClientsOptions: [{
       key: 'libp2pJsClient', 
       libp2pOptions: {
-        connectionGater: {denyDialMultiaddr: (multiaddress) => String(multiaddress).includes('webrtc-direct')}
+        connectionGater: {
+          denyDialMultiaddr: (multiaddress) => String(multiaddress).includes('webrtc-direct')
+        }
       }, 
       heliaOptions: {}
     }],
@@ -25,7 +27,7 @@ const benchmarkOptions = {
   },
   subplebbitAddresses: [
     // 'plebtoken.eth',
-    'blog.plebbit.eth',
+    // 'blog.plebbit.eth',
     // 'plebwhales.eth',
     // 'pleblore.eth',
     // 'politically-incorrect.eth',
@@ -34,12 +36,12 @@ const benchmarkOptions = {
     // 'plebmusic.eth',
     // 'videos-livestreams-podcasts.eth',
     // 'health-nutrition-science.eth',
-    // 'censorship-watch.eth',
+    'censorship-watch.eth',
     // 'reddit-screenshots.eth',
     // 'weaponized-autism.eth',
     // 'plebpiracy.eth',
     // 'technopleb.eth',
-    // 'fatpeoplehate.eth',
+    'fatpeoplehate.eth',
   ]
 }
 
@@ -48,8 +50,10 @@ import fs from 'fs'
 // fs.rmSync('.plebbit-benchmark', {recursive: true, force: true})
 
 // debug time
-let seconds = 1
-setInterval(() => console.log(`\n--------\n${seconds++ / 2} seconds\n--------\n`), 500).unref?.()
+if (process.env.DEBUG) {
+  let seconds = 1
+  setInterval(() => console.log(`\n--------\n${seconds++ / 2} seconds\n--------\n`), 500).unref?.()
+}
 
 // start http router
 import http from 'http'
@@ -111,19 +115,19 @@ const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
       reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
       console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
       resolve()
-      subplebbit.stop().catch(() => {})
+      // subplebbit.stop().catch(() => {})
     }
     if (updatingState === 'failed') {
-      console.log(`failed fetching ipns ${subplebbitAddress}`)
+      // console.log(`failed fetching ipns ${subplebbitAddress}`)
       resolve()
-      subplebbit.stop().catch(() => {})
+      // subplebbit.stop().catch(() => {})
     }
     if (updatingState === 'waiting-retry') {
       // wait retry for 10s
       setTimeout(() => {
-        console.log(`failed (waiting retry more than 10s)' fetching ipns ${subplebbitAddress}`)
+        // console.log(`failed (waiting retry more than 10s)' fetching ipns ${subplebbitAddress}`)
         resolve()
-        subplebbit.stop().catch(() => {})
+        // subplebbit.stop().catch(() => {})
       }, 10000)
     }
   })

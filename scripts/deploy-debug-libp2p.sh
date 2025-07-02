@@ -28,7 +28,18 @@ done
 
 SCRIPT="
 cd /home/plebbit-js-benchmark
-DEBUG=libp2p*,helia*,delegated* node scripts/debug-libp2p-fetch-ipns.js
+# sudo n 20
+# node -v
+# rm -fr node_modules
+# npm install
+DEBUG=libp2p*,helia*,delegated*,plebbit* node scripts/debug-libp2p-fetch-ipns.js
 "
+
+# SCRIPT="
+# while true; do
+#   cd /home/plebbit-js-benchmark
+#   node scripts/debug-libp2p-fetch-ipns.js
+# done
+# "
 
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"

@@ -49,10 +49,14 @@ const benchmarkOptions = {
 import fs from 'fs'
 // fs.rmSync('.plebbit-benchmark', {recursive: true, force: true})
 
-// debug time
+// debug time and connections
 if (process.env.DEBUG) {
   let seconds = 1
-  setInterval(() => console.log(`\n--------\n${seconds++ / 2} seconds\n--------\n`), 500).unref?.()
+  setInterval(() => {
+    let connected = 'connected:'
+    libp2p?.getConnections().forEach(connection => {connected += `\n${connection.remoteAddr.toString()}`})
+    console.log(`\n--------\n${seconds++ / 2} seconds, ${connected}\n--------\n`)
+  }, 500).unref?.()
 }
 
 // start http router
@@ -73,6 +77,14 @@ const server = http.createServer(async (req, res) => {
         "ID": "12D3KooWDfnXqdZfsoqKbcYEDKRttt3adumB5m6tw8YghPwMAz8V",
         "Protocols": ["transport-bitswap"]
       }
+      // {
+      //   "Schema": "peer",
+      //   "Addrs": [
+      //     "/ip4/91.234.199.189/tcp/4001/p2p/12D3KooWN67Wwh6EgudDZZr1UGbMmowxZHZLsSPWCsBy2rhL39T2",
+      //   ],
+      //   "ID": "12D3KooWN67Wwh6EgudDZZr1UGbMmowxZHZLsSPWCsBy2rhL39T2",
+      //   "Protocols": ["transport-bitswap"]
+      // }
     ]
   })
   res.writeHead(200, {
@@ -91,6 +103,7 @@ import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
 const plebbitOptions = {...benchmarkOptions.plebbitOptions,}
 const plebbit = await Plebbit(plebbitOptions)
 plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent:', plebbitErrorEvent.message))
+const libp2p = plebbit.clients.libp2pJsClients.libp2pJsClient._helia.libp2p
 
 const reportSubplebbits = {}
 

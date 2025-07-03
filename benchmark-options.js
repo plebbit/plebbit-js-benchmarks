@@ -173,9 +173,9 @@ let fetchIpnsBenchmarkOptions = [
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
   },
   {
-    name: 'libp2pJsClientsOptions',
+    name: 'libp2p js client',
     plebbitOptions: {
-      libp2pJsClientsOptions: [{key: 'libp2pJsClient', libp2pOptions: {}, heliaOptions: {}}],
+      libp2pJsClientsOptions: [{key: 'libp2pjs'}],
       httpRoutersOptions: [
         'https://routing.lol',
         'https://peers.pleb.bot',
@@ -219,26 +219,25 @@ let fetchIpnsBenchmarkOptions = [
 //   }
 // ]
 
-fetchIpnsBenchmarkOptions = [
-  {
-    name: 'libp2pJsClientsOptions',
-    plebbitOptions: {
-      libp2pJsClientsOptions: [{key: 'libp2pJsClient', libp2pOptions: {}, heliaOptions: {}}],
-      httpRoutersOptions: [
-        'https://routing.lol',
-        'https://peers.pleb.bot',
-        'https://peers.plebpubsub.xyz',
-        'https://peers.forumindex.com'
-      ],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-      resolveAuthorAddresses: false,
-      validatePages: false,
-      dataPath
-    },
-    // subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-    subplebbitAddresses: ['business-and-finance.eth']
-  }
-]
+// fetchIpnsBenchmarkOptions = [
+//   {
+//     name: 'libp2pJsClientsOptions',
+//     plebbitOptions: {
+//       libp2pJsClientsOptions: [{key: 'libp2pJsClient'}],
+//       httpRoutersOptions: [
+//         'https://routing.lol',
+//         'https://peers.pleb.bot',
+//         'https://peers.plebpubsub.xyz',
+//         'https://peers.forumindex.com'
+//       ],
+//       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+//       resolveAuthorAddresses: false,
+//       validatePages: false,
+//       dataPath
+//     },
+//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+//   }
+// ]
 
 let gatewayFetchIpnsBenchmarkOptions = [
   {

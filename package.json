@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@plebbit/plebbit-js": "https://github.com/plebbit/plebbit-js.git#a8754456fd2cd061a2b050d73beee588483d6714",
+    "@plebbit/plebbit-js": "https://github.com/plebbit/plebbit-js.git#6612569127ae5c62906b2e66a96c8735a207af0a",
     "cborg": "1.9.6",
     "debug": "4.3.7",
     "decompress": "4.2.1",

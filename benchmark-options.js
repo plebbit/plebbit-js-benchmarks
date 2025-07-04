@@ -176,7 +176,7 @@ let fetchIpnsBenchmarkOptions = [
   {
     name: 'https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com',
     plebbitOptions: {
-      ipfsGatewayUrls: ['https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com'],
+      ipfsGatewayUrls: ['https://ipfsgateway.xyz', 'https://gateway.plebpubsub.xyz', 'https://gateway.forumindex.com'],
       chainProviders: {
         eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
         sol: {urls: ['https://solrpc.xyz'], chainId: 1}
@@ -230,6 +230,23 @@ let fetchIpnsBenchmarkOptions = [
 //     },
 //     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
 //   }
+// ]
+
+// fetchIpnsBenchmarkOptions = [
+//   {
+//     name: 'https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com',
+//     plebbitOptions: {
+//       ipfsGatewayUrls: ['https://ipfsgateway.xyz', 'https://gateway.plebpubsub.xyz', 'https://gateway.forumindex.com'],
+//       chainProviders: {
+//         eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+//         sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+//       },
+//       resolveAuthorAddresses: false,
+//       validatePages: false,
+//       dataPath
+//     },
+//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
+//   },
 // ]
 
 // only fetches the first gateway

@@ -84,7 +84,8 @@ let resolveAddressesBenchmarkOptions = [
     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.sol'))
   },
   {
-    name: 'wss://solrpc.xyz (wss not yet implemented)',
+    // wss not yet implemented for sol rpc, low priority, did not improve speed in eth rpc
+    name: 'wss://solrpc.xyz (wss not implemented)',
     plebbitOptions: {
       chainProviders: {sol: {urls: ['wss://solrpc.xyz'], chainId: 1}},
       resolveAuthorAddresses: false,
@@ -115,102 +116,76 @@ let resolveAddressesBenchmarkOptions = [
   }
 ]
 
-// resolveAddressesBenchmarkOptions = [
-//   {
-//     name: 'ws://127.0.0.1:8000',
-//     plebbitOptions: {
-//       chainProviders: {eth: {urls: ['ws://127.0.0.1:8000'], chainId: 1}},
-//       resolveAuthorAddresses: false,
-//       validatePages: false,
-//       dataPath
-//     },
-//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-//   }
-// ]
-
-// resolveAddressesBenchmarkOptions = [
-//   {
-//     name: 'wss://ethrpc.xyz',
-//     plebbitOptions: {
-//       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-//       resolveAuthorAddresses: false,
-//       validatePages: false,
-//       dataPath
-//     },
-//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-//   }
-// ]
-
-// resolveAddressesBenchmarkOptions = [
-//   {
-//     name: 'https://solrpc.xyz',
-//     plebbitOptions: {
-//       chainProviders: {sol: {urls: ['https://solrpc.xyz'], chainId: 1}},
-//       resolveAuthorAddresses: false,
-//       validatePages: false,
-//       dataPath
-//     },
-//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.sol'))
-//   }
-// ]
-
-// resolveAddressesBenchmarkOptions = [
-//   {
-//     name: 'wss://solrpc.xyz',
-//     plebbitOptions: {
-//       chainProviders: {sol: {urls: ['wss://solrpc.xyz'], chainId: 1}},
-//       resolveAuthorAddresses: false,
-//       validatePages: false,
-//       dataPath
-//     },
-//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.sol'))
-//   }
-// ]
-
 let fetchIpnsBenchmarkOptions = [
   {
     name: 'https://ipfsgateway.xyz (possibly not cached)',
     plebbitOptions: {
       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
       resolveAuthorAddresses: false,
       validatePages: false,
       dataPath
     },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   },
   {
     name: 'https://ipfsgateway.xyz',
     plebbitOptions: {
       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
       resolveAuthorAddresses: false,
       validatePages: false,
       dataPath
     },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   },
   {
     name: 'https://gateway.plebpubsub.xyz',
     plebbitOptions: {
       ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz'],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
       resolveAuthorAddresses: false,
       validatePages: false,
       dataPath
     },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   },
   {
     name: 'https://gateway.forumindex.com',
     plebbitOptions: {
       ipfsGatewayUrls: ['https://gateway.forumindex.com'],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
       resolveAuthorAddresses: false,
       validatePages: false,
       dataPath
     },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
+  },
+  {
+    name: 'https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com',
+    plebbitOptions: {
+      ipfsGatewayUrls: ['https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com'],
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
+      resolveAuthorAddresses: false,
+      validatePages: false,
+      dataPath
+    },
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   },
   {
     name: 'libp2p js client',
@@ -222,111 +197,58 @@ let fetchIpnsBenchmarkOptions = [
         'https://peers.plebpubsub.xyz',
         'https://peers.forumindex.com'
       ],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
       resolveAuthorAddresses: false,
       validatePages: false,
       dataPath
     },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   }
 ]
 
 // fetchIpnsBenchmarkOptions = [
 //   {
-//     name: 'https://ipfsgateway.xyz',
+//     name: 'libp2p js client',
 //     plebbitOptions: {
-//       ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
-//       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
+//       libp2pJsClientsOptions: [{key: 'libp2pjs'}],
+//       httpRoutersOptions: [
+//         'https://routing.lol',
+//         'https://peers.pleb.bot',
+//         'https://peers.plebpubsub.xyz',
+//         'https://peers.forumindex.com'
+//       ],
+//       chainProviders: {
+//         eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+//         sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+//       },
 //       resolveAuthorAddresses: false,
 //       validatePages: false,
 //       dataPath
 //     },
-//     subplebbitAddresses: ['business-and-finance.eth']
+//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
 //   }
 // ]
 
-// fetchIpnsBenchmarkOptions = [
-//   {
-//     name: 'http://localhost:8000',
-//     plebbitOptions: {
-//       ipfsGatewayUrls: ['http://localhost:8000'],
-//       chainProviders: {eth: {urls: ['http://localhost:8000'], chainId: 1}},
-//       resolveAuthorAddresses: false,
-//       validatePages: false,
-//       dataPath
-//     },
-//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-//   }
-// ]
-
-fetchIpnsBenchmarkOptions = [
-  {
-    name: 'libp2p js client',
-    plebbitOptions: {
-      libp2pJsClientsOptions: [{key: 'libp2pjs'}],
-      httpRoutersOptions: [
-        'https://routing.lol',
-        'https://peers.pleb.bot',
-        'https://peers.plebpubsub.xyz',
-        'https://peers.forumindex.com'
-      ],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-      resolveAuthorAddresses: false,
-      validatePages: false,
-      dataPath
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-  }
-]
-
+// only fetches the first gateway
 let gatewayFetchIpnsBenchmarkOptions = [
   {
     name: 'https://ipfsgateway.xyz (gateway fetch only)',
-    plebbitOptions: {
-      ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-      resolveAuthorAddresses: false,
-      validatePages: false,
-      dataPath
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    plebbitOptions: {ipfsGatewayUrls: ['https://ipfsgateway.xyz']},
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   },
   {
     name: 'https://gateway.plebpubsub.xyz (gateway fetch only)',
-    plebbitOptions: {
-      ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz'],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-      resolveAuthorAddresses: false,
-      validatePages: false,
-      dataPath
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    plebbitOptions: {ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz']},
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   },
   {
     name: 'https://gateway.forumindex.com (gateway fetch only)',
-    plebbitOptions: {
-      ipfsGatewayUrls: ['https://gateway.forumindex.com'],
-      chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-      resolveAuthorAddresses: false,
-      validatePages: false,
-      dataPath
-    },
-    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
+    plebbitOptions: {ipfsGatewayUrls: ['https://gateway.forumindex.com']},
+    subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
   }
 ]
-
-// gatewayFetchIpnsBenchmarkOptions = [
-//   {
-//     name: 'http://localhost:8000 (gateway fetch only)',
-//     plebbitOptions: {
-//       ipfsGatewayUrls: ['http://localhost:8000'],
-//       chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
-//       resolveAuthorAddresses: false,
-//       validatePages: false,
-//       dataPath
-//     },
-//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address).filter(s => s.endsWith('.eth'))
-//   }
-// ]
 
 export default {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions, gatewayFetchIpnsBenchmarkOptions}

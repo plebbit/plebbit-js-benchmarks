@@ -43,7 +43,7 @@ it('benchmark', async function() {
   const reportComments = {}
 
   const fetchComment = (commentCid) => new Promise(async resolve => {
-    reportComments[commentCid] = {}
+    reportComments[commentCid] = {fetchCommentIpfsTimeSeconds: null, resolvingSubplebbitAddressTimeSeconds: null, fetchingCommentUpdateTimeSeconds: null}
     let beforeFetchingCommentIpfsTimestamp
     const comment = await plebbit.createComment({cid: commentCid})
     const getCommentUrlPath = () => comment.subplebbitAddress ? `p/${comment.subplebbitAddress}/c/${commentCid}` : `c/${commentCid}`

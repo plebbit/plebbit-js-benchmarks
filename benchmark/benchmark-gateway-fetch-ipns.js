@@ -74,7 +74,7 @@ it('benchmark', async function() {
   const reportSubplebbits = {}
 
   const fetchSubplebbit = async (subplebbitAddress) => {
-    reportSubplebbits[subplebbitAddress] = {}
+    reportSubplebbits[subplebbitAddress] = {fetchingIpnsTimeSeconds: null}
     let subplebbit, error
     try {
       subplebbit = await fetch(`${benchmarkServerUrl}/subplebbit?subplebbitAddress=${subplebbitAddress}`).then(res => res.json())

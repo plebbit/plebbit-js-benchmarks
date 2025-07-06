@@ -45,7 +45,7 @@ it('benchmark', async function() {
   const reportSubplebbits = {}
 
   const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
-    reportSubplebbits[subplebbitAddress] = {}
+    reportSubplebbits[subplebbitAddress] = {resolvingAddressTimeSeconds: null}
     let beforeResolvingAddressTimestamp
     const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
     subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent:', subplebbitAddress, subplebbitErrorEvent.message))

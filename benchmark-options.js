@@ -232,6 +232,23 @@ let fetchIpnsBenchmarkOptions = [
 //   }
 // ]
 
+// fetchIpnsBenchmarkOptions = [
+//   {
+//     name: 'https://gateway.plebpubsub.xyz',
+//     plebbitOptions: {
+//       ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz'],
+//       chainProviders: {
+//         eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+//         sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+//       },
+//       resolveAuthorAddresses: false,
+//       validatePages: false,
+//       dataPath
+//     },
+//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
+//   },
+// ]
+
 // only fetches the first gateway
 let gatewayFetchIpnsBenchmarkOptions = [
   {
@@ -251,4 +268,24 @@ let gatewayFetchIpnsBenchmarkOptions = [
   }
 ]
 
-export default {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions, gatewayFetchIpnsBenchmarkOptions}
+// TODO, post, reply, 10 posts/replies from different subs, 10 posts/replies from the same sub
+let fetchCommentBenchmarkOptions = [
+  {
+    name: 'https://ipfsgateway.xyz (post)',
+    plebbitOptions: {
+      ipfsGatewayUrls: ['https://ipfsgateway.xyz'],
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
+      resolveAuthorAddresses: false,
+      validatePages: false,
+      dataPath
+    },
+    commentCids: [
+      'QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG'
+    ]
+  },
+]
+
+export default {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions, gatewayFetchIpnsBenchmarkOptions, fetchCommentBenchmarkOptions}

@@ -49,10 +49,10 @@ done
 SCRIPT="
 kill -9 \$(lsof -t -i:3000) 2>/dev/null # in case the server didn't close properly
 cd /home/plebbit-js-benchmark
-# npm install
+npm install
 npm run webpack
 
-node start --benchmark publish
+node start
 "
 
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"

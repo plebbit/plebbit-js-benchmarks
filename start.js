@@ -129,6 +129,23 @@ if (isBenchmark('fetch-comment')) {
   }
 }
 
+// benchmark publish
+if (isBenchmark('publish')) {
+  console.log('benchmarking publish...')
+  const benchmarkFile = 'benchmark-publish.js'
+  if (isRuntime('node')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.publishBenchmarkOptions) {
+      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      await benchmarkNode(benchmarkFile, benchmarkOptions)
+    }
+  }
+  if (isRuntime('chrome')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.publishBenchmarkOptions) {
+      await benchmarkChrome(benchmarkFile, benchmarkOptions)
+    }
+  }
+}
+
 await printReport()
 server.close()
 process.exit()

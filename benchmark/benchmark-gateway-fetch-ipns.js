@@ -88,11 +88,11 @@ it('benchmark', async function() {
     }
 
     const ipnsName = getPlebbitAddressFromPublicKey(subplebbit.signature.publicKey)
-    const before = Date.now()
+    const beforeTimestamp = Date.now()
     try {
       const subplebbitUpdate = await fetchWithTimeout(`${gatewayUrl}/ipns/${ipnsName}`).then(res => res.json())
       if (subplebbitUpdate.signature) {
-        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - before) / 1000
+        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`gateway fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
       }
     }

@@ -46,15 +46,15 @@ it('benchmark', async function() {
 
   const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
     reportSubplebbits[subplebbitAddress] = {resolvingAddressTimeSeconds: null}
-    let beforeResolvingAddressTimestamp
+    let beforeTimestamp
     const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
     subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent:', subplebbitAddress, subplebbitErrorEvent.message))
     subplebbit.on('updatingstatechange', updatingState => {
       if (updatingState === 'resolving-address') {
-        beforeResolvingAddressTimestamp = Date.now()
+        beforeTimestamp = Date.now()
       }
       if (updatingState === 'fetching-ipns') {
-        reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
+        reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`resolved address ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds}s`)
         subplebbit.stop().catch(() => {})
         resolve()

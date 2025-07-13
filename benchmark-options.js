@@ -232,23 +232,6 @@ let fetchIpnsBenchmarkOptions = [
 //   }
 // ]
 
-// fetchIpnsBenchmarkOptions = [
-//   {
-//     name: 'https://gateway.plebpubsub.xyz',
-//     plebbitOptions: {
-//       ipfsGatewayUrls: ['https://gateway.plebpubsub.xyz'],
-//       chainProviders: {
-//         eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
-//         sol: {urls: ['https://solrpc.xyz'], chainId: 1}
-//       },
-//       resolveAuthorAddresses: false,
-//       validatePages: false,
-//       dataPath
-//     },
-//     subplebbitAddresses: defaultSubplebbits080125.subplebbits.map(s => s.address)
-//   },
-// ]
-
 // only fetches the first gateway
 let gatewayFetchIpnsBenchmarkOptions = [
   {
@@ -461,4 +444,27 @@ let fetchCommentBenchmarkOptions = [
 //   }
 // ]
 
-export default {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions, gatewayFetchIpnsBenchmarkOptions, fetchCommentBenchmarkOptions}
+let publishBenchmarkOptions = [
+  {
+    name: 'libp2p js client',
+    plebbitOptions: {
+      libp2pJsClientsOptions: [{key: 'libp2pjs'}],
+      httpRoutersOptions: [
+        'https://routing.lol',
+        'https://peers.pleb.bot',
+        'https://peers.plebpubsub.xyz',
+        'https://peers.forumindex.com'
+      ],
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
+      resolveAuthorAddresses: false,
+      validatePages: false,
+      dataPath
+    },
+    subplebbitAddress: 'business-and-finance.eth'
+  }
+]
+
+export default {resolveAddressesBenchmarkOptions, fetchIpnsBenchmarkOptions, gatewayFetchIpnsBenchmarkOptions, fetchCommentBenchmarkOptions, publishBenchmarkOptions}

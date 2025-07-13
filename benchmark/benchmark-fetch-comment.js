@@ -44,27 +44,25 @@ it('benchmark', async function() {
 
   const fetchComment = (commentCid) => new Promise(async resolve => {
     reportComments[commentCid] = {fetchCommentIpfsTimeSeconds: null, resolvingSubplebbitAddressTimeSeconds: null, fetchingCommentUpdateTimeSeconds: null}
-    let beforeFetchingCommentIpfsTimestamp
+    let beforeTimestamp
     const comment = await plebbit.createComment({cid: commentCid})
     const getCommentUrlPath = () => comment.subplebbitAddress ? `p/${comment.subplebbitAddress}/c/${commentCid}` : `c/${commentCid}`
 
     comment.on('error', commentErrorEvent => console.log('commentErrorEvent:', getCommentUrlPath(), commentErrorEvent.message))
     comment.on('updatingstatechange', updatingState => {
       if (updatingState === 'fetching-ipfs') {
-        beforeFetchingCommentIpfsTimestamp = Date.now()
+        beforeTimestamp = Date.now()
       }
       if (updatingState === 'resolving-subplebbit-address') {
-        reportComments[commentCid].fetchCommentIpfsTimeSeconds = (Date.now() - beforeFetchingCommentIpfsTimestamp) / 1000
+        reportComments[commentCid].fetchCommentIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`fetched comment ipfs ${getCommentUrlPath()} in ${reportComments[commentCid].fetchCommentIpfsTimeSeconds}s`)
-
-        beforeResolvingAddressTimestamp = Date.now()
       }
       if (updatingState === 'fetching-subplebbit-ipns') {
         if (reportComments[commentCid].resolvingSubplebbitAddressTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
         }
-        reportComments[commentCid].resolvingSubplebbitAddressTimeSeconds = (Date.now() - beforeFetchingCommentIpfsTimestamp) / 1000
+        reportComments[commentCid].resolvingSubplebbitAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`resolved subplebbit address ${getCommentUrlPath()} after ${reportComments[commentCid].resolvingSubplebbitAddressTimeSeconds}s`)
       }
       if (updatingState === 'succeeded') {
@@ -72,7 +70,7 @@ it('benchmark', async function() {
         if (!comment.updatedAt) {
           return
         }
-        reportComments[commentCid].fetchingCommentUpdateTimeSeconds = (Date.now() - beforeFetchingCommentIpfsTimestamp) / 1000
+        reportComments[commentCid].fetchingCommentUpdateTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`fetched comment update ${getCommentUrlPath()} in ${reportComments[commentCid].fetchingCommentUpdateTimeSeconds}s`)
         resolve()
         comment.stop().catch(() => {})

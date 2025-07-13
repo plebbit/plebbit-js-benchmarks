@@ -44,24 +44,39 @@ it('benchmark', async function() {
 
   const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
     reportSubplebbits[subplebbitAddress] = {resolvingAddressTimeSeconds: null, fetchingIpnsTimeSeconds: null}
-    let beforeResolvingAddressTimestamp
+    let beforeTimestamp
     const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
     subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent:', subplebbitAddress, subplebbitErrorEvent.message))
     subplebbit.on('updatingstatechange', updatingState => {
       if (updatingState === 'resolving-address') {
-        beforeResolvingAddressTimestamp = Date.now()
+        beforeTimestamp = Date.now()
       }
       if (updatingState === 'fetching-ipns') {
         if (reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
         }
-        reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
+        reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`resolved address ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds}s`)
       }
-      if (updatingState === 'succeeded') {
-        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
+      if (updatingState === 'fetching-ipfs') {
+        if (reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds) {
+          // already logged this once, might log again if waiting retry
+          return
+        }
+        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+      }
+      if (updatingState === 'succeeded') {
+        // not all plebbit options have fetching-ipfs state
+        if (reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds) {
+          reportSubplebbits[subplebbitAddress].fetchingIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipfs ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpfsTimeSeconds}s`)
+        }
+        else {
+          reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+        }
         resolve()
         subplebbit.stop().catch(() => {})
       }

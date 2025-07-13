@@ -20,7 +20,7 @@ SCRIPT="
 cd /home
 git clone https://github.com/estebanabaroa/plebbit-js-benchmark.git
 cd plebbit-js-benchmark
-git reset HEAD --hard
+git reset HEAD --hard && git clean -fd
 git pull
 git log -1
 "
@@ -52,7 +52,7 @@ cd /home/plebbit-js-benchmark
 # npm install
 npm run webpack
 
-node start --benchmark fetch-ipns
+node start --benchmark fetch-comment
 "
 
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"

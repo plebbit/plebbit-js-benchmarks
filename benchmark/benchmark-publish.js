@@ -38,10 +38,8 @@ it('benchmark', async function() {
   const reportPublish = {}
 
   const publishComment = (subplebbitAddress) => new Promise(async resolve => {
-    reportPublish[subplebbitAddress] = {fetchCommentIpfsTimeSeconds: null, resolvingSubplebbitAddressTimeSeconds: null, fetchingCommentUpdateTimeSeconds: null}
-    let beforeFetchingCommentIpfsTimestamp
-
-
+    reportPublish[subplebbitAddress] = {resolvingAddressTimeSeconds: null, fetchingIpnsTimeSeconds: null}
+    let beforeTimestamp
 
     const getRandomString = () => (Math.random() + 1).toString(36).replace('.', '')
     const signer = await plebbit.createSigner()
@@ -51,55 +49,75 @@ it('benchmark', async function() {
       title: `I am the plebbit-js benchmark ${getRandomString()}`,
       content: `I am the plebbit-js benchmark ${getRandomString()}`
     })
+    comment.on('error', commentErrorEvent => console.log('commentErrorEvent:', getCommentUrlPath(), commentErrorEvent.message))
     comment.once('challenge', () => {
+      reportPublish[subplebbitAddress].challengeTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+      console.log(`received challenge ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeTimeSeconds}s`)
+
       comment.publishChallengeAnswers(['plebbit-js benchmark wrong answer'])
     })
     comment.once('challengeverification', () => {
+      reportPublish[subplebbitAddress].challengeVerificationTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+      console.log(`received challenge verification ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeVerificationTimeSeconds}s`)
 
+      resolve()
+      comment.stop().catch(() => {})
     })
-    comment.on('error', commentErrorEvent => console.log('commentErrorEvent:', getCommentUrlPath(), commentErrorEvent.message))
     comment.on('publishingstatechange', publishingState => {
-      console.log(publishingState)
-      // if (publishingState === 'fetching-ipfs') {
-      //   beforeFetchingCommentIpfsTimestamp = Date.now()
-      // }
-      // if (publishingState === 'resolving-subplebbit-address') {
-      //   reportPublish[commentCid].fetchCommentIpfsTimeSeconds = (Date.now() - beforeFetchingCommentIpfsTimestamp) / 1000
-      //   console.log(`fetched comment ipfs ${getCommentUrlPath()} in ${reportPublish[commentCid].fetchCommentIpfsTimeSeconds}s`)
-
-      //   beforeResolvingAddressTimestamp = Date.now()
-      // }
-      // if (publishingState === 'fetching-subplebbit-ipns') {
-      //   if (reportPublish[commentCid].resolvingSubplebbitAddressTimeSeconds) {
-      //     // already logged this once, might log again if waiting retry
-      //     return
-      //   }
-      //   reportPublish[commentCid].resolvingSubplebbitAddressTimeSeconds = (Date.now() - beforeFetchingCommentIpfsTimestamp) / 1000
-      //   console.log(`resolved subplebbit address ${getCommentUrlPath()} after ${reportPublish[commentCid].resolvingSubplebbitAddressTimeSeconds}s`)
-      // }
-      // if (publishingState === 'succeeded') {
-      //   // TODO: plebbit-js bug, should only be state 'succeeded' after comment.updatedAt is defined
-      //   if (!comment.updatedAt) {
-      //     return
-      //   }
-      //   reportPublish[commentCid].fetchingCommentUpdateTimeSeconds = (Date.now() - beforeFetchingCommentIpfsTimestamp) / 1000
-      //   console.log(`fetched comment update ${getCommentUrlPath()} in ${reportPublish[commentCid].fetchingCommentUpdateTimeSeconds}s`)
-      //   resolve()
-      //   comment.stop().catch(() => {})
-      // }
-      // if (publishingState === 'failed') {
-      //   console.log(`failed fetching comment ${getCommentUrlPath()}`)
-      //   resolve()
-      //   comment.stop().catch(() => {})
-      // }
-      // if (publishingState === 'waiting-retry') {
-      //   // wait retry for 10s
-      //   setTimeout(() => {
-      //     console.log(`failed (waiting retry more than 10s)' fetching comment ${getCommentUrlPath()}`)
-      //     resolve()
-      //     comment.stop().catch(() => {})
-      //   }, 10000)
-      // }
+      if (publishingState === 'resolving-subplebbit-address') {
+        beforeTimestamp = Date.now()
+      }
+      if (publishingState === 'fetching-subplebbit-ipns') {
+        if (reportPublish[subplebbitAddress].resolvingAddressTimeSeconds) {
+          // already logged this once, might log again if waiting retry
+          return
+        }
+        reportPublish[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`resolved address ${subplebbitAddress} in ${reportPublish[subplebbitAddress].resolvingAddressTimeSeconds}s`)
+      }
+      if (publishingState === 'fetching-subplebbit-ipfs') {
+        if (reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds) {
+          // already logged this once, might log again if waiting retry
+          return
+        }
+        reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`fetched ipns ${subplebbitAddress} in ${reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+      }
+      if (publishingState === 'publishing-challenge-request') {
+        // not all plebbit options have fetching-ipfs state
+        if (reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds) {
+          reportPublish[subplebbitAddress].fetchingIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipfs ${subplebbitAddress} in ${reportPublish[subplebbitAddress].fetchingIpfsTimeSeconds}s`)
+        }
+        else {
+          reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipns ${subplebbitAddress} in ${reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+        }
+      }
+      if (publishingState === 'waiting-challenge') {
+        reportPublish[subplebbitAddress].publishChallengeRequestTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`published challenge request ${subplebbitAddress} in ${reportPublish[subplebbitAddress].publishChallengeRequestTimeSeconds}s`)
+      }
+      if (publishingState === 'waiting-challenge-verification') {
+        reportPublish[subplebbitAddress].publishChallengeAnswerTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`published challenge answer ${subplebbitAddress} in ${reportPublish[subplebbitAddress].publishChallengeAnswerTimeSeconds}s`)
+      }
+      if (publishingState === 'failed') {
+        // TODO: plebbit-js bug, events aren't emitted in correct order so wait 100ms for all of them
+        setTimeout(() => {
+          console.log(`failed publish ${subplebbitAddress}`)
+          resolve()
+          comment.stop().catch(() => {})
+        }, 100)
+      }
+      if (publishingState === 'waiting-retry') {
+        // wait retry for 10s
+        setTimeout(() => {
+          console.log(`failed (waiting retry more than 10s)' publish ${subplebbitAddress}`)
+          resolve()
+          comment.stop().catch(() => {})
+        }, 10000)
+      }
     })
     comment.publish()
   })
@@ -115,7 +133,7 @@ it('benchmark', async function() {
       name: benchmarkOptions.name,
       type: benchmarkOptionsType,
       runtime,
-      publish: reportPublish
+      subplebbits: reportPublish
     }
     const res = await fetch(`${benchmarkServerUrl}/report`, {
       method: 'POST',

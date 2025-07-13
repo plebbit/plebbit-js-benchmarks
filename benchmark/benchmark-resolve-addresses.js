@@ -87,6 +87,7 @@ it('benchmark', async function() {
     const report = {
       name: benchmarkOptions.name,
       type: benchmarkOptionsType,
+      timestamp: Date.now(),
       runtime,
       subplebbits: reportSubplebbits
     }

@@ -101,7 +101,6 @@ if (isBenchmark('gateway-fetch-ipns')) {
   const benchmarkFile = 'benchmark-gateway-fetch-ipns.js'
   if (isRuntime('node')) {
     for (const benchmarkOptions of benchmarkOptionsFile.gatewayFetchIpnsBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }

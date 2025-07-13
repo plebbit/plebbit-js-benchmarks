@@ -52,7 +52,7 @@ cd /home/plebbit-js-benchmark
 # npm install
 npm run webpack
 
-node start --benchmark fetch-comment
+node start --benchmark publish
 "
 
 echo "$SCRIPT" | sshpass -p "$DEPLOY_PASSWORD" ssh "$DEPLOY_USER"@"$DEPLOY_HOST"

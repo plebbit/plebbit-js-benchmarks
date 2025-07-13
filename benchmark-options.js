@@ -446,6 +446,34 @@ let fetchCommentBenchmarkOptions = [
 
 let publishBenchmarkOptions = [
   {
+    name: 'https://pubsubprovider.xyz',
+    plebbitOptions: {
+      pubsubKuboRpcClients: ['https://pubsubprovider.xyz'],
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
+      resolveAuthorAddresses: false,
+      validatePages: false,
+      dataPath
+    },
+    subplebbitAddress: 'business-and-finance.eth'
+  },
+  {
+    name: 'https://plebpubsub.xyz',
+    plebbitOptions: {
+      pubsubKuboRpcClients: ['https://plebpubsub.xyz'],
+      chainProviders: {
+        eth: {urls: ['https://ethrpc.xyz'], chainId: 1}, 
+        sol: {urls: ['https://solrpc.xyz'], chainId: 1}
+      },
+      resolveAuthorAddresses: false,
+      validatePages: false,
+      dataPath
+    },
+    subplebbitAddress: 'business-and-finance.eth'
+  },
+  {
     name: 'libp2p js client',
     plebbitOptions: {
       libp2pJsClientsOptions: [{key: 'libp2pjs'}],

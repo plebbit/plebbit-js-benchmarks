@@ -38,7 +38,14 @@ it('benchmark', async function() {
   const reportPublish = {}
 
   const publishComment = (subplebbitAddress) => new Promise(async resolve => {
-    reportPublish[subplebbitAddress] = {resolvingAddressTimeSeconds: null, fetchingIpnsTimeSeconds: null}
+    reportPublish[subplebbitAddress] = {
+      resolvingAddressTimeSeconds: null,
+      fetchingIpnsTimeSeconds: null,
+      challengeRequestTimeSeconds: null,
+      challengeTimeSeconds: null,
+      challengeAnswerTimeSeconds: null,
+      challengeVerificationTimeSeconds: null
+    }
     let beforeTimestamp
 
     const getRandomString = () => (Math.random() + 1).toString(36).replace('.', '')
@@ -93,14 +100,16 @@ it('benchmark', async function() {
           reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
           console.log(`fetched ipns ${subplebbitAddress} in ${reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
         }
+
+        beforeTimestamp = Date.now()
       }
       if (publishingState === 'waiting-challenge') {
-        reportPublish[subplebbitAddress].publishChallengeRequestTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`published challenge request ${subplebbitAddress} in ${reportPublish[subplebbitAddress].publishChallengeRequestTimeSeconds}s`)
+        reportPublish[subplebbitAddress].challengeRequestTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`published challenge request ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeRequestTimeSeconds}s`)
       }
       if (publishingState === 'waiting-challenge-verification') {
-        reportPublish[subplebbitAddress].publishChallengeAnswerTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`published challenge answer ${subplebbitAddress} in ${reportPublish[subplebbitAddress].publishChallengeAnswerTimeSeconds}s`)
+        reportPublish[subplebbitAddress].challengeAnswerTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`published challenge answer ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeAnswerTimeSeconds}s`)
       }
       if (publishingState === 'failed') {
         // TODO: plebbit-js bug, events aren't emitted in correct order so wait 100ms for all of them

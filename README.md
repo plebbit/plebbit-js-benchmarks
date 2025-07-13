@@ -9,7 +9,7 @@ npm start -- --runtime node --benchmark fetch-ipns
 ### running specific benchmarks
 
 ```
-npm start -- --runtime node|chrome --benchmark resolve-addresses|fetch-ipns|gateway-fetch-ipns
+npm start -- --runtime node|chrome --benchmark resolve-addresses|fetch-ipns|gateway-fetch-ipns|fetch-comment|publish
 ```
 
 ### editing benchmark options (the plebbit options used, the subplebbit addresses, etc)
@@ -33,7 +33,7 @@ npm run webpack:watch
 
 ### how it all works
 
-- 1. `npm run webpack` bundles `./benchmark` folder with all the benchmark scripts `resolve-addresses|fetch-ipns|gateway-fetch-ipns`
+- 1. `npm run webpack` bundles `./benchmark` folder with all the benchmark scripts
 - 2. `npm start` launches `node ./start` (with optional arguments `--runtime <runtime> --benchmark <benchmark>`)
 - 3. `node ./start` launches:
   - 1. `./lib/server` which is needed to communicate with the browser benchmarks

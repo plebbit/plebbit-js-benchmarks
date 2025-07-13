@@ -11,6 +11,9 @@ try {
 
 import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
 
+// wait to reply to challenge to emulate real scenario
+const publishChallengeAnswerDelay = 1000 * 10
+
 it('benchmark', async function() {
   let benchmarkOptionsName, runtime
   try {
@@ -57,10 +60,14 @@ it('benchmark', async function() {
       content: `I am the plebbit-js benchmark ${getRandomString()}`
     })
     comment.on('error', commentErrorEvent => console.log('commentErrorEvent:', getCommentUrlPath(), commentErrorEvent.message))
-    comment.once('challenge', () => {
+    comment.once('challenge', async () => {
       reportPublish[subplebbitAddress].challengeTimeSeconds = (Date.now() - beforeTimestamp) / 1000
       console.log(`received challenge ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeTimeSeconds}s`)
 
+      // wait to reply to challenge to emulate real scenario
+      console.log(`waiting ${publishChallengeAnswerDelay / 1000}s before publishing challenge answer...`)
+      await new Promise(r => setTimeout(r, publishChallengeAnswerDelay))
+      beforeTimestamp += publishChallengeAnswerDelay
       comment.publishChallengeAnswers(['plebbit-js benchmark wrong answer'])
     })
     comment.once('challengeverification', () => {

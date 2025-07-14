@@ -71,6 +71,7 @@ it('benchmark', async function() {
     throw Error(`no plebbitOptions.ipfsGatewayUrls`)
   }
 
+  const beforeReportTimestamp = Date.now()
   const reportSubplebbits = {}
 
   const fetchSubplebbit = async (subplebbitAddress) => {
@@ -113,6 +114,7 @@ it('benchmark', async function() {
       name: benchmarkOptions.name,
       type: benchmarkOptionsType,
       timestamp: Date.now(),
+      timeSeconds: (Date.now() - beforeReportTimestamp) / 1000,
       runtime,
       subplebbits: reportSubplebbits
     }

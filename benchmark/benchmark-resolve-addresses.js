@@ -42,6 +42,7 @@ it('benchmark', async function() {
   const plebbit = await Plebbit(plebbitOptions)
   plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent:', plebbitErrorEvent.message))
 
+  const beforeReportTimestamp = Date.now()
   const reportSubplebbits = {}
 
   const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
@@ -88,6 +89,7 @@ it('benchmark', async function() {
       name: benchmarkOptions.name,
       type: benchmarkOptionsType,
       timestamp: Date.now(),
+      timeSeconds: (Date.now() - beforeReportTimestamp) / 1000,
       runtime,
       subplebbits: reportSubplebbits
     }

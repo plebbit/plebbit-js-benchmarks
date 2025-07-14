@@ -1,3 +1,5 @@
+historical benchmarks for each plebbit-js commit are saved to `./reports/<commit-hash>.txt` and can be visualized at https://plebbit.github.io/plebbit-js-benchmarks/reports-ui
+
 ### getting started
 ```
 git clone https://github.com/estebanabaroa/plebbit-js-benchmark.git

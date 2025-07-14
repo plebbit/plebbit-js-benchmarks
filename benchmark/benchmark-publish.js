@@ -138,7 +138,7 @@ it('benchmark', async function() {
     })
     comment.publish()
 
-    // TODO: plebbit-js bug, libp2p js doesn't time out publishing
+    // in case plebbit-js doesn't time out fast enough
     setTimeout(() => {
       console.log(`failed publish timed out 2min ${subplebbitAddress}`)
       resolve()

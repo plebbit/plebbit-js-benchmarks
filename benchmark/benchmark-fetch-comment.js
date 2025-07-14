@@ -91,6 +91,13 @@ it('benchmark', async function() {
       }
     })
     comment.update()
+
+    // in case plebbit-js doesn't time out fast enough
+    setTimeout(() => {
+      console.log(`failed fetching comment timed out 2min ${getCommentUrlPath()}`)
+      resolve()
+      comment.stop().catch(() => {})
+    }, 1000 * 60 * 2)
   })
 
   const fetchComments = async () => {

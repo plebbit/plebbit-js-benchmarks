@@ -96,6 +96,13 @@ it('benchmark', async function() {
       }
     })
     subplebbit.update()
+
+    // in case plebbit-js doesn't time out fast enough
+    setTimeout(() => {
+      console.log(`failed fetching ipns timed out 2min ${subplebbitAddress}`)
+      resolve()
+      subplebbit.stop().catch(() => {})
+    }, 1000 * 60 * 2)
   })
 
   const fetchSubplebbits = async () => {

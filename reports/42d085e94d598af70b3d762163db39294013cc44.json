@@ -1,1 +1,106 @@
-[{"name":"https://pubsubprovider.xyz","type":"publishBenchmarkOptions","timestamp":1752445508090,"runtime":"node","subplebbits":{"business-and-finance.eth":{"resolvingAddressTimeSeconds":1.711,"fetchingIpnsTimeSeconds":2.822,"challengeRequestTimeSeconds":0.563,"challengeTimeSeconds":2.181,"challengeAnswerTimeSeconds":2.493,"challengeVerificationTimeSeconds":2.508}}},{"name":"https://plebpubsub.xyz","type":"publishBenchmarkOptions","timestamp":1752445526266,"runtime":"node","subplebbits":{"business-and-finance.eth":{"resolvingAddressTimeSeconds":0.769,"fetchingIpnsTimeSeconds":2.007,"challengeRequestTimeSeconds":0.564,"challengeTimeSeconds":0.689,"challengeAnswerTimeSeconds":0.962,"challengeVerificationTimeSeconds":3.842}}},{"name":"libp2p js client","type":"publishBenchmarkOptions","timestamp":1752445648575,"runtime":"node","subplebbits":{"business-and-finance.eth":{"resolvingAddressTimeSeconds":0.753,"fetchingIpnsTimeSeconds":1.415,"challengeRequestTimeSeconds":null,"challengeTimeSeconds":null,"challengeAnswerTimeSeconds":null,"challengeVerificationTimeSeconds":null,"fetchingIpfsTimeSeconds":2.269}}},{"name":"https://pubsubprovider.xyz","type":"publishBenchmarkOptions","timestamp":1752445680034,"runtime":"chrome","subplebbits":{"business-and-finance.eth":{"resolvingAddressTimeSeconds":0.688,"fetchingIpnsTimeSeconds":2.042,"challengeRequestTimeSeconds":0.362,"challengeTimeSeconds":0.553,"challengeAnswerTimeSeconds":0.729,"challengeVerificationTimeSeconds":0.823}}},{"name":"https://plebpubsub.xyz","type":"publishBenchmarkOptions","timestamp":1752445695044,"runtime":"chrome","subplebbits":{"business-and-finance.eth":{"resolvingAddressTimeSeconds":0.773,"fetchingIpnsTimeSeconds":2.039,"challengeRequestTimeSeconds":0.362,"challengeTimeSeconds":0.462,"challengeAnswerTimeSeconds":0.559,"challengeVerificationTimeSeconds":1.138}}},{"name":"libp2p js client","type":"publishBenchmarkOptions","timestamp":1752445818080,"runtime":"chrome","subplebbits":{"business-and-finance.eth":{"resolvingAddressTimeSeconds":0.779,"fetchingIpnsTimeSeconds":2.534,"challengeRequestTimeSeconds":null,"challengeTimeSeconds":null,"challengeAnswerTimeSeconds":null,"challengeVerificationTimeSeconds":null,"fetchingIpfsTimeSeconds":4.498}}}]
+[
+  {
+    "name": "https://pubsubprovider.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1752445508090,
+    "runtime": "node",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 1.711,
+        "fetchingIpnsTimeSeconds": 2.822,
+        "challengeRequestTimeSeconds": 0.563,
+        "challengeTimeSeconds": 2.181,
+        "challengeAnswerTimeSeconds": 2.493,
+        "challengeVerificationTimeSeconds": 2.508
+      }
+    },
+    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+  },
+  {
+    "name": "https://plebpubsub.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1752445526266,
+    "runtime": "node",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.769,
+        "fetchingIpnsTimeSeconds": 2.007,
+        "challengeRequestTimeSeconds": 0.564,
+        "challengeTimeSeconds": 0.689,
+        "challengeAnswerTimeSeconds": 0.962,
+        "challengeVerificationTimeSeconds": 3.842
+      }
+    },
+    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+  },
+  {
+    "name": "libp2p js client",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1752445648575,
+    "runtime": "node",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.753,
+        "fetchingIpnsTimeSeconds": 1.415,
+        "challengeRequestTimeSeconds": null,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": null,
+        "fetchingIpfsTimeSeconds": 2.269
+      }
+    },
+    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+  },
+  {
+    "name": "https://pubsubprovider.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1752445680034,
+    "runtime": "chrome",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.688,
+        "fetchingIpnsTimeSeconds": 2.042,
+        "challengeRequestTimeSeconds": 0.362,
+        "challengeTimeSeconds": 0.553,
+        "challengeAnswerTimeSeconds": 0.729,
+        "challengeVerificationTimeSeconds": 0.823
+      }
+    },
+    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+  },
+  {
+    "name": "https://plebpubsub.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1752445695044,
+    "runtime": "chrome",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.773,
+        "fetchingIpnsTimeSeconds": 2.039,
+        "challengeRequestTimeSeconds": 0.362,
+        "challengeTimeSeconds": 0.462,
+        "challengeAnswerTimeSeconds": 0.559,
+        "challengeVerificationTimeSeconds": 1.138
+      }
+    },
+    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+  },
+  {
+    "name": "libp2p js client",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1752445818080,
+    "runtime": "chrome",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.779,
+        "fetchingIpnsTimeSeconds": 2.534,
+        "challengeRequestTimeSeconds": null,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": null,
+        "fetchingIpfsTimeSeconds": 4.498
+      }
+    },
+    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+  }
+]

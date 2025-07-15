@@ -61,6 +61,23 @@ const printReport = (benchmarkFile, benchmarkOptions) => {
 const isRuntime = (name) => argv.runtime === name || (argv.runtime?.length || 0) < 1 || argv.runtime.find?.(_name => _name === name)
 const isBenchmark = (name) => argv.benchmark === name || (argv.benchmark?.length || 0) < 1 || argv.benchmark.find?.(_name => _name === name)
 
+// benchmark publish
+if (isBenchmark('publish')) {
+  console.log('benchmarking publish...')
+  const benchmarkFile = 'benchmark-publish.js'
+  if (isRuntime('node')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.publishBenchmarkOptions) {
+      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      await benchmarkNode(benchmarkFile, benchmarkOptions)
+    }
+  }
+  if (isRuntime('chrome')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.publishBenchmarkOptions) {
+      await benchmarkChrome(benchmarkFile, benchmarkOptions)
+    }
+  }
+}
+
 // benchmark fetch ipns
 if (isBenchmark('fetch-ipns')) {
   console.log('benchmarking fetch-ipns...')
@@ -73,6 +90,23 @@ if (isBenchmark('fetch-ipns')) {
   }
   if (isRuntime('chrome')) {
     for (const benchmarkOptions of benchmarkOptionsFile.fetchIpnsBenchmarkOptions) {
+      await benchmarkChrome(benchmarkFile, benchmarkOptions)
+    }
+  }
+}
+
+// benchmark fetch comment
+if (isBenchmark('fetch-comment')) {
+  console.log('benchmarking fetch-comment...')
+  const benchmarkFile = 'benchmark-fetch-comment.js'
+  if (isRuntime('node')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.fetchCommentBenchmarkOptions) {
+      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      await benchmarkNode(benchmarkFile, benchmarkOptions)
+    }
+  }
+  if (isRuntime('chrome')) {
+    for (const benchmarkOptions of benchmarkOptionsFile.fetchCommentBenchmarkOptions) {
       await benchmarkChrome(benchmarkFile, benchmarkOptions)
     }
   }
@@ -106,40 +140,6 @@ if (isBenchmark('gateway-fetch-ipns')) {
   }
   if (isRuntime('chrome')) {
     for (const benchmarkOptions of benchmarkOptionsFile.gatewayFetchIpnsBenchmarkOptions) {
-      await benchmarkChrome(benchmarkFile, benchmarkOptions)
-    }
-  }
-}
-
-// benchmark fetch comment
-if (isBenchmark('fetch-comment')) {
-  console.log('benchmarking fetch-comment...')
-  const benchmarkFile = 'benchmark-fetch-comment.js'
-  if (isRuntime('node')) {
-    for (const benchmarkOptions of benchmarkOptionsFile.fetchCommentBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
-      await benchmarkNode(benchmarkFile, benchmarkOptions)
-    }
-  }
-  if (isRuntime('chrome')) {
-    for (const benchmarkOptions of benchmarkOptionsFile.fetchCommentBenchmarkOptions) {
-      await benchmarkChrome(benchmarkFile, benchmarkOptions)
-    }
-  }
-}
-
-// benchmark publish
-if (isBenchmark('publish')) {
-  console.log('benchmarking publish...')
-  const benchmarkFile = 'benchmark-publish.js'
-  if (isRuntime('node')) {
-    for (const benchmarkOptions of benchmarkOptionsFile.publishBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
-      await benchmarkNode(benchmarkFile, benchmarkOptions)
-    }
-  }
-  if (isRuntime('chrome')) {
-    for (const benchmarkOptions of benchmarkOptionsFile.publishBenchmarkOptions) {
       await benchmarkChrome(benchmarkFile, benchmarkOptions)
     }
   }

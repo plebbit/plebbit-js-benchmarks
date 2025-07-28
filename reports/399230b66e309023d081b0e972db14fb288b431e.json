@@ -1,0 +1,5104 @@
+[
+  {
+    "name": "https://pubsubprovider.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1753732583317,
+    "timeSeconds": 6.389,
+    "runtime": "node",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.754,
+        "fetchingIpnsTimeSeconds": 2.367,
+        "challengeRequestTimeSeconds": 0.979,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": 3.952
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://plebpubsub.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1753732589584,
+    "timeSeconds": 3.953,
+    "runtime": "node",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.75,
+        "fetchingIpnsTimeSeconds": 2.477,
+        "challengeRequestTimeSeconds": 0.943,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": 1.394
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1753732596957,
+    "timeSeconds": 4.929,
+    "runtime": "node",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.753,
+        "fetchingIpnsTimeSeconds": 2.227,
+        "challengeRequestTimeSeconds": 0.007,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": 0.664,
+        "fetchingIpfsTimeSeconds": 4.201
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://pubsubprovider.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1753732615979,
+    "timeSeconds": 2.874,
+    "runtime": "chrome",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.671,
+        "fetchingIpnsTimeSeconds": 2.147,
+        "challengeRequestTimeSeconds": 0.614,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": 0.637
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://plebpubsub.xyz",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1753732620788,
+    "timeSeconds": 3.116,
+    "runtime": "chrome",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.806,
+        "fetchingIpnsTimeSeconds": 2.364,
+        "challengeRequestTimeSeconds": 0.642,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": 0.668
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client",
+    "type": "publishBenchmarkOptions",
+    "timestamp": 1753732687677,
+    "timeSeconds": 64.781,
+    "runtime": "chrome",
+    "subplebbits": {
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.806,
+        "fetchingIpnsTimeSeconds": 4.547,
+        "challengeRequestTimeSeconds": null,
+        "challengeTimeSeconds": null,
+        "challengeAnswerTimeSeconds": null,
+        "challengeVerificationTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz (possibly not cached)",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753732713297,
+    "timeSeconds": 23.285,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 4.897,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 1.583,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 1.562,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 1.463,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 1.657,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 1.552,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.317,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.595,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.485,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 6.736,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.602,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 2.141,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 1.62,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 4.922,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.617,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 1.601,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.581,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 1.592,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 1.457,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 1.521,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 1.573,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 1.609,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 1.618,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 1.447,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.6,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 1.433,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 1.544,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.658,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.215,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 1.484,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 1.569,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 1.517,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.477,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.615,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 3.114,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753732732948,
+    "timeSeconds": 17.438,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.986,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.708,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.628,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.512,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.597,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.8,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.212,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 6.671,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.477,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.578,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.622,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.641,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.633,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.605,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.545,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.556,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 1.561,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.705,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.676,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.645,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.667,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.594,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.452,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.742,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.709,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.723,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.497,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 3.088,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 0.89,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.474,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.714,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.748,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 1.559,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 1.588,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.726,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.plebpubsub.xyz",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753732846821,
+    "timeSeconds": 111.711,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.846,
+        "fetchingIpnsTimeSeconds": 3.265
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.794,
+        "fetchingIpnsTimeSeconds": 1.964
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.657,
+        "fetchingIpnsTimeSeconds": 1.767
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.754,
+        "fetchingIpnsTimeSeconds": 2.901
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.569,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.662,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.14,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.571,
+        "fetchingIpnsTimeSeconds": 2.783
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.487,
+        "fetchingIpnsTimeSeconds": 2.535
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.447,
+        "fetchingIpnsTimeSeconds": 1.865
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.584,
+        "fetchingIpnsTimeSeconds": 2.281
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.68,
+        "fetchingIpnsTimeSeconds": 2.119
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.545,
+        "fetchingIpnsTimeSeconds": 2.065
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.672,
+        "fetchingIpnsTimeSeconds": 2.179
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 1.551,
+        "fetchingIpnsTimeSeconds": 2.914
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.504,
+        "fetchingIpnsTimeSeconds": 2.394
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.693,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.588,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.493,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.631,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.758,
+        "fetchingIpnsTimeSeconds": 1.983
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.682,
+        "fetchingIpnsTimeSeconds": 2.654
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.776,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.696,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.721,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.783,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.8,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.704,
+        "fetchingIpnsTimeSeconds": 1.899
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.126,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.758,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.65,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.615,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.733,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.587,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.721,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.forumindex.com",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753732960998,
+    "timeSeconds": 111.904,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.996,
+        "fetchingIpnsTimeSeconds": 3.561
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.698,
+        "fetchingIpnsTimeSeconds": 1.285
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.642,
+        "fetchingIpnsTimeSeconds": 1.193
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.647,
+        "fetchingIpnsTimeSeconds": 3.602
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.651,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.597,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.152,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.744,
+        "fetchingIpnsTimeSeconds": 2.368
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.486,
+        "fetchingIpnsTimeSeconds": 2.155
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.674,
+        "fetchingIpnsTimeSeconds": 1.611
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.721,
+        "fetchingIpnsTimeSeconds": 3.416
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.565,
+        "fetchingIpnsTimeSeconds": 1.905
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.745,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.612,
+        "fetchingIpnsTimeSeconds": 1.851
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.592,
+        "fetchingIpnsTimeSeconds": 1.226
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.617,
+        "fetchingIpnsTimeSeconds": 2.81
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.727,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.688,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.505,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.679,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.653,
+        "fetchingIpnsTimeSeconds": 1.658
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.73,
+        "fetchingIpnsTimeSeconds": 2.656
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.699,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.747,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 1.49,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.652,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.492,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.758,
+        "fetchingIpnsTimeSeconds": 1.779
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.259,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.631,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.759,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.749,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.634,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.708,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.733,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733075276,
+    "timeSeconds": 112.067,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 1.06,
+        "fetchingIpnsTimeSeconds": 3.263
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.61,
+        "fetchingIpnsTimeSeconds": 1.444
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.586,
+        "fetchingIpnsTimeSeconds": 1.124
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.505,
+        "fetchingIpnsTimeSeconds": 1.761
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.664,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.598,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.165,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.739,
+        "fetchingIpnsTimeSeconds": 2.741
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.729,
+        "fetchingIpnsTimeSeconds": 2.878
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.77,
+        "fetchingIpnsTimeSeconds": 1.901
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.692,
+        "fetchingIpnsTimeSeconds": 2.348
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.565,
+        "fetchingIpnsTimeSeconds": 1.358
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.665,
+        "fetchingIpnsTimeSeconds": 4.281
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.671,
+        "fetchingIpnsTimeSeconds": 1.963
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.683,
+        "fetchingIpnsTimeSeconds": 1.46
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.719,
+        "fetchingIpnsTimeSeconds": 2.518
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.509,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.606,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.697,
+        "fetchingIpnsTimeSeconds": 3.478
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.673,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.653,
+        "fetchingIpnsTimeSeconds": 1.822
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.495,
+        "fetchingIpnsTimeSeconds": 2.068
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.706,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.821,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.44,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.752,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.47,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.628,
+        "fetchingIpnsTimeSeconds": 2.105
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.52,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.695,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.775,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.587,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.681,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.739,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.506,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733197581,
+    "timeSeconds": 120.031,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 1.785,
+        "fetchingIpnsTimeSeconds": 39.639,
+        "fetchingIpfsTimeSeconds": 43.522
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 1.554,
+        "fetchingIpnsTimeSeconds": 39.317,
+        "fetchingIpfsTimeSeconds": 41.973
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 3.152,
+        "fetchingIpnsTimeSeconds": 3.301,
+        "fetchingIpfsTimeSeconds": 4.019
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 3.102,
+        "fetchingIpnsTimeSeconds": 3.246,
+        "fetchingIpfsTimeSeconds": 4.789
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 1.538,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 4.912,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.011,
+        "fetchingIpnsTimeSeconds": 37.339,
+        "fetchingIpfsTimeSeconds": 37.869
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 1.455,
+        "fetchingIpnsTimeSeconds": 39.079,
+        "fetchingIpfsTimeSeconds": 42.127
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.627,
+        "fetchingIpnsTimeSeconds": 11.227,
+        "fetchingIpfsTimeSeconds": 12.402
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 1.63,
+        "fetchingIpnsTimeSeconds": 39.404,
+        "fetchingIpfsTimeSeconds": 43.295
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.652,
+        "fetchingIpnsTimeSeconds": 17.554,
+        "fetchingIpfsTimeSeconds": 18.823
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 1.474,
+        "fetchingIpnsTimeSeconds": 39.209,
+        "fetchingIpfsTimeSeconds": 42.942
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 3.015,
+        "fetchingIpnsTimeSeconds": 3.223,
+        "fetchingIpfsTimeSeconds": 4.86
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 1.517,
+        "fetchingIpnsTimeSeconds": 39.299,
+        "fetchingIpfsTimeSeconds": 42.903
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 1.636,
+        "fetchingIpnsTimeSeconds": 39.3,
+        "fetchingIpfsTimeSeconds": 41.96
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 24.481,
+        "fetchingIpnsTimeSeconds": 25.315,
+        "fetchingIpfsTimeSeconds": 26.805
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 3.167,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 1.614,
+        "fetchingIpnsTimeSeconds": 39.396,
+        "fetchingIpfsTimeSeconds": 41.96
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 3.06,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 8.16,
+        "fetchingIpnsTimeSeconds": 8.749,
+        "fetchingIpfsTimeSeconds": 9.237
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 1.476,
+        "fetchingIpnsTimeSeconds": 39.213,
+        "fetchingIpfsTimeSeconds": 43.127
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 1.435,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 3,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.629,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 16.291,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 8.256,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 4.883,
+        "fetchingIpnsTimeSeconds": 5.982,
+        "fetchingIpfsTimeSeconds": 6.383
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.403,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 14.884,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 3.119,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 11.532,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 1.445,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 11.425,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 3.085,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz (possibly not cached)",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733212417,
+    "timeSeconds": 13.271,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.978,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.776,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.596,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.743,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.76,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.639,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.266,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.723,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 1.41,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.602,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 1.406,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.727,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.628,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.708,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.688,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.648,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.577,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.679,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.709,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.687,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.682,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.632,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.688,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.682,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 1.321,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.696,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.697,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.685,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.061,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.683,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.689,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.69,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.679,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.688,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.665,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733228162,
+    "timeSeconds": 13.864,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.993,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.597,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.642,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.638,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.697,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.692,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.13,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.676,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.626,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.669,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.672,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.649,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.659,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.591,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.672,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.597,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.678,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.553,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.652,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.642,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.676,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.564,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.555,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.645,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.673,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.632,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.57,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.65,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.223,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.65,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.643,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.638,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.647,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.644,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.645,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.plebpubsub.xyz",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733341410,
+    "timeSeconds": 111.585,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.941,
+        "fetchingIpnsTimeSeconds": 3.028
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.674,
+        "fetchingIpnsTimeSeconds": 1.671
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.593,
+        "fetchingIpnsTimeSeconds": 1.624
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.653,
+        "fetchingIpnsTimeSeconds": 2.516
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.631,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.637,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 0.856,
+        "fetchingIpnsTimeSeconds": 2.483
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.497,
+        "fetchingIpnsTimeSeconds": 2.368
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.633,
+        "fetchingIpnsTimeSeconds": 2.71
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.472,
+        "fetchingIpnsTimeSeconds": 1.859
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.614,
+        "fetchingIpnsTimeSeconds": 2.452
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.597,
+        "fetchingIpnsTimeSeconds": 2.052
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.602,
+        "fetchingIpnsTimeSeconds": 2.079
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.61,
+        "fetchingIpnsTimeSeconds": 1.956
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.618,
+        "fetchingIpnsTimeSeconds": 1.762
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.603,
+        "fetchingIpnsTimeSeconds": 2.791
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.623,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.605,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.605,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.625,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.611,
+        "fetchingIpnsTimeSeconds": 1.683
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.505,
+        "fetchingIpnsTimeSeconds": 2.169
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.578,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.614,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.583,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.603,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.605,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.589,
+        "fetchingIpnsTimeSeconds": 1.746
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 0.881,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.59,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.597,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.606,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.6,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.599,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.59,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.forumindex.com",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733456004,
+    "timeSeconds": 112.881,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.887,
+        "fetchingIpnsTimeSeconds": 3.185
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.538,
+        "fetchingIpnsTimeSeconds": 1.369
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.581,
+        "fetchingIpnsTimeSeconds": 1.488
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.587,
+        "fetchingIpnsTimeSeconds": 2.113
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.579,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.57,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 2.335,
+        "fetchingIpnsTimeSeconds": 3.029
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.519,
+        "fetchingIpnsTimeSeconds": 2.677
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.548,
+        "fetchingIpnsTimeSeconds": 3.297
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.549,
+        "fetchingIpnsTimeSeconds": 1.7
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.548,
+        "fetchingIpnsTimeSeconds": 2.092
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.477,
+        "fetchingIpnsTimeSeconds": 2.228
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.51,
+        "fetchingIpnsTimeSeconds": 2.294
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.533,
+        "fetchingIpnsTimeSeconds": 1.748
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.508,
+        "fetchingIpnsTimeSeconds": 1.715
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.539,
+        "fetchingIpnsTimeSeconds": 2.167
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.544,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.553,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.544,
+        "fetchingIpnsTimeSeconds": 1.41
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.536,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.541,
+        "fetchingIpnsTimeSeconds": 1.852
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.52,
+        "fetchingIpnsTimeSeconds": 1.893
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.536,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.539,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.54,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.52,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.522,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.53,
+        "fetchingIpnsTimeSeconds": 1.776
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 2.274,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.533,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.514,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.519,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.524,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.528,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.528,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733571766,
+    "timeSeconds": 114.037,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 2.256,
+        "fetchingIpnsTimeSeconds": 4.331
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 1.979,
+        "fetchingIpnsTimeSeconds": 2.383
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 7.137,
+        "fetchingIpnsTimeSeconds": 7.469
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 1.986,
+        "fetchingIpnsTimeSeconds": 3.792
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 2.007,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 1.986,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.175,
+        "fetchingIpnsTimeSeconds": 2.04
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 1.975,
+        "fetchingIpnsTimeSeconds": 3.935
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.572,
+        "fetchingIpnsTimeSeconds": 1.919
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 1.951,
+        "fetchingIpnsTimeSeconds": 2.661
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.559,
+        "fetchingIpnsTimeSeconds": 1.637
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 1.948,
+        "fetchingIpnsTimeSeconds": 2.859
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 1.972,
+        "fetchingIpnsTimeSeconds": 3.768
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 1.936,
+        "fetchingIpnsTimeSeconds": 3.191
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 1.976,
+        "fetchingIpnsTimeSeconds": 2.386
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 6.979,
+        "fetchingIpnsTimeSeconds": 8.301
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 3.298,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 1.949,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.499,
+        "fetchingIpnsTimeSeconds": 3.09
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 1.928,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 1.932,
+        "fetchingIpnsTimeSeconds": 2.861
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 3.263,
+        "fetchingIpnsTimeSeconds": 4.183
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 1.908,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.533,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.56,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 1.898,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 1.916,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 1.92,
+        "fetchingIpnsTimeSeconds": 2.69
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.93,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.523,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 1.906,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.512,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 1.914,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 1.91,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.525,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client",
+    "type": "fetchIpnsBenchmarkOptions",
+    "timestamp": 1753733693690,
+    "timeSeconds": 120.06,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.882,
+        "fetchingIpnsTimeSeconds": 14.931,
+        "fetchingIpfsTimeSeconds": 18.917
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.678,
+        "fetchingIpnsTimeSeconds": 36.475,
+        "fetchingIpfsTimeSeconds": 37.94
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.665,
+        "fetchingIpnsTimeSeconds": 36.469,
+        "fetchingIpfsTimeSeconds": 37.251
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.674,
+        "fetchingIpnsTimeSeconds": 36.469
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.662,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.652,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 0.895,
+        "fetchingIpnsTimeSeconds": 36.461,
+        "fetchingIpfsTimeSeconds": 38.382
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.561,
+        "fetchingIpnsTimeSeconds": 4.092,
+        "fetchingIpfsTimeSeconds": 8.673
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 1.487,
+        "fetchingIpnsTimeSeconds": 36.445,
+        "fetchingIpfsTimeSeconds": 42.215
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.606,
+        "fetchingIpnsTimeSeconds": 18.651,
+        "fetchingIpfsTimeSeconds": 21.379
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 1.459,
+        "fetchingIpnsTimeSeconds": 36.439,
+        "fetchingIpfsTimeSeconds": 40.765
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.587,
+        "fetchingIpnsTimeSeconds": 24.09,
+        "fetchingIpfsTimeSeconds": 26.516
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.616,
+        "fetchingIpnsTimeSeconds": 19.403,
+        "fetchingIpfsTimeSeconds": 22.252
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.642,
+        "fetchingIpnsTimeSeconds": 36.428,
+        "fetchingIpfsTimeSeconds": 40.82
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.585,
+        "fetchingIpnsTimeSeconds": 15.4,
+        "fetchingIpfsTimeSeconds": 16.729
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.567,
+        "fetchingIpnsTimeSeconds": 3.669,
+        "fetchingIpfsTimeSeconds": 7.293
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.609,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.579,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.623,
+        "fetchingIpnsTimeSeconds": 36.412
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.569,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.609,
+        "fetchingIpnsTimeSeconds": 36.407,
+        "fetchingIpfsTimeSeconds": 38.321
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.598,
+        "fetchingIpnsTimeSeconds": 36.403
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.6,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.617,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 1.438,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.611,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.618,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.626,
+        "fetchingIpnsTimeSeconds": 36.396,
+        "fetchingIpfsTimeSeconds": 40.243
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 0.878,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.611,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.602,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.611,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.604,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.599,
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.605,
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (1 post)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733706867,
+    "timeSeconds": 10.885,
+    "runtime": "node",
+    "comments": {
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (1 reply)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733720094,
+    "timeSeconds": 11.062,
+    "runtime": "node",
+    "comments": {
+      "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (1 sub, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733746396,
+    "timeSeconds": 24.094,
+    "runtime": "node",
+    "comments": {
+      "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (10 subs, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733759554,
+    "timeSeconds": 11.006,
+    "runtime": "node",
+    "comments": {
+      "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (1 post)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733766742,
+    "timeSeconds": 4.962,
+    "runtime": "node",
+    "comments": {
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": 1.412,
+        "resolvingSubplebbitAddressTimeSeconds": 2.114,
+        "fetchingCommentUpdateTimeSeconds": 4.957
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (1 reply)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733839015,
+    "timeSeconds": 70.008,
+    "runtime": "node",
+    "comments": {
+      "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (1 sub, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733847835,
+    "timeSeconds": 6.585,
+    "runtime": "node",
+    "comments": {
+      "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
+        "fetchCommentIpfsTimeSeconds": 1.654,
+        "resolvingSubplebbitAddressTimeSeconds": 2.152,
+        "fetchingCommentUpdateTimeSeconds": 6.534
+      },
+      "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
+        "fetchCommentIpfsTimeSeconds": 1.655,
+        "resolvingSubplebbitAddressTimeSeconds": 2.172,
+        "fetchingCommentUpdateTimeSeconds": 6.543
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": 1.648,
+        "resolvingSubplebbitAddressTimeSeconds": 2.141,
+        "fetchingCommentUpdateTimeSeconds": 6.498
+      },
+      "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
+        "fetchCommentIpfsTimeSeconds": 1.653,
+        "resolvingSubplebbitAddressTimeSeconds": 2.201,
+        "fetchingCommentUpdateTimeSeconds": 5.417
+      },
+      "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
+        "fetchCommentIpfsTimeSeconds": 1.467,
+        "resolvingSubplebbitAddressTimeSeconds": 2.164,
+        "fetchingCommentUpdateTimeSeconds": 6.499
+      },
+      "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 2.171,
+        "fetchingCommentUpdateTimeSeconds": 6.469
+      },
+      "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 2.171,
+        "fetchingCommentUpdateTimeSeconds": 6.406
+      },
+      "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 2.17,
+        "fetchingCommentUpdateTimeSeconds": 6.566
+      },
+      "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 2.17,
+        "fetchingCommentUpdateTimeSeconds": 6.384
+      },
+      "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 2.171,
+        "fetchingCommentUpdateTimeSeconds": 6.405
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (10 subs, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733858242,
+    "timeSeconds": 8.128,
+    "runtime": "node",
+    "comments": {
+      "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
+        "fetchCommentIpfsTimeSeconds": 1.613,
+        "resolvingSubplebbitAddressTimeSeconds": 3.082,
+        "fetchingCommentUpdateTimeSeconds": 6.222
+      },
+      "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
+        "fetchCommentIpfsTimeSeconds": 1.603,
+        "resolvingSubplebbitAddressTimeSeconds": 3.094,
+        "fetchingCommentUpdateTimeSeconds": 4.857
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": 1.426,
+        "resolvingSubplebbitAddressTimeSeconds": 2.13,
+        "fetchingCommentUpdateTimeSeconds": 4.882
+      },
+      "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
+        "fetchCommentIpfsTimeSeconds": 1.612,
+        "resolvingSubplebbitAddressTimeSeconds": 3.141,
+        "fetchingCommentUpdateTimeSeconds": 4.847
+      },
+      "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
+        "fetchCommentIpfsTimeSeconds": 1.8,
+        "resolvingSubplebbitAddressTimeSeconds": 3.243,
+        "fetchingCommentUpdateTimeSeconds": 6.116
+      },
+      "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
+        "fetchCommentIpfsTimeSeconds": 1.936,
+        "resolvingSubplebbitAddressTimeSeconds": 3.316,
+        "fetchingCommentUpdateTimeSeconds": 6.845
+      },
+      "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
+        "fetchCommentIpfsTimeSeconds": 1.937,
+        "resolvingSubplebbitAddressTimeSeconds": 3.344,
+        "fetchingCommentUpdateTimeSeconds": 6.728
+      },
+      "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
+        "fetchCommentIpfsTimeSeconds": 6.115,
+        "resolvingSubplebbitAddressTimeSeconds": 6.655,
+        "fetchingCommentUpdateTimeSeconds": 8.111
+      },
+      "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
+        "fetchCommentIpfsTimeSeconds": 2.742,
+        "resolvingSubplebbitAddressTimeSeconds": 4.144,
+        "fetchingCommentUpdateTimeSeconds": 6.016
+      },
+      "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
+        "fetchCommentIpfsTimeSeconds": 2.741,
+        "resolvingSubplebbitAddressTimeSeconds": 4.156,
+        "fetchingCommentUpdateTimeSeconds": 6.022
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (1 post)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733870799,
+    "timeSeconds": 10.956,
+    "runtime": "chrome",
+    "comments": {
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (1 reply)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733883128,
+    "timeSeconds": 10.649,
+    "runtime": "chrome",
+    "comments": {
+      "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (1 sub, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733895790,
+    "timeSeconds": 11.088,
+    "runtime": "chrome",
+    "comments": {
+      "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ipfsgateway.xyz (10 subs, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733909445,
+    "timeSeconds": 12.004,
+    "runtime": "chrome",
+    "comments": {
+      "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (1 post)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733921609,
+    "timeSeconds": 10.392,
+    "runtime": "chrome",
+    "comments": {
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": 3.731,
+        "resolvingSubplebbitAddressTimeSeconds": 5.356,
+        "fetchingCommentUpdateTimeSeconds": 10.382
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (1 reply)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753733993467,
+    "timeSeconds": 70.017,
+    "runtime": "chrome",
+    "comments": {
+      "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
+        "fetchCommentIpfsTimeSeconds": 3.747,
+        "resolvingSubplebbitAddressTimeSeconds": 4.471,
+        "fetchingCommentUpdateTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (1 sub, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753734004662,
+    "timeSeconds": 9.319,
+    "runtime": "chrome",
+    "comments": {
+      "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
+        "fetchCommentIpfsTimeSeconds": 3.496,
+        "resolvingSubplebbitAddressTimeSeconds": 4.176,
+        "fetchingCommentUpdateTimeSeconds": 9.133
+      },
+      "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
+        "fetchCommentIpfsTimeSeconds": 3.494,
+        "resolvingSubplebbitAddressTimeSeconds": 4.174,
+        "fetchingCommentUpdateTimeSeconds": 9.171
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": 3.493,
+        "resolvingSubplebbitAddressTimeSeconds": 4.173,
+        "fetchingCommentUpdateTimeSeconds": 8.004
+      },
+      "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
+        "fetchCommentIpfsTimeSeconds": 3.493,
+        "resolvingSubplebbitAddressTimeSeconds": 4.173,
+        "fetchingCommentUpdateTimeSeconds": 8.001
+      },
+      "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
+        "fetchCommentIpfsTimeSeconds": 3.492,
+        "resolvingSubplebbitAddressTimeSeconds": 4.172,
+        "fetchingCommentUpdateTimeSeconds": 9.165
+      },
+      "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 4.173,
+        "fetchingCommentUpdateTimeSeconds": 9.289
+      },
+      "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 4.172,
+        "fetchingCommentUpdateTimeSeconds": 9.132
+      },
+      "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 4.171,
+        "fetchingCommentUpdateTimeSeconds": 9.271
+      },
+      "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 4.17,
+        "fetchingCommentUpdateTimeSeconds": 9.283
+      },
+      "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": 4.17,
+        "fetchingCommentUpdateTimeSeconds": 9.279
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "libp2p js client (10 subs, 5 posts, 5 replies)",
+    "type": "fetchCommentBenchmarkOptions",
+    "timestamp": 1753734081889,
+    "timeSeconds": 75.434,
+    "runtime": "chrome",
+    "comments": {
+      "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
+        "fetchCommentIpfsTimeSeconds": 3.739,
+        "resolvingSubplebbitAddressTimeSeconds": 4.268,
+        "fetchingCommentUpdateTimeSeconds": 25.699
+      },
+      "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
+        "fetchCommentIpfsTimeSeconds": 3.739,
+        "resolvingSubplebbitAddressTimeSeconds": 4.233,
+        "fetchingCommentUpdateTimeSeconds": 12.133
+      },
+      "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
+        "fetchCommentIpfsTimeSeconds": 3.592,
+        "resolvingSubplebbitAddressTimeSeconds": 4.271,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
+        "fetchCommentIpfsTimeSeconds": 3.743,
+        "resolvingSubplebbitAddressTimeSeconds": 4.249,
+        "fetchingCommentUpdateTimeSeconds": 12.144
+      },
+      "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
+        "fetchCommentIpfsTimeSeconds": 4.209,
+        "resolvingSubplebbitAddressTimeSeconds": 4.673,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
+        "fetchCommentIpfsTimeSeconds": 4.213,
+        "resolvingSubplebbitAddressTimeSeconds": 4.652,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
+        "fetchCommentIpfsTimeSeconds": null,
+        "resolvingSubplebbitAddressTimeSeconds": null,
+        "fetchingCommentUpdateTimeSeconds": null
+      },
+      "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
+        "fetchCommentIpfsTimeSeconds": 5.023,
+        "resolvingSubplebbitAddressTimeSeconds": 5.501,
+        "fetchingCommentUpdateTimeSeconds": 14.709
+      },
+      "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
+        "fetchCommentIpfsTimeSeconds": 5.023,
+        "resolvingSubplebbitAddressTimeSeconds": 5.501,
+        "fetchingCommentUpdateTimeSeconds": 14.711
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ethrpc.xyz (possibly not cached)",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734086181,
+    "timeSeconds": 2.044,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 1.769
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.662
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 1.604
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.596
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 1.618
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 1.553
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 1.542
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.609
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 1.591
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 1.572
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.659
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 1.629
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.631
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.465
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.597
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 1.457
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 1.522
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 1.427
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 1.65
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.611
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.66
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 1.48
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 1.442
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 1.787
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 1.472
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 1.459
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 1.606
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 1.498
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 1.623
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 1.594
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 1.405
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 1.428
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 1.632
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ethrpc.xyz",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734089427,
+    "timeSeconds": 1.053,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.846
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.662
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.644
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.512
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.771
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.663
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.791
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.5
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.548
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.702
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.615
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.76
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.511
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.645
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.603
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.486
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.461
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.731
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.533
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.669
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.555
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.66
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.613
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.738
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.705
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.565
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.761
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.557
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.695
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.742
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.716
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.47
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.54
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "wss://ethrpc.xyz (possibly not cached)",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734099529,
+    "timeSeconds": 7.917,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 1.219
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 1.048
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 1.071
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 1.089
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 1.095
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 1.11
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 1.118
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 1.125
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 1.602
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 2.176
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 2.936
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 3.752
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 1.31
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 1.309
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 1.317
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 1.324
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 1.328
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 1.341
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 1.347
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 1.355
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 1.367
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 1.473
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 1.489
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 1.501
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 1.509
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 1.978
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 1.522
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 2.021
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 2.587
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 1.535
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 1.545
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 1.558
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 1.558
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "wss://ethrpc.xyz",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734102968,
+    "timeSeconds": 1.283,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.956
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.837
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.835
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.835
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.834
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.835
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.834
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.833
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.833
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.833
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.833
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.832
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.832
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.833
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.854
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.855
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.862
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.863
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.863
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 1.004
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 1.004
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 1.003
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 1.002
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 1.024
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 1.024
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 1.023
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 1.023
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 1.022
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 1.023
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 1.023
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 1.022
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 1.022
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 1.022
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ethrpc.xyz, viem, ethers.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734106299,
+    "timeSeconds": 1.173,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.65
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.522
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.486
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.712
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.506
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.748
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.627
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.452
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.4
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.559
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.721
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.826
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.608
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.452
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.565
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.666
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.531
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.399
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.539
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.519
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.59
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.649
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.675
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.663
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.615
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.713
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.692
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.748
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.758
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.838
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.44
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.812
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.411
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "viem",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734109287,
+    "timeSeconds": 0.824,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.489
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.292
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.393
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.271
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.499
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.452
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.511
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.231
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.412
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.485
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.502
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.364
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.437
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.552
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.288
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.349
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.233
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.217
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.462
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.322
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.305
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.173
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.445
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.388
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.381
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.367
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.448
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.358
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.32
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.462
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.543
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.329
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.228
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ethers.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734231490,
+    "timeSeconds": 120.04,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://solrpc.xyz",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734234831,
+    "timeSeconds": 1.141,
+    "runtime": "node",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.129
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 0.944
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "wss://solrpc.xyz (wss not implemented)",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734248150,
+    "timeSeconds": 11.124,
+    "runtime": "node",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "web3.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734296980,
+    "timeSeconds": 46.626,
+    "runtime": "node",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://solrpc.xyz, web3.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734300406,
+    "timeSeconds": 1.237,
+    "runtime": "node",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.224
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.029
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ethrpc.xyz (possibly not cached)",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734303951,
+    "timeSeconds": 1.929,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.887
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.682
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.653
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 1.548
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.643
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.607
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.598
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 1.535
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.639
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.679
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 1.538
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.663
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 1.473
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 1.502
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 1.497
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.628
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.64
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.662
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.657
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 1.445
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 1.503
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.571
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.642
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.649
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.571
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.559
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.571
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.627
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.466
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.608
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.599
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.614
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.62
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ethrpc.xyz",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734306951,
+    "timeSeconds": 1.068,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.903
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.731
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.65
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.71
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.725
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.607
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.665
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.689
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.686
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.707
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.721
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.579
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.633
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.598
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.687
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.693
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.642
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.626
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.684
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.628
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.643
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.678
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.661
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.688
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.677
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.597
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.677
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.589
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.65
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.654
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.682
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.673
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.675
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "wss://ethrpc.xyz (possibly not cached)",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734325511,
+    "timeSeconds": 15.921,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "wss://ethrpc.xyz",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734343227,
+    "timeSeconds": 16.056,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ethrpc.xyz, viem, ethers.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734346054,
+    "timeSeconds": 1.164,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.986
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.749
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.642
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.778
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.766
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.618
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.635
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.664
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.673
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.746
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.631
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.704
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.667
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.544
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.68
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.714
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.588
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.612
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.608
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.642
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.506
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.358
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.592
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.55
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.524
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.511
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.58
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.489
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.472
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.551
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.345
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.47
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.629
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "viem",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734349411,
+    "timeSeconds": 0.785,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": 0.67
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.454
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": 0.397
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": 0.24
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": 0.404
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": 0.416
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": 0.427
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": 0.29
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": 0.406
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": 0.369
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": 0.282
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": 0.199
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": 0.203
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": 0.408
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": 0.298
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": 0.37
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": 0.249
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": 0.276
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": 0.234
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": 0.368
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": 0.173
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": 0.352
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": 0.235
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": 0.23
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": 0.246
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": 0.247
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": 0.25
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": 0.25
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": 0.353
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": 0.375
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": 0.358
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": 0.349
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": 0.358
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "ethers.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734472402,
+    "timeSeconds": 120.077,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://solrpc.xyz",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734475205,
+    "timeSeconds": 1.124,
+    "runtime": "chrome",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.094
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.018
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "wss://solrpc.xyz (wss not implemented)",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734488657,
+    "timeSeconds": 11.138,
+    "runtime": "chrome",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "web3.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734533539,
+    "timeSeconds": 43.206,
+    "runtime": "chrome",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://solrpc.xyz, web3.js",
+    "type": "resolveAddressesBenchmarkOptions",
+    "timestamp": 1753734536536,
+    "timeSeconds": 1.339,
+    "runtime": "chrome",
+    "subplebbits": {
+      "redditdeath.sol": {
+        "resolvingAddressTimeSeconds": 1.286
+      },
+      "socomfy.sol": {
+        "resolvingAddressTimeSeconds": 1.301
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz (gateway fetch only)",
+    "type": "gatewayFetchIpnsBenchmarkOptions",
+    "timestamp": 1753734643109,
+    "timeSeconds": 105.622,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.plebpubsub.xyz (gateway fetch only)",
+    "type": "gatewayFetchIpnsBenchmarkOptions",
+    "timestamp": 1753734646370,
+    "timeSeconds": 2.705,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "fetchingIpnsTimeSeconds": 2.43
+      },
+      "blog.plebbit.eth": {
+        "fetchingIpnsTimeSeconds": 1.677
+      },
+      "plebwhales.eth": {
+        "fetchingIpnsTimeSeconds": 1.319
+      },
+      "pleblore.eth": {
+        "fetchingIpnsTimeSeconds": 2.142
+      },
+      "plebshelpingplebs.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "fetchingIpnsTimeSeconds": 2.258
+      },
+      "business-and-finance.eth": {
+        "fetchingIpnsTimeSeconds": 2.146
+      },
+      "movies-tv-anime.eth": {
+        "fetchingIpnsTimeSeconds": 1.873
+      },
+      "plebmusic.eth": {
+        "fetchingIpnsTimeSeconds": 2.025
+      },
+      "videos-livestreams-podcasts.eth": {
+        "fetchingIpnsTimeSeconds": 1.84
+      },
+      "health-nutrition-science.eth": {
+        "fetchingIpnsTimeSeconds": 2.091
+      },
+      "censorship-watch.eth": {
+        "fetchingIpnsTimeSeconds": 1.808
+      },
+      "reddit-screenshots.eth": {
+        "fetchingIpnsTimeSeconds": 1.635
+      },
+      "weaponized-autism.eth": {
+        "fetchingIpnsTimeSeconds": 2.032
+      },
+      "monarkia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "fetchingIpnsTimeSeconds": 1.508
+      },
+      "technopleb.eth": {
+        "fetchingIpnsTimeSeconds": 1.977
+      },
+      "bitcoinbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "fetchingIpnsTimeSeconds": 1.474
+      },
+      "socomfy.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.forumindex.com (gateway fetch only)",
+    "type": "gatewayFetchIpnsBenchmarkOptions",
+    "timestamp": 1753734649789,
+    "timeSeconds": 3.085,
+    "runtime": "node",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "fetchingIpnsTimeSeconds": 2.697
+      },
+      "blog.plebbit.eth": {
+        "fetchingIpnsTimeSeconds": 0.828
+      },
+      "plebwhales.eth": {
+        "fetchingIpnsTimeSeconds": 0.785
+      },
+      "pleblore.eth": {
+        "fetchingIpnsTimeSeconds": 2.45
+      },
+      "plebshelpingplebs.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "fetchingIpnsTimeSeconds": 2.032
+      },
+      "business-and-finance.eth": {
+        "fetchingIpnsTimeSeconds": 2.142
+      },
+      "movies-tv-anime.eth": {
+        "fetchingIpnsTimeSeconds": 1.072
+      },
+      "plebmusic.eth": {
+        "fetchingIpnsTimeSeconds": 2.026
+      },
+      "videos-livestreams-podcasts.eth": {
+        "fetchingIpnsTimeSeconds": 1.234
+      },
+      "health-nutrition-science.eth": {
+        "fetchingIpnsTimeSeconds": 1.635
+      },
+      "censorship-watch.eth": {
+        "fetchingIpnsTimeSeconds": 1.353
+      },
+      "reddit-screenshots.eth": {
+        "fetchingIpnsTimeSeconds": 0.826
+      },
+      "weaponized-autism.eth": {
+        "fetchingIpnsTimeSeconds": 2.572
+      },
+      "monarkia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "fetchingIpnsTimeSeconds": 1.312
+      },
+      "technopleb.eth": {
+        "fetchingIpnsTimeSeconds": 1.715
+      },
+      "bitcoinbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "fetchingIpnsTimeSeconds": 1.018
+      },
+      "socomfy.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://ipfsgateway.xyz (gateway fetch only)",
+    "type": "gatewayFetchIpnsBenchmarkOptions",
+    "timestamp": 1753734652947,
+    "timeSeconds": 2.273,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.plebpubsub.xyz (gateway fetch only)",
+    "type": "gatewayFetchIpnsBenchmarkOptions",
+    "timestamp": 1753734656666,
+    "timeSeconds": 2.839,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "fetchingIpnsTimeSeconds": 2.218
+      },
+      "blog.plebbit.eth": {
+        "fetchingIpnsTimeSeconds": 1.554
+      },
+      "plebwhales.eth": {
+        "fetchingIpnsTimeSeconds": 1.404
+      },
+      "pleblore.eth": {
+        "fetchingIpnsTimeSeconds": 1.931
+      },
+      "plebshelpingplebs.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "fetchingIpnsTimeSeconds": 2.002
+      },
+      "business-and-finance.eth": {
+        "fetchingIpnsTimeSeconds": 2.115
+      },
+      "movies-tv-anime.eth": {
+        "fetchingIpnsTimeSeconds": 1.733
+      },
+      "plebmusic.eth": {
+        "fetchingIpnsTimeSeconds": 1.981
+      },
+      "videos-livestreams-podcasts.eth": {
+        "fetchingIpnsTimeSeconds": 1.676
+      },
+      "health-nutrition-science.eth": {
+        "fetchingIpnsTimeSeconds": 1.98
+      },
+      "censorship-watch.eth": {
+        "fetchingIpnsTimeSeconds": 1.678
+      },
+      "reddit-screenshots.eth": {
+        "fetchingIpnsTimeSeconds": 1.563
+      },
+      "weaponized-autism.eth": {
+        "fetchingIpnsTimeSeconds": 2.171
+      },
+      "monarkia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "fetchingIpnsTimeSeconds": 1.591
+      },
+      "technopleb.eth": {
+        "fetchingIpnsTimeSeconds": 2.021
+      },
+      "bitcoinbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "fetchingIpnsTimeSeconds": 1.547
+      },
+      "socomfy.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  },
+  {
+    "name": "https://gateway.forumindex.com (gateway fetch only)",
+    "type": "gatewayFetchIpnsBenchmarkOptions",
+    "timestamp": 1753734660878,
+    "timeSeconds": 2.797,
+    "runtime": "chrome",
+    "subplebbits": {
+      "plebtoken.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "blog.plebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebwhales.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "pleblore.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebshelpingplebs.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "decentralizedscam.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "redditdeath.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "politically-incorrect.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "business-and-finance.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "movies-tv-anime.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebmusic.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "videos-livestreams-podcasts.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "health-nutrition-science.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "censorship-watch.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "reddit-screenshots.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "weaponized-autism.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "monarkia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "mktwallet.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "brasilandia.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebcouncil.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebpiracy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "technopleb.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "bitcoinbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "💩posting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbrothers.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cave2cave.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "ripmy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cringeposting.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "plebbit-ukraine.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "fatpeoplehate.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "socomfy.sol": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "psychicgarden.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "diyeconomy.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "cryptoserious.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "chantdownbabylon.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "wereadbooks.eth": {
+        "fetchingIpnsTimeSeconds": null
+      },
+      "askplebbit.eth": {
+        "fetchingIpnsTimeSeconds": null
+      }
+    },
+    "plebbitJsCommitHash": "399230b66e309023d081b0e972db14fb288b431e"
+  }
+]

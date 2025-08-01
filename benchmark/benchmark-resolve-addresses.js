@@ -5,7 +5,7 @@ const failUrl = 'http://127.0.0.2'
 // debug node
 // import util from 'util'
 // util.inspect.defaultOptions.depth = 6
-// import './debug-http.js'
+// import '../lib/debug-http.js'
 
 // fix unknown bug with viem in browser, that starts a new websocket connection per request
 try {

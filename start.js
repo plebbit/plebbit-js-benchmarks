@@ -19,7 +19,9 @@ import startServer from './lib/server.js'
 const server = await startServer()
 
 let benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
-  const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])
+  const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile], {
+    env: {...process.env, BENCHMARK_OPTIONS_NAME: benchmarkOptions.name}
+  })
   benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
   benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
   benchmarkProcess.on('close', (code) => resolve())
@@ -31,15 +33,17 @@ if (argv.debugPlebbitJs) {
   setInterval(() => {console.log(`\n\n${seconds++}s\n\n`)}, 1000)
   benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
     seconds = 0
-    const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name], {
-      env: {...process.env, DEBUG: 'plebbit*', FORCE_COLOR: '1'}, stdio: 'inherit'
+    const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile], {
+      env: {...process.env, DEBUG: 'plebbit*', FORCE_COLOR: '1', BENCHMARK_OPTIONS_NAME: benchmarkOptions.name}, stdio: 'inherit'
     })
     benchmarkProcess.on('close', (code) => resolve())
   })
 }
 
 const benchmarkChrome = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
-  const benchmarkProcess = spawn('npm', ['run', 'benchmark:browser', '--', '--file', benchmarkFile, '--benchmarkOptionsName', benchmarkOptions.name])
+  const benchmarkProcess = spawn('npm', ['run', 'benchmark:browser', '--', 'benchmark/' + benchmarkFile], {
+    env: {...process.env, BENCHMARK_OPTIONS_NAME: benchmarkOptions.name, BENCHMARK_FILE: benchmarkFile}
+  })
   benchmarkProcess.stdout.on('data', (data) => process.stdout.write(`${data}`))
   benchmarkProcess.stderr.on('data', (data) => process.stderr.write(`${data}`))
   benchmarkProcess.on('close', (code) => resolve())

@@ -4,13 +4,11 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node start",
-    "benchmark:browser": "CHROME_BIN=$(which chrome || which chromium) karma start config/karma.conf.cjs",
-    "benchmark:node": "mocha --config config/.mocharc.json",
+    "benchmark:browser": "vitest run --config config/vitest.browser.config.js",
+    "benchmark:node": "vitest run --config config/vitest.node.config.js",
     "benchmark:server": "nodemon scripts/start-server.js",
     "report": "node lib/print-report",
-    "report:inline": "node lib/print-report --inline",
-    "webpack": "webpack --mode development --config config/webpack.config.js",
-    "webpack:watch": "webpack watch --mode development --config config/webpack.config.js"
+    "report:inline": "node lib/print-report --inline"
   },
   "author": "",
   "license": "ISC",
@@ -39,17 +37,8 @@
     "yargs": "17.7.1"
   },
   "devDependencies": {
-    "karma": "6.3.20",
-    "karma-chrome-launcher": "3.1.1",
-    "karma-firefox-launcher": "2.1.2",
-    "karma-mocha": "2.0.1",
-    "karma-spec-reporter": "0.0.34",
-    "mocha": "10.2.0",
-    "webpack": "5.72.1",
-    "webpack-cli": "4.9.2",
-    "string-replace-loader": "3.1.0",
-    "@babel/core": "7.23.7",
-    "@babel/preset-env": " 7.23.9",
-    "babel-loader": "9.1.3 "
+    "vitest": "^4.0.18",
+    "@vitest/browser": "^4.0.18",
+    "playwright": "^1.58.0"
   }
 }

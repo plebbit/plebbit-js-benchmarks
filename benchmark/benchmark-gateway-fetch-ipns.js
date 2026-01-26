@@ -1,3 +1,5 @@
+import { test } from 'vitest'
+
 const benchmarkOptionsType = 'gatewayFetchIpnsBenchmarkOptions'
 const benchmarkServerUrl = 'http://127.0.0.1:3000'
 
@@ -33,8 +35,8 @@ async function fetchWithTimeout(url, options = {}) {
   const timeout = setTimeout(() => controller.abort(), 1000 * 120)
   try {
     const response = await fetch(url, {
-      ...options, 
-      signal: controller.signal, 
+      ...options,
+      signal: controller.signal,
       cache: 'no-cache' // test that the provider should cache even when using no-cache
     })
     clearTimeout(timeout)
@@ -45,14 +47,14 @@ async function fetchWithTimeout(url, options = {}) {
   }
 }
 
-it('benchmark', async function() {
+test('benchmark', async () => {
   let benchmarkOptionsName, runtime
   try {
     benchmarkOptionsName = window.benchmarkOptionsName
     runtime = 'chrome'
   }
   catch (e) {
-    benchmarkOptionsName = process.argv.includes('--benchmarkOptionsName') && process.argv[process.argv.indexOf('--benchmarkOptionsName') + 1]
+    benchmarkOptionsName = process.env.BENCHMARK_OPTIONS_NAME || (process.argv.includes('--benchmarkOptionsName') && process.argv[process.argv.indexOf('--benchmarkOptionsName') + 1])
     runtime = 'node'
   }
   if (!benchmarkOptionsName) {

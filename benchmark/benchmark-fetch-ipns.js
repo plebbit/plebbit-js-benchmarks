@@ -1,3 +1,5 @@
+import { test } from 'vitest'
+
 const benchmarkOptionsType = 'fetchIpnsBenchmarkOptions'
 const benchmarkServerUrl = 'http://127.0.0.1:3000'
 
@@ -16,14 +18,14 @@ try {
 
 import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
 
-it('benchmark', async function() {
+test('benchmark', async () => {
   let benchmarkOptionsName, runtime
   try {
     benchmarkOptionsName = window.benchmarkOptionsName
     runtime = 'chrome'
   }
   catch (e) {
-    benchmarkOptionsName = process.argv.includes('--benchmarkOptionsName') && process.argv[process.argv.indexOf('--benchmarkOptionsName') + 1]
+    benchmarkOptionsName = process.env.BENCHMARK_OPTIONS_NAME || (process.argv.includes('--benchmarkOptionsName') && process.argv[process.argv.indexOf('--benchmarkOptionsName') + 1])
     runtime = 'node'
   }
   if (!benchmarkOptionsName) {

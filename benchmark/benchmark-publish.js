@@ -1,3 +1,5 @@
+import { test } from 'vitest'
+
 const benchmarkOptionsType = 'publishBenchmarkOptions'
 const benchmarkServerUrl = 'http://127.0.0.1:3000'
 
@@ -14,14 +16,14 @@ import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
 // wait to reply to challenge to emulate real scenario
 const publishChallengeAnswerDelay = 1000 * 10
 
-it('benchmark', async function() {
+test('benchmark', async () => {
   let benchmarkOptionsName, runtime
   try {
     benchmarkOptionsName = window.benchmarkOptionsName
     runtime = 'chrome'
   }
   catch (e) {
-    benchmarkOptionsName = process.argv.includes('--benchmarkOptionsName') && process.argv[process.argv.indexOf('--benchmarkOptionsName') + 1]
+    benchmarkOptionsName = process.env.BENCHMARK_OPTIONS_NAME || (process.argv.includes('--benchmarkOptionsName') && process.argv[process.argv.indexOf('--benchmarkOptionsName') + 1])
     runtime = 'node'
   }
   if (!benchmarkOptionsName) {

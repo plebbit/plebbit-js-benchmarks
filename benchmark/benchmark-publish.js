@@ -11,7 +11,7 @@ try {
   }
 } catch (e) {}
 
-import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
+import PKC from '../node_modules/@pkc/pkc-js/dist/node/index.js'
 
 // wait to reply to challenge to emulate real scenario
 const publishChallengeAnswerDelay = 1000 * 10
@@ -34,17 +34,17 @@ test('benchmark', async () => {
     throw Error('failed fetching benchmarkOptions')
   }
 
-  const plebbitOptions = {
-    ...benchmarkOptions.plebbitOptions,
+  const pkcOptions = {
+    ...benchmarkOptions.pkcOptions,
   }
-  const plebbit = await Plebbit(plebbitOptions)
-  plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent:', plebbitErrorEvent.message))
+  const pkc = await PKC(pkcOptions)
+  pkc.on('error', pkcErrorEvent => console.log('pkcErrorEvent:', pkcErrorEvent.message))
 
   const beforeReportTimestamp = Date.now()
   const reportPublish = {}
 
-  const publishComment = (subplebbitAddress) => new Promise(async resolve => {
-    reportPublish[subplebbitAddress] = {
+  const publishComment = (communityAddress) => new Promise(async resolve => {
+    reportPublish[communityAddress] = {
       resolvingAddressTimeSeconds: null,
       fetchingIpnsTimeSeconds: null,
       challengeRequestTimeSeconds: null,
@@ -55,27 +55,27 @@ test('benchmark', async () => {
     let beforeTimestamp
 
     const getRandomString = () => (Math.random() + 1).toString(36).replace('.', '')
-    const signer = await plebbit.createSigner()
-    const comment = await plebbit.createComment({
+    const signer = await pkc.createSigner()
+    const comment = await pkc.createComment({
       signer,
-      subplebbitAddress,
-      title: `I am the plebbit-js benchmark ${getRandomString()}`,
-      content: `I am the plebbit-js benchmark ${getRandomString()}`
+      communityAddress,
+      title: `I am the pkc-js benchmark ${getRandomString()}`,
+      content: `I am the pkc-js benchmark ${getRandomString()}`
     })
     comment.on('error', commentErrorEvent => console.log('commentErrorEvent:', getCommentUrlPath(), commentErrorEvent.message))
     comment.once('challenge', async () => {
-      reportPublish[subplebbitAddress].challengeTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-      console.log(`received challenge ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeTimeSeconds}s`)
+      reportPublish[communityAddress].challengeTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+      console.log(`received challenge ${communityAddress} in ${reportPublish[communityAddress].challengeTimeSeconds}s`)
 
       // wait to reply to challenge to emulate real scenario
       console.log(`waiting ${publishChallengeAnswerDelay / 1000}s before publishing challenge answer...`)
       await new Promise(r => setTimeout(r, publishChallengeAnswerDelay))
       beforeTimestamp += publishChallengeAnswerDelay
-      comment.publishChallengeAnswers(['plebbit-js benchmark wrong answer'])
+      comment.publishChallengeAnswers(['pkc-js benchmark wrong answer'])
     })
     comment.once('challengeverification', () => {
-      reportPublish[subplebbitAddress].challengeVerificationTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-      console.log(`received challenge verification ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeVerificationTimeSeconds}s`)
+      reportPublish[communityAddress].challengeVerificationTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+      console.log(`received challenge verification ${communityAddress} in ${reportPublish[communityAddress].challengeVerificationTimeSeconds}s`)
 
       resolve()
       comment.stop().catch(() => {})
@@ -85,46 +85,46 @@ test('benchmark', async () => {
         beforeTimestamp = Date.now()
       }
       if (publishingState === 'fetching-subplebbit-ipns') {
-        if (reportPublish[subplebbitAddress].resolvingAddressTimeSeconds) {
+        if (reportPublish[communityAddress].resolvingAddressTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
         }
-        reportPublish[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`resolved address ${subplebbitAddress} in ${reportPublish[subplebbitAddress].resolvingAddressTimeSeconds}s`)
+        reportPublish[communityAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`resolved address ${communityAddress} in ${reportPublish[communityAddress].resolvingAddressTimeSeconds}s`)
       }
       if (publishingState === 'fetching-subplebbit-ipfs') {
-        if (reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds) {
+        if (reportPublish[communityAddress].fetchingIpnsTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
         }
-        reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`fetched ipns ${subplebbitAddress} in ${reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+        reportPublish[communityAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`fetched ipns ${communityAddress} in ${reportPublish[communityAddress].fetchingIpnsTimeSeconds}s`)
       }
       if (publishingState === 'publishing-challenge-request') {
-        // not all plebbit options have fetching-ipfs state
-        if (reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds) {
-          reportPublish[subplebbitAddress].fetchingIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-          console.log(`fetched ipfs ${subplebbitAddress} in ${reportPublish[subplebbitAddress].fetchingIpfsTimeSeconds}s`)
+        // not all pkc options have fetching-ipfs state
+        if (reportPublish[communityAddress].fetchingIpnsTimeSeconds) {
+          reportPublish[communityAddress].fetchingIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipfs ${communityAddress} in ${reportPublish[communityAddress].fetchingIpfsTimeSeconds}s`)
         }
         else {
-          reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-          console.log(`fetched ipns ${subplebbitAddress} in ${reportPublish[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+          reportPublish[communityAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipns ${communityAddress} in ${reportPublish[communityAddress].fetchingIpnsTimeSeconds}s`)
         }
 
         beforeTimestamp = Date.now()
       }
       if (publishingState === 'waiting-challenge') {
-        reportPublish[subplebbitAddress].challengeRequestTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`published challenge request ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeRequestTimeSeconds}s`)
+        reportPublish[communityAddress].challengeRequestTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`published challenge request ${communityAddress} in ${reportPublish[communityAddress].challengeRequestTimeSeconds}s`)
       }
       if (publishingState === 'waiting-challenge-verification') {
-        reportPublish[subplebbitAddress].challengeAnswerTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`published challenge answer ${subplebbitAddress} in ${reportPublish[subplebbitAddress].challengeAnswerTimeSeconds}s`)
+        reportPublish[communityAddress].challengeAnswerTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`published challenge answer ${communityAddress} in ${reportPublish[communityAddress].challengeAnswerTimeSeconds}s`)
       }
       if (publishingState === 'failed') {
-        // TODO: plebbit-js bug, events aren't emitted in correct order so wait 100ms for all of them
+        // TODO: pkc-js bug, events aren't emitted in correct order so wait 100ms for all of them
         setTimeout(() => {
-          console.log(`failed publish ${subplebbitAddress}`)
+          console.log(`failed publish ${communityAddress}`)
           resolve()
           comment.stop().catch(() => {})
         }, 100)
@@ -132,7 +132,7 @@ test('benchmark', async () => {
       if (publishingState === 'waiting-retry') {
         // wait retry for 10s
         setTimeout(() => {
-          console.log(`failed (waiting retry more than 10s)' publish ${subplebbitAddress}`)
+          console.log(`failed (waiting retry more than 10s)' publish ${communityAddress}`)
           resolve()
           comment.stop().catch(() => {})
         }, 10000)
@@ -140,9 +140,9 @@ test('benchmark', async () => {
     })
     comment.publish()
 
-    // in case plebbit-js doesn't time out fast enough
+    // in case pkc-js doesn't time out fast enough
     setTimeout(() => {
-      console.log(`failed publish timed out 2min ${subplebbitAddress}`)
+      console.log(`failed publish timed out 2min ${communityAddress}`)
       resolve()
       comment.stop().catch(() => {})
     }, 1000 * 60 * 2)
@@ -150,7 +150,7 @@ test('benchmark', async () => {
 
   const publish = async () => {
     console.log('publishing...')
-    await publishComment(benchmarkOptions.subplebbitAddress)
+    await publishComment(benchmarkOptions.communityAddress)
     console.log('done publishing')
   }
 
@@ -161,7 +161,7 @@ test('benchmark', async () => {
       timestamp: Date.now(),
       timeSeconds: (Date.now() - beforeReportTimestamp) / 1000,
       runtime,
-      subplebbits: reportPublish
+      communities: reportPublish
     }
     const res = await fetch(`${benchmarkServerUrl}/report`, {
       method: 'POST',

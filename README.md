@@ -1,8 +1,8 @@
-historical benchmarks for each plebbit-js commit are saved to `./reports/<commit-hash>.txt` and can be visualized at https://plebbit.github.io/plebbit-js-benchmarks/reports-ui
+historical benchmarks for each pkc-js commit are saved to `./reports/<commit-hash>.txt` and can be visualized at https://pkcprotocol.github.io/pkc-js-benchmarks/reports-ui
 
 ### getting started
 ```
-git clone https://github.com/estebanabaroa/plebbit-js-benchmark.git
+git clone https://github.com/pkcprotocol/pkc-js-benchmarks.git
 npm install
 npm run webpack
 npm start -- --runtime node --benchmark fetch-ipns
@@ -14,9 +14,9 @@ npm start -- --runtime node --benchmark fetch-ipns
 npm start -- --runtime node|chrome --benchmark resolve-addresses|fetch-ipns|gateway-fetch-ipns|fetch-comment|publish
 ```
 
-### editing benchmark options (the plebbit options used, the subplebbit addresses, etc)
+### editing benchmark options (the pkc options used, the community addresses, etc)
 
-edit the file `./benchmark-options.js`. this is needed to do manual debugging with specific plebbit options.
+edit the file `./benchmark-options.js`. this is needed to do manual debugging with specific pkc options.
 
 ### print reports
 
@@ -40,5 +40,5 @@ npm run webpack:watch
 - 3. `node ./start` launches:
   - 1. `./lib/server` which is needed to communicate with the browser benchmarks
   - 2. it reads `./benchmark-options.js` and iterates over all the benchmarks to do
-  - 3. for each benchmark to do, it launches either node or karma (browser) to execute it in an isolated environment (i.e. no plebbit-js caching)
+  - 3. for each benchmark to do, it launches either node or karma (browser) to execute it in an isolated environment (i.e. no pkc-js caching)
   - 4. it launches `npm run report` to print the last report (saved to `./report.json`)

@@ -16,7 +16,7 @@ try {
   }
 } catch (e) {}
 
-import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
+import PKC from '../node_modules/@pkc/pkc-js/dist/node/index.js'
 
 test('benchmark', async () => {
   let benchmarkOptionsName, runtime
@@ -36,82 +36,82 @@ test('benchmark', async () => {
     throw Error('failed fetching benchmarkOptions')
   }
 
-  const plebbitOptions = {
-    ...benchmarkOptions.plebbitOptions,
+  const pkcOptions = {
+    ...benchmarkOptions.pkcOptions,
   }
-  const plebbit = await Plebbit(plebbitOptions)
-  plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent:', plebbitErrorEvent.message))
+  const pkc = await PKC(pkcOptions)
+  pkc.on('error', pkcErrorEvent => console.log('pkcErrorEvent:', pkcErrorEvent.message))
 
   const beforeReportTimestamp = Date.now()
-  const reportSubplebbits = {}
+  const reportCommunities = {}
 
-  const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
-    reportSubplebbits[subplebbitAddress] = {resolvingAddressTimeSeconds: null, fetchingIpnsTimeSeconds: null}
+  const fetchCommunity = (communityAddress) => new Promise(async resolve => {
+    reportCommunities[communityAddress] = {resolvingAddressTimeSeconds: null, fetchingIpnsTimeSeconds: null}
     let beforeTimestamp
-    const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
-    subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent:', subplebbitAddress, subplebbitErrorEvent.message))
-    subplebbit.on('updatingstatechange', updatingState => {
+    const community = await pkc.createCommunity({address: communityAddress})
+    community.on('error', communityErrorEvent => console.log('communityErrorEvent:', communityAddress, communityErrorEvent.message))
+    community.on('updatingstatechange', updatingState => {
       if (updatingState === 'resolving-address') {
         beforeTimestamp = Date.now()
       }
       if (updatingState === 'fetching-ipns') {
-        if (reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds) {
+        if (reportCommunities[communityAddress].resolvingAddressTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
         }
-        reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`resolved address ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds}s`)
+        reportCommunities[communityAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`resolved address ${communityAddress} in ${reportCommunities[communityAddress].resolvingAddressTimeSeconds}s`)
       }
       if (updatingState === 'fetching-ipfs') {
-        if (reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds) {
+        if (reportCommunities[communityAddress].fetchingIpnsTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
         }
-        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+        reportCommunities[communityAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`fetched ipns ${communityAddress} in ${reportCommunities[communityAddress].fetchingIpnsTimeSeconds}s`)
       }
       if (updatingState === 'succeeded') {
-        // not all plebbit options have fetching-ipfs state
-        if (reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds) {
-          reportSubplebbits[subplebbitAddress].fetchingIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-          console.log(`fetched ipfs ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpfsTimeSeconds}s`)
+        // not all pkc options have fetching-ipfs state
+        if (reportCommunities[communityAddress].fetchingIpnsTimeSeconds) {
+          reportCommunities[communityAddress].fetchingIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipfs ${communityAddress} in ${reportCommunities[communityAddress].fetchingIpfsTimeSeconds}s`)
         }
         else {
-          reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-          console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+          reportCommunities[communityAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+          console.log(`fetched ipns ${communityAddress} in ${reportCommunities[communityAddress].fetchingIpnsTimeSeconds}s`)
         }
         resolve()
-        subplebbit.stop().catch(() => {})
+        community.stop().catch(() => {})
       }
       if (updatingState === 'failed') {
-        console.log(`failed fetching ipns ${subplebbitAddress}`)
+        console.log(`failed fetching ipns ${communityAddress}`)
         resolve()
-        subplebbit.stop().catch(() => {})
+        community.stop().catch(() => {})
       }
       if (updatingState === 'waiting-retry') {
         // wait retry for 10s
         setTimeout(() => {
-          console.log(`failed (waiting retry more than 10s)' fetching ipns ${subplebbitAddress}`)
+          console.log(`failed (waiting retry more than 10s)' fetching ipns ${communityAddress}`)
           resolve()
-          subplebbit.stop().catch(() => {})
+          community.stop().catch(() => {})
         }, 10000)
       }
     })
-    subplebbit.update()
+    community.update()
 
-    // in case plebbit-js doesn't time out fast enough
+    // in case pkc-js doesn't time out fast enough
     setTimeout(() => {
-      console.log(`failed fetching ipns timed out 2min ${subplebbitAddress}`)
+      console.log(`failed fetching ipns timed out 2min ${communityAddress}`)
       resolve()
-      subplebbit.stop().catch(() => {})
+      community.stop().catch(() => {})
     }, 1000 * 60 * 2)
   })
 
-  const fetchSubplebbits = async () => {
-    console.log('fetching subplebbits...')
-    const promises = benchmarkOptions.subplebbitAddresses.map(fetchSubplebbit)
+  const fetchCommunities = async () => {
+    console.log('fetching communities...')
+    const promises = benchmarkOptions.communityAddresses.map(fetchCommunity)
     await Promise.all(promises)
-    console.log('done fetching subplebbits')
+    console.log('done fetching communities')
   }
 
   const writeReport = async () => {
@@ -121,7 +121,7 @@ test('benchmark', async () => {
       timestamp: Date.now(),
       timeSeconds: (Date.now() - beforeReportTimestamp) / 1000,
       runtime,
-      subplebbits: reportSubplebbits
+      communities: reportCommunities
     }
     const res = await fetch(`${benchmarkServerUrl}/report`, {
       method: 'POST',
@@ -133,9 +133,9 @@ test('benchmark', async () => {
     }
   }
 
-  await fetchSubplebbits()
+  await fetchCommunities()
   await writeReport()
-  console.log(reportSubplebbits)
+  console.log(reportCommunities)
   console.log(benchmarkOptions.name, 'done')
 
   try {

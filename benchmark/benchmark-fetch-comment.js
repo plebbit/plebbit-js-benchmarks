@@ -16,7 +16,7 @@ try {
   }
 } catch (e) {}
 
-import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
+import PKC from '../node_modules/@pkc/pkc-js/dist/node/index.js'
 
 test('benchmark', async () => {
   let benchmarkOptionsName, runtime
@@ -36,20 +36,20 @@ test('benchmark', async () => {
     throw Error('failed fetching benchmarkOptions')
   }
 
-  const plebbitOptions = {
-    ...benchmarkOptions.plebbitOptions,
+  const pkcOptions = {
+    ...benchmarkOptions.pkcOptions,
   }
-  const plebbit = await Plebbit(plebbitOptions)
-  plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent:', plebbitErrorEvent.message))
+  const pkc = await PKC(pkcOptions)
+  pkc.on('error', pkcErrorEvent => console.log('pkcErrorEvent:', pkcErrorEvent.message))
 
   const beforeReportTimestamp = Date.now()
   const reportComments = {}
 
   const fetchComment = (commentCid) => new Promise(async resolve => {
-    reportComments[commentCid] = {fetchCommentIpfsTimeSeconds: null, resolvingSubplebbitAddressTimeSeconds: null, fetchingCommentUpdateTimeSeconds: null}
+    reportComments[commentCid] = {fetchCommentIpfsTimeSeconds: null, resolvingCommunityAddressTimeSeconds: null, fetchingCommentUpdateTimeSeconds: null}
     let beforeTimestamp
-    const comment = await plebbit.createComment({cid: commentCid})
-    const getCommentUrlPath = () => comment.subplebbitAddress ? `p/${comment.subplebbitAddress}/c/${commentCid}` : `c/${commentCid}`
+    const comment = await pkc.createComment({cid: commentCid})
+    const getCommentUrlPath = () => comment.communityAddress ? `p/${comment.communityAddress}/c/${commentCid}` : `c/${commentCid}`
 
     comment.on('error', commentErrorEvent => console.log('commentErrorEvent:', getCommentUrlPath(), commentErrorEvent.message))
     comment.on('updatingstatechange', updatingState => {
@@ -61,15 +61,15 @@ test('benchmark', async () => {
         console.log(`fetched comment ipfs ${getCommentUrlPath()} in ${reportComments[commentCid].fetchCommentIpfsTimeSeconds}s`)
       }
       if (updatingState === 'fetching-subplebbit-ipns') {
-        if (reportComments[commentCid].resolvingSubplebbitAddressTimeSeconds) {
+        if (reportComments[commentCid].resolvingCommunityAddressTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
         }
-        reportComments[commentCid].resolvingSubplebbitAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`resolved subplebbit address ${getCommentUrlPath()} after ${reportComments[commentCid].resolvingSubplebbitAddressTimeSeconds}s`)
+        reportComments[commentCid].resolvingCommunityAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`resolved community address ${getCommentUrlPath()} after ${reportComments[commentCid].resolvingCommunityAddressTimeSeconds}s`)
       }
       if (updatingState === 'succeeded') {
-        // TODO: plebbit-js bug, should only be state 'succeeded' after comment.updatedAt is defined
+        // TODO: pkc-js bug, should only be state 'succeeded' after comment.updatedAt is defined
         if (!comment.updatedAt) {
           return
         }
@@ -94,7 +94,7 @@ test('benchmark', async () => {
     })
     comment.update()
 
-    // in case plebbit-js doesn't time out fast enough
+    // in case pkc-js doesn't time out fast enough
     setTimeout(() => {
       console.log(`failed fetching comment timed out 2min ${getCommentUrlPath()}`)
       resolve()

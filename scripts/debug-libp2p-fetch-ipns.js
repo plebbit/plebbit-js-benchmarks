@@ -3,14 +3,14 @@ console.log('make sure to run with DEBUG=libp2p*,helia*,delegated*')
 
 const benchmarkOptions = {
   name: 'libp2pJsClientsOptions',
-  plebbitOptions: {
+  pkcOptions: {
     libp2pJsClientsOptions: [{
-      key: 'libp2pJsClient', 
+      key: 'libp2pJsClient',
       libp2pOptions: {
         connectionGater: {
           denyDialMultiaddr: (multiaddress) => String(multiaddress).includes('webrtc-direct')
         }
-      }, 
+      },
       heliaOptions: {}
     }],
     httpRoutersOptions: [
@@ -23,9 +23,9 @@ const benchmarkOptions = {
     chainProviders: {eth: {urls: ['wss://ethrpc.xyz'], chainId: 1}},
     resolveAuthorAddresses: false,
     validatePages: false,
-    dataPath: '.plebbit-benchmark'
+    dataPath: '.pkc-benchmark'
   },
-  subplebbitAddresses: [
+  communityAddresses: [
     // 'plebtoken.eth',
     // 'blog.plebbit.eth',
     // 'plebwhales.eth',
@@ -45,9 +45,9 @@ const benchmarkOptions = {
   ]
 }
 
-// delete plebbit-js cache (for resolving address)
+// delete pkc-js cache (for resolving address)
 import fs from 'fs'
-// fs.rmSync('.plebbit-benchmark', {recursive: true, force: true})
+// fs.rmSync('.pkc-benchmark', {recursive: true, force: true})
 
 // debug time and connections
 if (process.env.DEBUG) {
@@ -98,66 +98,66 @@ server.listen(9999, () => {
   console.log(`http router listening on port ${9999}`)
 })
 
-// start plebbit
-import Plebbit from '../node_modules/@plebbit/plebbit-js/dist/node/index.js'
-const plebbitOptions = {...benchmarkOptions.plebbitOptions,}
-const plebbit = await Plebbit(plebbitOptions)
-plebbit.on('error', plebbitErrorEvent => console.log('plebbitErrorEvent:', plebbitErrorEvent.message))
-const libp2p = plebbit.clients.libp2pJsClients.libp2pJsClient._helia.libp2p
+// start pkc
+import PKC from '../node_modules/@pkc/pkc-js/dist/node/index.js'
+const pkcOptions = {...benchmarkOptions.pkcOptions,}
+const pkc = await PKC(pkcOptions)
+pkc.on('error', pkcErrorEvent => console.log('pkcErrorEvent:', pkcErrorEvent.message))
+const libp2p = pkc.clients.libp2pJsClients.libp2pJsClient._helia.libp2p
 
-const reportSubplebbits = {}
+const reportCommunities = {}
 
-const fetchSubplebbit = (subplebbitAddress) => new Promise(async resolve => {
-  reportSubplebbits[subplebbitAddress] = {}
+const fetchCommunity = (communityAddress) => new Promise(async resolve => {
+  reportCommunities[communityAddress] = {}
   let beforeResolvingAddressTimestamp = Date.now()
-  const subplebbit = await plebbit.createSubplebbit({address: subplebbitAddress})
-  subplebbit.on('error', subplebbitErrorEvent => console.log('subplebbitErrorEvent:', subplebbitAddress, subplebbitErrorEvent.message))
-  subplebbit.on('updatingstatechange', updatingState => {
+  const community = await pkc.createCommunity({address: communityAddress})
+  community.on('error', communityErrorEvent => console.log('communityErrorEvent:', communityAddress, communityErrorEvent.message))
+  community.on('updatingstatechange', updatingState => {
     if (updatingState === 'resolving-address') {
       beforeResolvingAddressTimestamp = Date.now()
     }
     if (updatingState === 'fetching-ipns') {
-      if (reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds) {
+      if (reportCommunities[communityAddress].resolvingAddressTimeSeconds) {
         // already logged this once, might log again if waiting retry
         return
       }
-      reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
-      console.log(`resolved address ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].resolvingAddressTimeSeconds}s`)
+      reportCommunities[communityAddress].resolvingAddressTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
+      console.log(`resolved address ${communityAddress} in ${reportCommunities[communityAddress].resolvingAddressTimeSeconds}s`)
     }
     if (updatingState === 'succeeded') {
-      reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
-      console.log(`fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+      reportCommunities[communityAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeResolvingAddressTimestamp) / 1000
+      console.log(`fetched ipns ${communityAddress} in ${reportCommunities[communityAddress].fetchingIpnsTimeSeconds}s`)
       resolve()
-      // subplebbit.stop().catch(() => {})
+      // community.stop().catch(() => {})
     }
     if (updatingState === 'failed') {
-      // console.log(`failed fetching ipns ${subplebbitAddress}`)
+      // console.log(`failed fetching ipns ${communityAddress}`)
       resolve()
-      // subplebbit.stop().catch(() => {})
+      // community.stop().catch(() => {})
     }
     if (updatingState === 'waiting-retry') {
       // wait retry for 10s
       setTimeout(() => {
-        // console.log(`failed (waiting retry more than 10s)' fetching ipns ${subplebbitAddress}`)
+        // console.log(`failed (waiting retry more than 10s)' fetching ipns ${communityAddress}`)
         resolve()
-        // subplebbit.stop().catch(() => {})
+        // community.stop().catch(() => {})
       }, 10000)
     }
   })
-  subplebbit.update()
+  community.update()
 })
 
-const fetchSubplebbits = async () => {
-  console.log('fetching subplebbits...')
-  const promises = benchmarkOptions.subplebbitAddresses.map(fetchSubplebbit)
+const fetchCommunities = async () => {
+  console.log('fetching communities...')
+  const promises = benchmarkOptions.communityAddresses.map(fetchCommunity)
   await Promise.all(promises)
-  console.log('done fetching subplebbits')
+  console.log('done fetching communities')
 }
 
-await fetchSubplebbits()
-console.log(reportSubplebbits)
+await fetchCommunities()
+console.log(reportCommunities)
 console.log(benchmarkOptions.name, 'done')
-console.log('http routers', benchmarkOptions.plebbitOptions.httpRoutersOptions)
+console.log('http routers', benchmarkOptions.pkcOptions.httpRoutersOptions)
 
 try {
   process.exit()

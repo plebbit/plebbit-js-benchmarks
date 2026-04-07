@@ -21,7 +21,7 @@ import {toString as uint8ArrayToString} from 'uint8arrays/to-string'
 import {create as createMultihash} from 'multiformats/hashes/digest'
 const protobufPublicKeyPrefix = new Uint8Array([8, 1, 18, 32])
 const multihashIdentityCode = 0
-export const getPlebbitAddressFromPublicKey = (publicKeyBase64) => {
+export const getPkcAddressFromPublicKey = (publicKeyBase64) => {
   const publicKeyBuffer = uint8ArrayFromString(publicKeyBase64, 'base64')
   const publicKeyBufferWithPrefix = new Uint8Array(protobufPublicKeyPrefix.length + publicKeyBuffer.length)
   publicKeyBufferWithPrefix.set(protobufPublicKeyPrefix, 0)
@@ -65,50 +65,50 @@ test('benchmark', async () => {
     throw Error('failed fetching benchmarkOptions')
   }
 
-  const plebbitOptions = {
-    ...benchmarkOptions.plebbitOptions,
+  const pkcOptions = {
+    ...benchmarkOptions.pkcOptions,
   }
-  const gatewayUrl = plebbitOptions.ipfsGatewayUrls?.[0]
+  const gatewayUrl = pkcOptions.ipfsGatewayUrls?.[0]
   if (!gatewayUrl) {
-    throw Error(`no plebbitOptions.ipfsGatewayUrls`)
+    throw Error(`no pkcOptions.ipfsGatewayUrls`)
   }
 
   const beforeReportTimestamp = Date.now()
-  const reportSubplebbits = {}
+  const reportCommunities = {}
 
-  const fetchSubplebbit = async (subplebbitAddress) => {
-    reportSubplebbits[subplebbitAddress] = {fetchingIpnsTimeSeconds: null}
-    let subplebbit, error
+  const fetchCommunity = async (communityAddress) => {
+    reportCommunities[communityAddress] = {fetchingIpnsTimeSeconds: null}
+    let community, error
     try {
-      subplebbit = await fetch(`${benchmarkServerUrl}/subplebbit?subplebbitAddress=${subplebbitAddress}`).then(res => res.json())
+      community = await fetch(`${benchmarkServerUrl}/community?communityAddress=${communityAddress}`).then(res => res.json())
     }
     catch (e) {
       error = e
     }
-    if (!subplebbit || subplebbit.error) {
-      console.log(`failed fetching ${subplebbitAddress} from benchmark server with error: ${error?.message || subplebbit?.error?.message}`)
+    if (!community || community.error) {
+      console.log(`failed fetching ${communityAddress} from benchmark server with error: ${error?.message || community?.error?.message}`)
       return
     }
 
-    const ipnsName = getPlebbitAddressFromPublicKey(subplebbit.signature.publicKey)
+    const ipnsName = getPkcAddressFromPublicKey(community.signature.publicKey)
     const beforeTimestamp = Date.now()
     try {
-      const subplebbitUpdate = await fetchWithTimeout(`${gatewayUrl}/ipns/${ipnsName}`).then(res => res.json())
-      if (subplebbitUpdate.signature) {
-        reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
-        console.log(`gateway fetched ipns ${subplebbitAddress} in ${reportSubplebbits[subplebbitAddress].fetchingIpnsTimeSeconds}s`)
+      const communityUpdate = await fetchWithTimeout(`${gatewayUrl}/ipns/${ipnsName}`).then(res => res.json())
+      if (communityUpdate.signature) {
+        reportCommunities[communityAddress].fetchingIpnsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
+        console.log(`gateway fetched ipns ${communityAddress} in ${reportCommunities[communityAddress].fetchingIpnsTimeSeconds}s`)
       }
     }
     catch (e) {
-      console.log(`failed gateway fetched ipns ${subplebbitAddress}: ${e.message}`)
+      console.log(`failed gateway fetched ipns ${communityAddress}: ${e.message}`)
     }
   }
 
-  const fetchSubplebbits = async () => {
-    console.log('fetching subplebbits...')
-    const promises = benchmarkOptions.subplebbitAddresses.map(fetchSubplebbit)
+  const fetchCommunities = async () => {
+    console.log('fetching communities...')
+    const promises = benchmarkOptions.communityAddresses.map(fetchCommunity)
     await Promise.all(promises)
-    console.log('done fetching subplebbits')
+    console.log('done fetching communities')
   }
 
   const writeReport = async () => {
@@ -118,7 +118,7 @@ test('benchmark', async () => {
       timestamp: Date.now(),
       timeSeconds: (Date.now() - beforeReportTimestamp) / 1000,
       runtime,
-      subplebbits: reportSubplebbits
+      communities: reportCommunities
     }
     const res = await fetch(`${benchmarkServerUrl}/report`, {
       method: 'POST',
@@ -130,9 +130,9 @@ test('benchmark', async () => {
     }
   }
 
-  await fetchSubplebbits()
+  await fetchCommunities()
   await writeReport()
-  console.log(reportSubplebbits)
+  console.log(reportCommunities)
   console.log(benchmarkOptions.name, 'done')
 
   try {

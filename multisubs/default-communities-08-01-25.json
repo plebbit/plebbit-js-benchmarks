@@ -1,9 +1,9 @@
 {
-  "title": "Temporary Default Subplebbits",
-  "description": "Temporary default subplebbits curated by the team, until DAO curation is implemented.\n\nhttps://github.com/plebbit/temporary-default-subplebbits",
+  "title": "Temporary Default Communities",
+  "description": "Temporary default communities curated by the team, until DAO curation is implemented.\n\nhttps://github.com/plebbit/temporary-default-subplebbits",
   "createdAt": 1697995054,
   "updatedAt": 1697995054,
-  "subplebbits": [
+  "communities": [
     {
       "title": "Plebbit Token",
       "address": "plebtoken.eth",

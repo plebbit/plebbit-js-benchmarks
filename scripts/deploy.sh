@@ -18,8 +18,8 @@ if [ -z "${DEPLOY_PASSWORD+xxx}" ]; then echo "DEPLOY_PASSWORD not set" && exit;
 
 SCRIPT="
 cd /home
-git clone https://github.com/estebanabaroa/plebbit-js-benchmark.git
-cd plebbit-js-benchmark
+git clone https://github.com/pkcprotocol/pkc-js-benchmarks.git pkc-js-benchmark
+cd pkc-js-benchmark
 git reset HEAD --hard && git clean -fd
 git pull
 git log -1
@@ -43,12 +43,12 @@ FILE_NAMES=(
 
 # copy files
 for FILE_NAME in ${FILE_NAMES[@]}; do
-  sshpass -p "$DEPLOY_PASSWORD" scp $FILE_NAME "$DEPLOY_USER"@"$DEPLOY_HOST":/home/plebbit-js-benchmark
+  sshpass -p "$DEPLOY_PASSWORD" scp $FILE_NAME "$DEPLOY_USER"@"$DEPLOY_HOST":/home/pkc-js-benchmark
 done
 
 SCRIPT="
 kill -9 \$(lsof -t -i:3000) 2>/dev/null # in case the server didn't close properly
-cd /home/plebbit-js-benchmark
+cd /home/pkc-js-benchmark
 # npm install
 npm run webpack
 

@@ -23,21 +23,21 @@ FILE_NAMES=(
 
 # copy files
 for FILE_NAME in ${FILE_NAMES[@]}; do
-  sshpass -p "$DEPLOY_PASSWORD" scp $FILE_NAME "$DEPLOY_USER"@"$DEPLOY_HOST":/home/plebbit-js-benchmark/scripts
+  sshpass -p "$DEPLOY_PASSWORD" scp $FILE_NAME "$DEPLOY_USER"@"$DEPLOY_HOST":/home/pkc-js-benchmark/scripts
 done
 
 SCRIPT="
-cd /home/plebbit-js-benchmark
+cd /home/pkc-js-benchmark
 # sudo n 20
 # node -v
 # rm -fr node_modules
 # npm install
-DEBUG=libp2p*,helia*,delegated*,plebbit* node scripts/debug-libp2p-fetch-ipns.js
+DEBUG=libp2p*,helia*,delegated*,pkc* node scripts/debug-libp2p-fetch-ipns.js
 "
 
 # SCRIPT="
 # while true; do
-#   cd /home/plebbit-js-benchmark
+#   cd /home/pkc-js-benchmark
 #   node scripts/debug-libp2p-fetch-ipns.js
 # done
 # "

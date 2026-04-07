@@ -28,8 +28,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      // Redirect node import to browser import for plebbit-js
-      '../node_modules/@plebbit/plebbit-js/dist/node/index.js': '../node_modules/@plebbit/plebbit-js/dist/browser/index.js'
+      // Redirect node import to browser import for pkc-js
+      '../node_modules/@pkc/pkc-js/dist/node/index.js': '../node_modules/@pkc/pkc-js/dist/browser/index.js'
     }
   }
 })

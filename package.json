@@ -1,5 +1,5 @@
 {
-  "name": "plebbit-js-benchmarks",
+  "name": "pkc-js-benchmarks",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@plebbit/plebbit-js": "https://github.com/plebbit/plebbit-js.git#958b1a7f2fce05ee5275cbb4c239ee3de5c6672a",
+    "@pkc/pkc-js": "https://github.com/pkcprotocol/pkc-js.git#958b1a7f2fce05ee5275cbb4c239ee3de5c6672a",
     "cborg": "1.9.6",
     "debug": "4.3.7",
     "decompress": "4.2.1",

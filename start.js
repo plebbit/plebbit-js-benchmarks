@@ -1,4 +1,4 @@
-// import './lib/modify-plebbit-js.js'
+// import './lib/modify-pkc-js.js'
 import {spawn} from 'node:child_process'
 import fs from 'fs-extra'
 import {fileURLToPath} from 'url'
@@ -27,14 +27,14 @@ let benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => 
   benchmarkProcess.on('close', (code) => resolve())
 })
 
-// very hacky but can be used to manually debug plebbit-js
-if (argv.debugPlebbitJs) {
+// very hacky but can be used to manually debug pkc-js
+if (argv.debugPkcJs) {
   let seconds = 0
   setInterval(() => {console.log(`\n\n${seconds++}s\n\n`)}, 1000)
   benchmarkNode = (benchmarkFile, benchmarkOptions) => new Promise(resolve => {
     seconds = 0
     const benchmarkProcess = spawn('npm', ['run', 'benchmark:node', '--', 'benchmark/' + benchmarkFile], {
-      env: {...process.env, DEBUG: 'plebbit*', FORCE_COLOR: '1', BENCHMARK_OPTIONS_NAME: benchmarkOptions.name}, stdio: 'inherit'
+      env: {...process.env, DEBUG: 'pkc*', FORCE_COLOR: '1', BENCHMARK_OPTIONS_NAME: benchmarkOptions.name}, stdio: 'inherit'
     })
     benchmarkProcess.on('close', (code) => resolve())
   })
@@ -71,7 +71,7 @@ if (isBenchmark('publish')) {
   const benchmarkFile = 'benchmark-publish.js'
   if (isRuntime('node')) {
     for (const benchmarkOptions of benchmarkOptionsFile.publishBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      fs.removeSync(benchmarkOptions.pkcOptions.dataPath)
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }
@@ -88,7 +88,7 @@ if (isBenchmark('fetch-ipns')) {
   const benchmarkFile = 'benchmark-fetch-ipns.js'
   if (isRuntime('node')) {
     for (const benchmarkOptions of benchmarkOptionsFile.fetchIpnsBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      fs.removeSync(benchmarkOptions.pkcOptions.dataPath)
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }
@@ -105,7 +105,7 @@ if (isBenchmark('fetch-comment')) {
   const benchmarkFile = 'benchmark-fetch-comment.js'
   if (isRuntime('node')) {
     for (const benchmarkOptions of benchmarkOptionsFile.fetchCommentBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      fs.removeSync(benchmarkOptions.pkcOptions.dataPath)
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }
@@ -122,7 +122,7 @@ if (isBenchmark('resolve-addresses')) {
   const benchmarkFile = 'benchmark-resolve-addresses.js'
   if (isRuntime('node')) {
     for (const benchmarkOptions of benchmarkOptionsFile.resolveAddressesBenchmarkOptions) {
-      fs.removeSync(benchmarkOptions.plebbitOptions.dataPath)
+      fs.removeSync(benchmarkOptions.pkcOptions.dataPath)
       await benchmarkNode(benchmarkFile, benchmarkOptions)
     }
   }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Plebbit-Js Benchmarks</title>
+  <title>PKC-Js Benchmarks</title>
   <style>
     body {
       background-color: #121212;
@@ -74,7 +74,7 @@
   </style>
 </head>
 <body>
-  <h1>Plebbit-Js Benchmarks</h1>
+  <h1>PKC-Js Benchmarks</h1>
   <div id="charts"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -86,7 +86,7 @@
     ];
 
     async function run() {
-      const res = await fetch('https://raw.githubusercontent.com/plebbit/plebbit-js-benchmarks/refs/heads/master/reports/all.json');
+      const res = await fetch('https://raw.githubusercontent.com/pkcprotocol/pkc-js-benchmarks/refs/heads/master/reports/all.json');
       const data = (await res.json()).flat();
 
       // Group by type, then name, then runtime
@@ -150,7 +150,7 @@
             for (const entry of benchmarks) {
               let ts = entry.timestamp;
               if (!ts) continue;
-              const hash = entry.plebbitJsCommitHash || 'unknown';
+              const hash = entry.pkcJsCommitHash || 'unknown';
               commitTimestampMap[hash] = ts;
 
               function extractTimings(obj) {

@@ -1,9 +1,9 @@
 test-gc.js
-subplebbits-cache.json
+communities-cache.json
 webpacked
 report.json
 TODO.md
-.plebbit*
+.pkc*
 .ipfs
 .deploy-env
 bin

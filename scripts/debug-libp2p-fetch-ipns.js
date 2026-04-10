@@ -99,7 +99,7 @@ server.listen(9999, () => {
 })
 
 // start pkc
-import PKC from '../node_modules/@pkc/pkc-js/dist/node/index.js'
+import PKC from '../node_modules/@pkcprotocol/pkc-js/dist/node/index.js'
 const pkcOptions = {...benchmarkOptions.pkcOptions,}
 const pkc = await PKC(pkcOptions)
 pkc.on('error', pkcErrorEvent => console.log('pkcErrorEvent:', pkcErrorEvent.message))

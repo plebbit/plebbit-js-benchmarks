@@ -11,7 +11,7 @@ try {
   }
 } catch (e) {}
 
-import PKC from '../node_modules/@pkc/pkc-js/dist/node/index.js'
+import PKC from '../node_modules/@pkcprotocol/pkc-js/dist/node/index.js'
 
 // wait to reply to challenge to emulate real scenario
 const publishChallengeAnswerDelay = 1000 * 10

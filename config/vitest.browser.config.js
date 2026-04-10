@@ -29,7 +29,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Redirect node import to browser import for pkc-js
-      '../node_modules/@pkc/pkc-js/dist/node/index.js': '../node_modules/@pkc/pkc-js/dist/browser/index.js'
+      '../node_modules/@pkcprotocol/pkc-js/dist/node/index.js': '../node_modules/@pkcprotocol/pkc-js/dist/browser/index.js'
     }
   }
 })

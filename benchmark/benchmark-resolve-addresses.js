@@ -17,7 +17,7 @@ try {
   }
 } catch (e) {}
 
-import PKC from '../node_modules/@pkc/pkc-js/dist/node/index.js'
+import PKC from '../node_modules/@pkcprotocol/pkc-js/dist/node/index.js'
 
 test('benchmark', async () => {
   let benchmarkOptionsName, runtime

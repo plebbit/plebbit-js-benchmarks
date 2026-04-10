@@ -11,9 +11,9 @@
     "report:inline": "node lib/print-report --inline"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@pkc/pkc-js": "https://github.com/pkcprotocol/pkc-js.git#958b1a7f2fce05ee5275cbb4c239ee3de5c6672a",
+    "@pkcprotocol/pkc-js": "https://github.com/pkcprotocol/pkc-js.git#958b1a7f2fce05ee5275cbb4c239ee3de5c6672a",
     "cborg": "1.9.6",
     "debug": "4.3.7",
     "decompress": "4.2.1",

@@ -56,11 +56,11 @@ test('benchmark', async () => {
       if (updatingState === 'fetching-ipfs') {
         beforeTimestamp = Date.now()
       }
-      if (updatingState === 'resolving-subplebbit-address') {
+      if (updatingState === 'resolving-community-address') {
         reportComments[commentCid].fetchCommentIpfsTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`fetched comment ipfs ${getCommentUrlPath()} in ${reportComments[commentCid].fetchCommentIpfsTimeSeconds}s`)
       }
-      if (updatingState === 'fetching-subplebbit-ipns') {
+      if (updatingState === 'fetching-community-ipns') {
         if (reportComments[commentCid].resolvingCommunityAddressTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return

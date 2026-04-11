@@ -54,35 +54,35 @@
 │                                                │         │                              │        │         │         │
 │ ipfsgateway.xyz (1 post)                       │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ 16.737 │ 16.737  │ '1/1'   │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/1'   │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/1'   │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/1'   │
 │ ipfsgateway.xyz (1 reply)                      │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ 1.591  │ 1.591   │ '1/1'   │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/1'   │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/1'   │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/1'   │
 │ ipfsgateway.xyz (1 sub, 5 posts, 5 replies)    │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ 13.627 │ 13.627  │ '5/10'  │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/10'  │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/10'  │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/10'  │
 │ ipfsgateway.xyz (10 subs, 5 posts, 5 replies)  │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ 7.642  │ 7.643   │ '8/10'  │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/10'  │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/10'  │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/10'  │
 │ libp2p js client (1 post)                      │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ NaN    │ NaN     │ '0/1'   │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/1'   │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/1'   │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/1'   │
 │ libp2p js client (1 reply)                     │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ NaN    │ NaN     │ '0/1'   │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/1'   │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/1'   │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/1'   │
 │ libp2p js client (1 sub, 5 posts, 5 replies)   │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ 14.404 │ 14.404  │ '1/10'  │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/10'  │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/10'  │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/10'  │
 │ libp2p js client (10 subs, 5 posts, 5 replies) │         │                              │        │         │         │
 │                                                │ 'node'  │ 'fetch comment ipfs'         │ 8.293  │ 8.08    │ '6/10'  │
-│                                                │ 'node'  │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/10'  │
+│                                                │ 'node'  │ 'resolve community address' │ NaN    │ NaN     │ '0/10'  │
 │                                                │ 'node'  │ 'fetch comment update'       │ NaN    │ NaN     │ '0/10'  │
 └────────────────────────────────────────────────┴─────────┴──────────────────────────────┴────────┴─────────┴─────────┘
 ┌──────────────────────────────────────────┬─────────┬───────────────────┬────────┬─────────┬─────────┐

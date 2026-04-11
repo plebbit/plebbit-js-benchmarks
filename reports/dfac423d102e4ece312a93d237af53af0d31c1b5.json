@@ -5,7 +5,7 @@
     "timestamp": 1752516016034,
     "timeSeconds": 72.537,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.874,
         "fetchingIpnsTimeSeconds": 2.722
@@ -155,7 +155,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ipfsgateway.xyz",
@@ -163,7 +163,7 @@
     "timestamp": 1752516090858,
     "timeSeconds": 72.638,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.868,
         "fetchingIpnsTimeSeconds": 2.856
@@ -313,7 +313,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.plebpubsub.xyz",
@@ -321,7 +321,7 @@
     "timestamp": 1752516204648,
     "timeSeconds": 111.626,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.973,
         "fetchingIpnsTimeSeconds": 2.648
@@ -471,7 +471,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.forumindex.com",
@@ -479,7 +479,7 @@
     "timestamp": 1752516320352,
     "timeSeconds": 113.529,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.813,
         "fetchingIpnsTimeSeconds": 2.453
@@ -629,7 +629,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com",
@@ -637,7 +637,7 @@
     "timestamp": 1752516434470,
     "timeSeconds": 111.88,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.911,
         "fetchingIpnsTimeSeconds": 2.424
@@ -787,7 +787,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client",
@@ -795,7 +795,7 @@
     "timestamp": 1752516556760,
     "timeSeconds": 120.034,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 1.028,
         "fetchingIpnsTimeSeconds": 6.852,
@@ -963,7 +963,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ipfsgateway.xyz (possibly not cached)",
@@ -971,7 +971,7 @@
     "timestamp": 1752516664520,
     "timeSeconds": 73.047,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.884,
         "fetchingIpnsTimeSeconds": null
@@ -1121,7 +1121,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ipfsgateway.xyz",
@@ -1129,7 +1129,7 @@
     "timestamp": 1752516738440,
     "timeSeconds": 72.086,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.999,
         "fetchingIpnsTimeSeconds": 2.949
@@ -1279,7 +1279,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.plebpubsub.xyz",
@@ -1287,7 +1287,7 @@
     "timestamp": 1752516853276,
     "timeSeconds": 113.16,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.994,
         "fetchingIpnsTimeSeconds": 2.883
@@ -1437,7 +1437,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.forumindex.com",
@@ -1445,7 +1445,7 @@
     "timestamp": 1752516967969,
     "timeSeconds": 113.007,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.952,
         "fetchingIpnsTimeSeconds": 2.805
@@ -1595,7 +1595,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ipfsgateway.xyz, https://gateway.plebpubsub.xyz, https://gateway.forumindex.com",
@@ -1603,7 +1603,7 @@
     "timestamp": 1752517089779,
     "timeSeconds": 120.089,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 2.182,
         "fetchingIpnsTimeSeconds": 2.825
@@ -1753,7 +1753,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client",
@@ -1761,7 +1761,7 @@
     "timestamp": 1752517211857,
     "timeSeconds": 120.097,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.986,
         "fetchingIpnsTimeSeconds": 12.627,
@@ -1929,7 +1929,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ethrpc.xyz (possibly not cached)",
@@ -1937,7 +1937,7 @@
     "timestamp": 1752517216017,
     "timeSeconds": 1.914,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.826
       },
@@ -2044,7 +2044,7 @@
         "resolvingAddressTimeSeconds": 0.825
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ethrpc.xyz",
@@ -2052,7 +2052,7 @@
     "timestamp": 1752517219467,
     "timeSeconds": 1.212,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.967
       },
@@ -2159,7 +2159,7 @@
         "resolvingAddressTimeSeconds": 0.727
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "wss://ethrpc.xyz (possibly not cached)",
@@ -2167,7 +2167,7 @@
     "timestamp": 1752517226246,
     "timeSeconds": 4.585,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 1.289
       },
@@ -2274,7 +2274,7 @@
         "resolvingAddressTimeSeconds": 1.729
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "wss://ethrpc.xyz",
@@ -2282,7 +2282,7 @@
     "timestamp": 1752517229815,
     "timeSeconds": 1.365,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 1.013
       },
@@ -2389,7 +2389,7 @@
         "resolvingAddressTimeSeconds": 1.082
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ethrpc.xyz, viem, ethers.js",
@@ -2397,7 +2397,7 @@
     "timestamp": 1752517233199,
     "timeSeconds": 1.189,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.648
       },
@@ -2504,7 +2504,7 @@
         "resolvingAddressTimeSeconds": 0.745
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "viem",
@@ -2512,7 +2512,7 @@
     "timestamp": 1752517236264,
     "timeSeconds": 0.831,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.59
       },
@@ -2619,7 +2619,7 @@
         "resolvingAddressTimeSeconds": 0.218
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ethers.js",
@@ -2627,7 +2627,7 @@
     "timestamp": 1752517358519,
     "timeSeconds": 120.044,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": null
       },
@@ -2734,7 +2734,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://solrpc.xyz",
@@ -2742,7 +2742,7 @@
     "timestamp": 1752517362047,
     "timeSeconds": 1.322,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": 1.169
       },
@@ -2750,7 +2750,7 @@
         "resolvingAddressTimeSeconds": 1.301
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "wss://solrpc.xyz (wss not implemented)",
@@ -2758,7 +2758,7 @@
     "timestamp": 1752517375358,
     "timeSeconds": 11.128,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": null
       },
@@ -2766,7 +2766,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "web3.js",
@@ -2774,7 +2774,7 @@
     "timestamp": 1752517419839,
     "timeSeconds": 42.279,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": null
       },
@@ -2782,7 +2782,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://solrpc.xyz, web3.js",
@@ -2790,7 +2790,7 @@
     "timestamp": 1752517423270,
     "timeSeconds": 1.255,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": 1.242
       },
@@ -2798,7 +2798,7 @@
         "resolvingAddressTimeSeconds": 1.196
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ethrpc.xyz (possibly not cached)",
@@ -2806,7 +2806,7 @@
     "timestamp": 1752517435263,
     "timeSeconds": 10.349,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.877
       },
@@ -2913,7 +2913,7 @@
         "resolvingAddressTimeSeconds": 1.468
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ethrpc.xyz",
@@ -2921,7 +2921,7 @@
     "timestamp": 1752517438062,
     "timeSeconds": 1.157,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.836
       },
@@ -3028,7 +3028,7 @@
         "resolvingAddressTimeSeconds": 0.735
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "wss://ethrpc.xyz (possibly not cached)",
@@ -3036,7 +3036,7 @@
     "timestamp": 1752517456608,
     "timeSeconds": 16.014,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": null
       },
@@ -3143,7 +3143,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "wss://ethrpc.xyz",
@@ -3151,7 +3151,7 @@
     "timestamp": 1752517474302,
     "timeSeconds": 16.017,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": null
       },
@@ -3258,7 +3258,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ethrpc.xyz, viem, ethers.js",
@@ -3266,7 +3266,7 @@
     "timestamp": 1752517476848,
     "timeSeconds": 0.932,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.57
       },
@@ -3373,7 +3373,7 @@
         "resolvingAddressTimeSeconds": 0.363
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "viem",
@@ -3381,7 +3381,7 @@
     "timestamp": 1752517480419,
     "timeSeconds": 0.686,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": 0.441
       },
@@ -3488,7 +3488,7 @@
         "resolvingAddressTimeSeconds": 0.235
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ethers.js",
@@ -3496,7 +3496,7 @@
     "timestamp": 1752517603450,
     "timeSeconds": 120.054,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "resolvingAddressTimeSeconds": null
       },
@@ -3603,7 +3603,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://solrpc.xyz",
@@ -3611,7 +3611,7 @@
     "timestamp": 1752517606518,
     "timeSeconds": 1.38,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": 1.317
       },
@@ -3619,7 +3619,7 @@
         "resolvingAddressTimeSeconds": 1.34
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "wss://solrpc.xyz (wss not implemented)",
@@ -3627,7 +3627,7 @@
     "timestamp": 1752517619736,
     "timeSeconds": 11.145,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": null
       },
@@ -3635,7 +3635,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "web3.js",
@@ -3643,7 +3643,7 @@
     "timestamp": 1752517662753,
     "timeSeconds": 41.337,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": null
       },
@@ -3651,7 +3651,7 @@
         "resolvingAddressTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://solrpc.xyz, web3.js",
@@ -3659,7 +3659,7 @@
     "timestamp": 1752517665792,
     "timeSeconds": 1.383,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "redditdeath.sol": {
         "resolvingAddressTimeSeconds": 1.338
       },
@@ -3667,7 +3667,7 @@
         "resolvingAddressTimeSeconds": 1.346
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ipfsgateway.xyz (gateway fetch only)",
@@ -3675,7 +3675,7 @@
     "timestamp": 1752517772425,
     "timeSeconds": 105.747,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "fetchingIpnsTimeSeconds": 1.047
       },
@@ -3788,7 +3788,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.plebpubsub.xyz (gateway fetch only)",
@@ -3796,7 +3796,7 @@
     "timestamp": 1752517775386,
     "timeSeconds": 2.212,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "fetchingIpnsTimeSeconds": 1.438
       },
@@ -3909,7 +3909,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.forumindex.com (gateway fetch only)",
@@ -3917,7 +3917,7 @@
     "timestamp": 1752517777701,
     "timeSeconds": 1.987,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "fetchingIpnsTimeSeconds": 1.035
       },
@@ -4030,7 +4030,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://ipfsgateway.xyz (gateway fetch only)",
@@ -4038,7 +4038,7 @@
     "timestamp": 1752517780095,
     "timeSeconds": 1.509,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "fetchingIpnsTimeSeconds": 1.03
       },
@@ -4151,7 +4151,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.plebpubsub.xyz (gateway fetch only)",
@@ -4159,7 +4159,7 @@
     "timestamp": 1752517782987,
     "timeSeconds": 1.802,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "fetchingIpnsTimeSeconds": 1.257
       },
@@ -4272,7 +4272,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://gateway.forumindex.com (gateway fetch only)",
@@ -4280,7 +4280,7 @@
     "timestamp": 1752517785902,
     "timeSeconds": 2.025,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "plebtoken.eth": {
         "fetchingIpnsTimeSeconds": 1.125
       },
@@ -4393,7 +4393,7 @@
         "fetchingIpnsTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (1 post)",
@@ -4404,11 +4404,11 @@
     "comments": {
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 0.764,
-        "resolvingSubplebbitAddressTimeSeconds": 2.41,
+        "resolvingCommunityAddressTimeSeconds": 2.41,
         "fetchingCommentUpdateTimeSeconds": 9.269
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (1 reply)",
@@ -4419,11 +4419,11 @@
     "comments": {
       "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
         "fetchCommentIpfsTimeSeconds": 0.823,
-        "resolvingSubplebbitAddressTimeSeconds": 1.555,
+        "resolvingCommunityAddressTimeSeconds": 1.555,
         "fetchingCommentUpdateTimeSeconds": 3.481
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (1 sub, 5 posts, 5 replies)",
@@ -4434,56 +4434,56 @@
     "comments": {
       "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 6.646,
+        "resolvingCommunityAddressTimeSeconds": 6.646,
         "fetchingCommentUpdateTimeSeconds": null
       },
       "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
         "fetchCommentIpfsTimeSeconds": 0.714,
-        "resolvingSubplebbitAddressTimeSeconds": 1.541,
+        "resolvingCommunityAddressTimeSeconds": 1.541,
         "fetchingCommentUpdateTimeSeconds": 3.238
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.542,
+        "resolvingCommunityAddressTimeSeconds": 1.542,
         "fetchingCommentUpdateTimeSeconds": 2.841
       },
       "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.541,
+        "resolvingCommunityAddressTimeSeconds": 1.541,
         "fetchingCommentUpdateTimeSeconds": 2.838
       },
       "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.541,
+        "resolvingCommunityAddressTimeSeconds": 1.541,
         "fetchingCommentUpdateTimeSeconds": 3.16
       },
       "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.541,
+        "resolvingCommunityAddressTimeSeconds": 1.541,
         "fetchingCommentUpdateTimeSeconds": 3.223
       },
       "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.541,
+        "resolvingCommunityAddressTimeSeconds": 1.541,
         "fetchingCommentUpdateTimeSeconds": 3.169
       },
       "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.541,
+        "resolvingCommunityAddressTimeSeconds": 1.541,
         "fetchingCommentUpdateTimeSeconds": 3.248
       },
       "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.54,
+        "resolvingCommunityAddressTimeSeconds": 1.54,
         "fetchingCommentUpdateTimeSeconds": 3.68
       },
       "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.54,
+        "resolvingCommunityAddressTimeSeconds": 1.54,
         "fetchingCommentUpdateTimeSeconds": 3.259
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (10 subs, 5 posts, 5 replies)",
@@ -4494,56 +4494,56 @@
     "comments": {
       "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
         "fetchCommentIpfsTimeSeconds": 0.806,
-        "resolvingSubplebbitAddressTimeSeconds": 2.382,
+        "resolvingCommunityAddressTimeSeconds": 2.382,
         "fetchingCommentUpdateTimeSeconds": 6.058
       },
       "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
         "fetchCommentIpfsTimeSeconds": 0.747,
-        "resolvingSubplebbitAddressTimeSeconds": 2.375,
+        "resolvingCommunityAddressTimeSeconds": 2.375,
         "fetchingCommentUpdateTimeSeconds": 2.934
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 0.529,
-        "resolvingSubplebbitAddressTimeSeconds": 1.342,
+        "resolvingCommunityAddressTimeSeconds": 1.342,
         "fetchingCommentUpdateTimeSeconds": 2.365
       },
       "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
         "fetchCommentIpfsTimeSeconds": 1.031,
-        "resolvingSubplebbitAddressTimeSeconds": 2.517,
+        "resolvingCommunityAddressTimeSeconds": 2.517,
         "fetchingCommentUpdateTimeSeconds": 3.114
       },
       "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
         "fetchCommentIpfsTimeSeconds": 0.94,
-        "resolvingSubplebbitAddressTimeSeconds": 2.409,
+        "resolvingCommunityAddressTimeSeconds": 2.409,
         "fetchingCommentUpdateTimeSeconds": 3.224
       },
       "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
         "fetchCommentIpfsTimeSeconds": 1.327,
-        "resolvingSubplebbitAddressTimeSeconds": 2.861,
+        "resolvingCommunityAddressTimeSeconds": 2.861,
         "fetchingCommentUpdateTimeSeconds": 3.569
       },
       "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
         "fetchCommentIpfsTimeSeconds": 1.406,
-        "resolvingSubplebbitAddressTimeSeconds": 2.885,
+        "resolvingCommunityAddressTimeSeconds": 2.885,
         "fetchingCommentUpdateTimeSeconds": 3.621
       },
       "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
         "fetchCommentIpfsTimeSeconds": 1.106,
-        "resolvingSubplebbitAddressTimeSeconds": 2.601,
+        "resolvingCommunityAddressTimeSeconds": 2.601,
         "fetchingCommentUpdateTimeSeconds": 3.451
       },
       "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 2.613,
+        "resolvingCommunityAddressTimeSeconds": 2.613,
         "fetchingCommentUpdateTimeSeconds": 3.259
       },
       "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
         "fetchCommentIpfsTimeSeconds": 1.091,
-        "resolvingSubplebbitAddressTimeSeconds": 2.613,
+        "resolvingCommunityAddressTimeSeconds": 2.613,
         "fetchingCommentUpdateTimeSeconds": 3.257
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (1 post)",
@@ -4554,11 +4554,11 @@
     "comments": {
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 1.017,
-        "resolvingSubplebbitAddressTimeSeconds": 1.736,
+        "resolvingCommunityAddressTimeSeconds": 1.736,
         "fetchingCommentUpdateTimeSeconds": 3.054
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (1 reply)",
@@ -4569,11 +4569,11 @@
     "comments": {
       "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
         "fetchCommentIpfsTimeSeconds": 1.022,
-        "resolvingSubplebbitAddressTimeSeconds": 1.711,
+        "resolvingCommunityAddressTimeSeconds": 1.711,
         "fetchingCommentUpdateTimeSeconds": 3.747
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (1 sub, 5 posts, 5 replies)",
@@ -4584,56 +4584,56 @@
     "comments": {
       "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
         "fetchCommentIpfsTimeSeconds": 1.068,
-        "resolvingSubplebbitAddressTimeSeconds": 1.621,
+        "resolvingCommunityAddressTimeSeconds": 1.621,
         "fetchingCommentUpdateTimeSeconds": 4.326
       },
       "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
         "fetchCommentIpfsTimeSeconds": 1.068,
-        "resolvingSubplebbitAddressTimeSeconds": 1.608,
+        "resolvingCommunityAddressTimeSeconds": 1.608,
         "fetchingCommentUpdateTimeSeconds": 4.202
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 0.885,
-        "resolvingSubplebbitAddressTimeSeconds": 1.589,
+        "resolvingCommunityAddressTimeSeconds": 1.589,
         "fetchingCommentUpdateTimeSeconds": 4.272
       },
       "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
         "fetchCommentIpfsTimeSeconds": 1.065,
-        "resolvingSubplebbitAddressTimeSeconds": 1.601,
+        "resolvingCommunityAddressTimeSeconds": 1.601,
         "fetchingCommentUpdateTimeSeconds": 4.212
       },
       "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
         "fetchCommentIpfsTimeSeconds": 1.055,
-        "resolvingSubplebbitAddressTimeSeconds": 1.613,
+        "resolvingCommunityAddressTimeSeconds": 1.613,
         "fetchingCommentUpdateTimeSeconds": 4.203
       },
       "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.607,
+        "resolvingCommunityAddressTimeSeconds": 1.607,
         "fetchingCommentUpdateTimeSeconds": 4.292
       },
       "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.607,
+        "resolvingCommunityAddressTimeSeconds": 1.607,
         "fetchingCommentUpdateTimeSeconds": 4.27
       },
       "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.606,
+        "resolvingCommunityAddressTimeSeconds": 1.606,
         "fetchingCommentUpdateTimeSeconds": 4.33
       },
       "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.606,
+        "resolvingCommunityAddressTimeSeconds": 1.606,
         "fetchingCommentUpdateTimeSeconds": 4.282
       },
       "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.606,
+        "resolvingCommunityAddressTimeSeconds": 1.606,
         "fetchingCommentUpdateTimeSeconds": 4.292
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (10 subs, 5 posts, 5 replies)",
@@ -4644,56 +4644,56 @@
     "comments": {
       "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
         "fetchCommentIpfsTimeSeconds": 1.212,
-        "resolvingSubplebbitAddressTimeSeconds": 1.734,
+        "resolvingCommunityAddressTimeSeconds": 1.734,
         "fetchingCommentUpdateTimeSeconds": 12.104
       },
       "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
         "fetchCommentIpfsTimeSeconds": 0.888,
-        "resolvingSubplebbitAddressTimeSeconds": 1.596,
+        "resolvingCommunityAddressTimeSeconds": 1.596,
         "fetchingCommentUpdateTimeSeconds": 3.787
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 1.205,
-        "resolvingSubplebbitAddressTimeSeconds": 1.76,
+        "resolvingCommunityAddressTimeSeconds": 1.76,
         "fetchingCommentUpdateTimeSeconds": 63.905
       },
       "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
         "fetchCommentIpfsTimeSeconds": 1.209,
-        "resolvingSubplebbitAddressTimeSeconds": 1.751,
+        "resolvingCommunityAddressTimeSeconds": 1.751,
         "fetchingCommentUpdateTimeSeconds": 3.798
       },
       "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
         "fetchCommentIpfsTimeSeconds": 1.202,
-        "resolvingSubplebbitAddressTimeSeconds": 1.742,
+        "resolvingCommunityAddressTimeSeconds": 1.742,
         "fetchingCommentUpdateTimeSeconds": 11.993
       },
       "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
         "fetchCommentIpfsTimeSeconds": 1.515,
-        "resolvingSubplebbitAddressTimeSeconds": 2.028,
+        "resolvingCommunityAddressTimeSeconds": 2.028,
         "fetchingCommentUpdateTimeSeconds": null
       },
       "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
         "fetchCommentIpfsTimeSeconds": 1.515,
-        "resolvingSubplebbitAddressTimeSeconds": 2.041,
+        "resolvingCommunityAddressTimeSeconds": 2.041,
         "fetchingCommentUpdateTimeSeconds": null
       },
       "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
         "fetchCommentIpfsTimeSeconds": 1.341,
-        "resolvingSubplebbitAddressTimeSeconds": 1.864,
+        "resolvingCommunityAddressTimeSeconds": 1.864,
         "fetchingCommentUpdateTimeSeconds": null
       },
       "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
         "fetchCommentIpfsTimeSeconds": 1.476,
-        "resolvingSubplebbitAddressTimeSeconds": 2.007,
+        "resolvingCommunityAddressTimeSeconds": 2.007,
         "fetchingCommentUpdateTimeSeconds": 4.31
       },
       "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
         "fetchCommentIpfsTimeSeconds": 1.475,
-        "resolvingSubplebbitAddressTimeSeconds": 2.013,
+        "resolvingCommunityAddressTimeSeconds": 2.013,
         "fetchingCommentUpdateTimeSeconds": 4.315
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (1 post)",
@@ -4704,11 +4704,11 @@
     "comments": {
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 0.779,
-        "resolvingSubplebbitAddressTimeSeconds": 1.612,
+        "resolvingCommunityAddressTimeSeconds": 1.612,
         "fetchingCommentUpdateTimeSeconds": 3.279
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (1 reply)",
@@ -4719,11 +4719,11 @@
     "comments": {
       "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
         "fetchCommentIpfsTimeSeconds": 0.899,
-        "resolvingSubplebbitAddressTimeSeconds": 1.684,
+        "resolvingCommunityAddressTimeSeconds": 1.684,
         "fetchingCommentUpdateTimeSeconds": 2.637
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (1 sub, 5 posts, 5 replies)",
@@ -4734,56 +4734,56 @@
     "comments": {
       "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
         "fetchCommentIpfsTimeSeconds": 0.93,
-        "resolvingSubplebbitAddressTimeSeconds": 1.711,
+        "resolvingCommunityAddressTimeSeconds": 1.711,
         "fetchingCommentUpdateTimeSeconds": 4.774
       },
       "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
         "fetchCommentIpfsTimeSeconds": 0.927,
-        "resolvingSubplebbitAddressTimeSeconds": 1.71,
+        "resolvingCommunityAddressTimeSeconds": 1.71,
         "fetchingCommentUpdateTimeSeconds": 4.679
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 0.928,
-        "resolvingSubplebbitAddressTimeSeconds": 1.709,
+        "resolvingCommunityAddressTimeSeconds": 1.709,
         "fetchingCommentUpdateTimeSeconds": 4.022
       },
       "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
         "fetchCommentIpfsTimeSeconds": 0.928,
-        "resolvingSubplebbitAddressTimeSeconds": 1.709,
+        "resolvingCommunityAddressTimeSeconds": 1.709,
         "fetchingCommentUpdateTimeSeconds": 4.025
       },
       "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
         "fetchCommentIpfsTimeSeconds": 0.926,
-        "resolvingSubplebbitAddressTimeSeconds": 1.709,
+        "resolvingCommunityAddressTimeSeconds": 1.709,
         "fetchingCommentUpdateTimeSeconds": 4.774
       },
       "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.709,
+        "resolvingCommunityAddressTimeSeconds": 1.709,
         "fetchingCommentUpdateTimeSeconds": 4.685
       },
       "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.708,
+        "resolvingCommunityAddressTimeSeconds": 1.708,
         "fetchingCommentUpdateTimeSeconds": 4.688
       },
       "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.709,
+        "resolvingCommunityAddressTimeSeconds": 1.709,
         "fetchingCommentUpdateTimeSeconds": 4.135
       },
       "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.709,
+        "resolvingCommunityAddressTimeSeconds": 1.709,
         "fetchingCommentUpdateTimeSeconds": 4.763
       },
       "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 1.708,
+        "resolvingCommunityAddressTimeSeconds": 1.708,
         "fetchingCommentUpdateTimeSeconds": 4.141
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "ipfsgateway.xyz (10 subs, 5 posts, 5 replies)",
@@ -4794,56 +4794,56 @@
     "comments": {
       "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
         "fetchCommentIpfsTimeSeconds": 1.225,
-        "resolvingSubplebbitAddressTimeSeconds": 1.769,
+        "resolvingCommunityAddressTimeSeconds": 1.769,
         "fetchingCommentUpdateTimeSeconds": 2.779
       },
       "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
         "fetchCommentIpfsTimeSeconds": 1.231,
-        "resolvingSubplebbitAddressTimeSeconds": 1.751,
+        "resolvingCommunityAddressTimeSeconds": 1.751,
         "fetchingCommentUpdateTimeSeconds": 2.157
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 0.939,
-        "resolvingSubplebbitAddressTimeSeconds": 1.769,
+        "resolvingCommunityAddressTimeSeconds": 1.769,
         "fetchingCommentUpdateTimeSeconds": 2.805
       },
       "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
         "fetchCommentIpfsTimeSeconds": 1.214,
-        "resolvingSubplebbitAddressTimeSeconds": 1.758,
+        "resolvingCommunityAddressTimeSeconds": 1.758,
         "fetchingCommentUpdateTimeSeconds": 2.255
       },
       "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
         "fetchCommentIpfsTimeSeconds": 1.234,
-        "resolvingSubplebbitAddressTimeSeconds": 1.765,
+        "resolvingCommunityAddressTimeSeconds": 1.765,
         "fetchingCommentUpdateTimeSeconds": 2.541
       },
       "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
         "fetchCommentIpfsTimeSeconds": 1.395,
-        "resolvingSubplebbitAddressTimeSeconds": 1.905,
+        "resolvingCommunityAddressTimeSeconds": 1.905,
         "fetchingCommentUpdateTimeSeconds": 2.943
       },
       "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
         "fetchCommentIpfsTimeSeconds": 1.387,
-        "resolvingSubplebbitAddressTimeSeconds": 1.89,
+        "resolvingCommunityAddressTimeSeconds": 1.89,
         "fetchingCommentUpdateTimeSeconds": 2.914
       },
       "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
         "fetchCommentIpfsTimeSeconds": 1.398,
-        "resolvingSubplebbitAddressTimeSeconds": 1.898,
+        "resolvingCommunityAddressTimeSeconds": 1.898,
         "fetchingCommentUpdateTimeSeconds": 2.934
       },
       "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
         "fetchCommentIpfsTimeSeconds": 1.391,
-        "resolvingSubplebbitAddressTimeSeconds": 1.882,
+        "resolvingCommunityAddressTimeSeconds": 1.882,
         "fetchingCommentUpdateTimeSeconds": 2.75
       },
       "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
         "fetchCommentIpfsTimeSeconds": 1.391,
-        "resolvingSubplebbitAddressTimeSeconds": 1.882,
+        "resolvingCommunityAddressTimeSeconds": 1.882,
         "fetchingCommentUpdateTimeSeconds": 2.752
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (1 post)",
@@ -4854,11 +4854,11 @@
     "comments": {
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 1.977,
-        "resolvingSubplebbitAddressTimeSeconds": 2.674,
+        "resolvingCommunityAddressTimeSeconds": 2.674,
         "fetchingCommentUpdateTimeSeconds": 6.11
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (1 reply)",
@@ -4869,11 +4869,11 @@
     "comments": {
       "QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": null,
+        "resolvingCommunityAddressTimeSeconds": null,
         "fetchingCommentUpdateTimeSeconds": null
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (1 sub, 5 posts, 5 replies)",
@@ -4884,56 +4884,56 @@
     "comments": {
       "QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1": {
         "fetchCommentIpfsTimeSeconds": 1.701,
-        "resolvingSubplebbitAddressTimeSeconds": 2.444,
+        "resolvingCommunityAddressTimeSeconds": 2.444,
         "fetchingCommentUpdateTimeSeconds": 5.789
       },
       "QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs": {
         "fetchCommentIpfsTimeSeconds": 1.699,
-        "resolvingSubplebbitAddressTimeSeconds": 2.441,
+        "resolvingCommunityAddressTimeSeconds": 2.441,
         "fetchingCommentUpdateTimeSeconds": 5.656
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 1.699,
-        "resolvingSubplebbitAddressTimeSeconds": 2.441,
+        "resolvingCommunityAddressTimeSeconds": 2.441,
         "fetchingCommentUpdateTimeSeconds": 4.78
       },
       "Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps": {
         "fetchCommentIpfsTimeSeconds": 1.699,
-        "resolvingSubplebbitAddressTimeSeconds": 2.44,
+        "resolvingCommunityAddressTimeSeconds": 2.44,
         "fetchingCommentUpdateTimeSeconds": 4.783
       },
       "QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma": {
         "fetchCommentIpfsTimeSeconds": 1.699,
-        "resolvingSubplebbitAddressTimeSeconds": 2.44,
+        "resolvingCommunityAddressTimeSeconds": 2.44,
         "fetchingCommentUpdateTimeSeconds": 5.702
       },
       "QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 2.439,
+        "resolvingCommunityAddressTimeSeconds": 2.439,
         "fetchingCommentUpdateTimeSeconds": 5.739
       },
       "QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 2.438,
+        "resolvingCommunityAddressTimeSeconds": 2.438,
         "fetchingCommentUpdateTimeSeconds": 5.742
       },
       "QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 2.439,
+        "resolvingCommunityAddressTimeSeconds": 2.439,
         "fetchingCommentUpdateTimeSeconds": 5.753
       },
       "QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 2.438,
+        "resolvingCommunityAddressTimeSeconds": 2.438,
         "fetchingCommentUpdateTimeSeconds": 5.757
       },
       "QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": 2.437,
+        "resolvingCommunityAddressTimeSeconds": 2.437,
         "fetchingCommentUpdateTimeSeconds": 5.703
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client (10 subs, 5 posts, 5 replies)",
@@ -4944,56 +4944,56 @@
     "comments": {
       "QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61": {
         "fetchCommentIpfsTimeSeconds": 2.909,
-        "resolvingSubplebbitAddressTimeSeconds": 3.431,
+        "resolvingCommunityAddressTimeSeconds": 3.431,
         "fetchingCommentUpdateTimeSeconds": 6.457
       },
       "QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci": {
         "fetchCommentIpfsTimeSeconds": 1.784,
-        "resolvingSubplebbitAddressTimeSeconds": 2.54,
+        "resolvingCommunityAddressTimeSeconds": 2.54,
         "fetchingCommentUpdateTimeSeconds": 3.981
       },
       "QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG": {
         "fetchCommentIpfsTimeSeconds": 2.904,
-        "resolvingSubplebbitAddressTimeSeconds": 3.422,
+        "resolvingCommunityAddressTimeSeconds": 3.422,
         "fetchingCommentUpdateTimeSeconds": 5.906
       },
       "QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH": {
         "fetchCommentIpfsTimeSeconds": 2.9,
-        "resolvingSubplebbitAddressTimeSeconds": 3.408,
+        "resolvingCommunityAddressTimeSeconds": 3.408,
         "fetchingCommentUpdateTimeSeconds": 4.904
       },
       "QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e": {
         "fetchCommentIpfsTimeSeconds": null,
-        "resolvingSubplebbitAddressTimeSeconds": null,
+        "resolvingCommunityAddressTimeSeconds": null,
         "fetchingCommentUpdateTimeSeconds": null
       },
       "QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC": {
         "fetchCommentIpfsTimeSeconds": 3.513,
-        "resolvingSubplebbitAddressTimeSeconds": 4.024,
+        "resolvingCommunityAddressTimeSeconds": 4.024,
         "fetchingCommentUpdateTimeSeconds": 7.589
       },
       "QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1": {
         "fetchCommentIpfsTimeSeconds": 3.515,
-        "resolvingSubplebbitAddressTimeSeconds": 4.012,
+        "resolvingCommunityAddressTimeSeconds": 4.012,
         "fetchingCommentUpdateTimeSeconds": 7.453
       },
       "QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi": {
         "fetchCommentIpfsTimeSeconds": 2.161,
-        "resolvingSubplebbitAddressTimeSeconds": 2.668,
+        "resolvingCommunityAddressTimeSeconds": 2.668,
         "fetchingCommentUpdateTimeSeconds": 5.298
       },
       "QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi": {
         "fetchCommentIpfsTimeSeconds": 3.992,
-        "resolvingSubplebbitAddressTimeSeconds": 4.504,
+        "resolvingCommunityAddressTimeSeconds": 4.504,
         "fetchingCommentUpdateTimeSeconds": 6.483
       },
       "QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK": {
         "fetchCommentIpfsTimeSeconds": 3.992,
-        "resolvingSubplebbitAddressTimeSeconds": 4.504,
+        "resolvingCommunityAddressTimeSeconds": 4.504,
         "fetchingCommentUpdateTimeSeconds": 6.484
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://pubsubprovider.xyz",
@@ -5001,7 +5001,7 @@
     "timestamp": 1752518109383,
     "timeSeconds": 16.286,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 1.725,
         "fetchingIpnsTimeSeconds": 2.914,
@@ -5011,7 +5011,7 @@
         "challengeVerificationTimeSeconds": 3.294
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://plebpubsub.xyz",
@@ -5019,7 +5019,7 @@
     "timestamp": 1752518124462,
     "timeSeconds": 12.891,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.762,
         "fetchingIpnsTimeSeconds": 1.8,
@@ -5029,7 +5029,7 @@
         "challengeVerificationTimeSeconds": 1.025
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client",
@@ -5037,7 +5037,7 @@
     "timestamp": 1752518149854,
     "timeSeconds": 23.118,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.75,
         "fetchingIpnsTimeSeconds": 0.968,
@@ -5048,7 +5048,7 @@
         "fetchingIpfsTimeSeconds": 10.021
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://pubsubprovider.xyz",
@@ -5056,7 +5056,7 @@
     "timestamp": 1752518164351,
     "timeSeconds": 12.852,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.781,
         "fetchingIpnsTimeSeconds": 2.097,
@@ -5066,7 +5066,7 @@
         "challengeVerificationTimeSeconds": 0.633
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "https://plebpubsub.xyz",
@@ -5074,7 +5074,7 @@
     "timestamp": 1752518185881,
     "timeSeconds": 19.789,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.755,
         "fetchingIpnsTimeSeconds": 2.082,
@@ -5084,7 +5084,7 @@
         "challengeVerificationTimeSeconds": 7.599
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   },
   {
     "name": "libp2p js client",
@@ -5092,7 +5092,7 @@
     "timestamp": 1752518201276,
     "timeSeconds": 13.583,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.858,
         "fetchingIpnsTimeSeconds": 2.049,
@@ -5103,6 +5103,6 @@
         "fetchingIpfsTimeSeconds": 3.168
       }
     },
-    "plebbitJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
+    "pkcJsCommitHash": "dfac423d102e4ece312a93d237af53af0d31c1b5"
   }
 ]

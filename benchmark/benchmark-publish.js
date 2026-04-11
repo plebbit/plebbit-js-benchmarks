@@ -81,10 +81,10 @@ test('benchmark', async () => {
       comment.stop().catch(() => {})
     })
     comment.on('publishingstatechange', publishingState => {
-      if (publishingState === 'resolving-subplebbit-address') {
+      if (publishingState === 'resolving-community-address') {
         beforeTimestamp = Date.now()
       }
-      if (publishingState === 'fetching-subplebbit-ipns') {
+      if (publishingState === 'fetching-community-ipns') {
         if (reportPublish[communityAddress].resolvingAddressTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return
@@ -92,7 +92,7 @@ test('benchmark', async () => {
         reportPublish[communityAddress].resolvingAddressTimeSeconds = (Date.now() - beforeTimestamp) / 1000
         console.log(`resolved address ${communityAddress} in ${reportPublish[communityAddress].resolvingAddressTimeSeconds}s`)
       }
-      if (publishingState === 'fetching-subplebbit-ipfs') {
+      if (publishingState === 'fetching-community-ipfs') {
         if (reportPublish[communityAddress].fetchingIpnsTimeSeconds) {
           // already logged this once, might log again if waiting retry
           return

@@ -4,7 +4,7 @@
     "type": "publishBenchmarkOptions",
     "timestamp": 1752445508090,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 1.711,
         "fetchingIpnsTimeSeconds": 2.822,
@@ -14,14 +14,14 @@
         "challengeVerificationTimeSeconds": 2.508
       }
     },
-    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+    "pkcJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
   },
   {
     "name": "https://plebpubsub.xyz",
     "type": "publishBenchmarkOptions",
     "timestamp": 1752445526266,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.769,
         "fetchingIpnsTimeSeconds": 2.007,
@@ -31,14 +31,14 @@
         "challengeVerificationTimeSeconds": 3.842
       }
     },
-    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+    "pkcJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
   },
   {
     "name": "libp2p js client",
     "type": "publishBenchmarkOptions",
     "timestamp": 1752445648575,
     "runtime": "node",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.753,
         "fetchingIpnsTimeSeconds": 1.415,
@@ -49,14 +49,14 @@
         "fetchingIpfsTimeSeconds": 2.269
       }
     },
-    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+    "pkcJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
   },
   {
     "name": "https://pubsubprovider.xyz",
     "type": "publishBenchmarkOptions",
     "timestamp": 1752445680034,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.688,
         "fetchingIpnsTimeSeconds": 2.042,
@@ -66,14 +66,14 @@
         "challengeVerificationTimeSeconds": 0.823
       }
     },
-    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+    "pkcJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
   },
   {
     "name": "https://plebpubsub.xyz",
     "type": "publishBenchmarkOptions",
     "timestamp": 1752445695044,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.773,
         "fetchingIpnsTimeSeconds": 2.039,
@@ -83,14 +83,14 @@
         "challengeVerificationTimeSeconds": 1.138
       }
     },
-    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+    "pkcJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
   },
   {
     "name": "libp2p js client",
     "type": "publishBenchmarkOptions",
     "timestamp": 1752445818080,
     "runtime": "chrome",
-    "subplebbits": {
+    "communities": {
       "business-and-finance.eth": {
         "resolvingAddressTimeSeconds": 0.779,
         "fetchingIpnsTimeSeconds": 2.534,
@@ -101,6 +101,6 @@
         "fetchingIpfsTimeSeconds": 4.498
       }
     },
-    "plebbitJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
+    "pkcJsCommitHash": "42d085e94d598af70b3d762163db39294013cc44"
   }
 ]

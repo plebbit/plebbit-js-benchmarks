@@ -1,5 +1,5 @@
 
-> plebbit-js-benchmarks@1.0.0 report
+> pkc-js-benchmarks@1.0.0 report
 > node lib/print-report
 
 {
@@ -7,7 +7,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752495773825,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 1.833,
       fetchingIpnsTimeSeconds: null
@@ -163,7 +163,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752496596732,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 1.675,
       fetchingIpnsTimeSeconds: 3.384
@@ -316,7 +316,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752495850026,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 0.827,
       fetchingIpnsTimeSeconds: null
@@ -469,7 +469,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752496673220,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 1.006,
       fetchingIpnsTimeSeconds: null
@@ -625,7 +625,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752495964004,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 0.772,
       fetchingIpnsTimeSeconds: 2.942
@@ -781,7 +781,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752496786839,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 0.879,
       fetchingIpnsTimeSeconds: 3.085
@@ -937,7 +937,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752496078038,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 0.818,
       fetchingIpnsTimeSeconds: 3.518
@@ -1090,7 +1090,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752496900969,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 0.879,
       fetchingIpnsTimeSeconds: 3.082
@@ -1246,7 +1246,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752496194227,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 1.734,
       fetchingIpnsTimeSeconds: 3.511
@@ -1402,7 +1402,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752497023231,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 1.729,
       fetchingIpnsTimeSeconds: 3.506
@@ -1558,7 +1558,7 @@
   type: 'fetchIpnsBenchmarkOptions',
   timestamp: 1752496507549,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': {
       resolvingAddressTimeSeconds: 0.741,
       fetchingIpnsTimeSeconds: 1.879,
@@ -1768,7 +1768,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752497338992,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 1.726 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 1.461 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 1.524 },
@@ -1811,7 +1811,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498317739,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.929 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.551 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.559 },
@@ -1854,7 +1854,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752497342300,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.694 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.601 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.522 },
@@ -1897,7 +1897,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498320567,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.927 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.554 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.545 },
@@ -1940,7 +1940,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752497350061,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 1.108 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.905 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.915 },
@@ -1983,7 +1983,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498339371,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: null },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: null },
     'plebwhales.eth': { resolvingAddressTimeSeconds: null },
@@ -2026,7 +2026,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752497353469,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.835 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.656 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.654 },
@@ -2069,7 +2069,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498357210,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: null },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: null },
     'plebwhales.eth': { resolvingAddressTimeSeconds: null },
@@ -2112,7 +2112,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752497356883,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.685 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.436 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.585 },
@@ -2155,7 +2155,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498360382,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.882 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.836 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.909 },
@@ -2198,7 +2198,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752497366862,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.574 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.373 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.454 },
@@ -2241,7 +2241,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498370649,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: 0.547 },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: 0.419 },
     'plebwhales.eth': { resolvingAddressTimeSeconds: 0.313 },
@@ -2284,7 +2284,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498245799,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: null },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: null },
     'plebwhales.eth': { resolvingAddressTimeSeconds: null },
@@ -2327,7 +2327,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498627419,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { resolvingAddressTimeSeconds: null },
     'blog.plebbit.eth': { resolvingAddressTimeSeconds: null },
     'plebwhales.eth': { resolvingAddressTimeSeconds: null },
@@ -2370,7 +2370,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498249547,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: 0.952 },
     'socomfy.sol': { resolvingAddressTimeSeconds: 1.432 }
   }
@@ -2380,7 +2380,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498630481,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: 1.187 },
     'socomfy.sol': { resolvingAddressTimeSeconds: 1.257 }
   }
@@ -2390,7 +2390,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498262960,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: null },
     'socomfy.sol': { resolvingAddressTimeSeconds: null }
   }
@@ -2400,7 +2400,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498643937,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: null },
     'socomfy.sol': { resolvingAddressTimeSeconds: null }
   }
@@ -2410,7 +2410,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498309356,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: null },
     'socomfy.sol': { resolvingAddressTimeSeconds: null }
   }
@@ -2420,7 +2420,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498688591,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: null },
     'socomfy.sol': { resolvingAddressTimeSeconds: null }
   }
@@ -2430,7 +2430,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498312548,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: 0.87 },
     'socomfy.sol': { resolvingAddressTimeSeconds: 0.883 }
   }
@@ -2440,7 +2440,7 @@
   type: 'resolveAddressesBenchmarkOptions',
   timestamp: 1752498691493,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'redditdeath.sol': { resolvingAddressTimeSeconds: 0.838 },
     'socomfy.sol': { resolvingAddressTimeSeconds: 1.105 }
   }
@@ -2490,7 +2490,7 @@
   type: 'gatewayFetchIpnsBenchmarkOptions',
   timestamp: 1752498798125,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { fetchingIpnsTimeSeconds: 1.492 },
     'blog.plebbit.eth': { fetchingIpnsTimeSeconds: 1.096 },
     'plebwhales.eth': { fetchingIpnsTimeSeconds: 1.287 },
@@ -2535,7 +2535,7 @@
   type: 'gatewayFetchIpnsBenchmarkOptions',
   timestamp: 1752498807787,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { fetchingIpnsTimeSeconds: 1.777 },
     'blog.plebbit.eth': { fetchingIpnsTimeSeconds: 1.488 },
     'plebwhales.eth': { fetchingIpnsTimeSeconds: 1.321 },
@@ -2580,7 +2580,7 @@
   type: 'gatewayFetchIpnsBenchmarkOptions',
   timestamp: 1752498800924,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { fetchingIpnsTimeSeconds: 1.72 },
     'blog.plebbit.eth': { fetchingIpnsTimeSeconds: 1.359 },
     'plebwhales.eth': { fetchingIpnsTimeSeconds: 1.083 },
@@ -2625,7 +2625,7 @@
   type: 'gatewayFetchIpnsBenchmarkOptions',
   timestamp: 1752498811128,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { fetchingIpnsTimeSeconds: 1.906 },
     'blog.plebbit.eth': { fetchingIpnsTimeSeconds: 1.346 },
     'plebwhales.eth': { fetchingIpnsTimeSeconds: 1.167 },
@@ -2670,7 +2670,7 @@
   type: 'gatewayFetchIpnsBenchmarkOptions',
   timestamp: 1752498804637,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { fetchingIpnsTimeSeconds: 2.332 },
     'blog.plebbit.eth': { fetchingIpnsTimeSeconds: 1.01 },
     'plebwhales.eth': { fetchingIpnsTimeSeconds: 0.798 },
@@ -2715,7 +2715,7 @@
   type: 'gatewayFetchIpnsBenchmarkOptions',
   timestamp: 1752498815546,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'plebtoken.eth': { fetchingIpnsTimeSeconds: 2.379 },
     'blog.plebbit.eth': { fetchingIpnsTimeSeconds: 1.101 },
     'plebwhales.eth': { fetchingIpnsTimeSeconds: 0.672 },
@@ -2779,7 +2779,7 @@
   comments: {
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.142,
-      resolvingSubplebbitAddressTimeSeconds: 1.762,
+      resolvingCommunityAddressTimeSeconds: 1.762,
       fetchingCommentUpdateTimeSeconds: 3.334
     }
   }
@@ -2792,7 +2792,7 @@
   comments: {
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.104,
-      resolvingSubplebbitAddressTimeSeconds: 1.915,
+      resolvingCommunityAddressTimeSeconds: 1.915,
       fetchingCommentUpdateTimeSeconds: 3.17
     }
   }
@@ -2805,7 +2805,7 @@
   comments: {
     QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig: {
       fetchCommentIpfsTimeSeconds: 1.538,
-      resolvingSubplebbitAddressTimeSeconds: 2.164,
+      resolvingCommunityAddressTimeSeconds: 2.164,
       fetchingCommentUpdateTimeSeconds: 4.421
     }
   }
@@ -2818,7 +2818,7 @@
   comments: {
     QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig: {
       fetchCommentIpfsTimeSeconds: 1.359,
-      resolvingSubplebbitAddressTimeSeconds: 2.069,
+      resolvingCommunityAddressTimeSeconds: 2.069,
       fetchingCommentUpdateTimeSeconds: 3.423
     }
   }
@@ -2831,52 +2831,52 @@
   comments: {
     QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 1.446,
+      resolvingCommunityAddressTimeSeconds: 1.446,
       fetchingCommentUpdateTimeSeconds: 3.637
     },
     QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs: {
       fetchCommentIpfsTimeSeconds: 0.809,
-      resolvingSubplebbitAddressTimeSeconds: 1.446,
+      resolvingCommunityAddressTimeSeconds: 1.446,
       fetchingCommentUpdateTimeSeconds: 3.648
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 1.445,
+      resolvingCommunityAddressTimeSeconds: 1.445,
       fetchingCommentUpdateTimeSeconds: 3.042
     },
     Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 1.445,
+      resolvingCommunityAddressTimeSeconds: 1.445,
       fetchingCommentUpdateTimeSeconds: 3.04
     },
     QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 1.445,
+      resolvingCommunityAddressTimeSeconds: 1.445,
       fetchingCommentUpdateTimeSeconds: 3.573
     },
     QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: null,
+      resolvingCommunityAddressTimeSeconds: null,
       fetchingCommentUpdateTimeSeconds: 3.659
     },
     QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: null,
+      resolvingCommunityAddressTimeSeconds: null,
       fetchingCommentUpdateTimeSeconds: 3.543
     },
     QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: null,
+      resolvingCommunityAddressTimeSeconds: null,
       fetchingCommentUpdateTimeSeconds: 3.532
     },
     QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: null,
+      resolvingCommunityAddressTimeSeconds: null,
       fetchingCommentUpdateTimeSeconds: 3.682
     },
     QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: null,
+      resolvingCommunityAddressTimeSeconds: null,
       fetchingCommentUpdateTimeSeconds: 3.674
     }
   }
@@ -2889,52 +2889,52 @@
   comments: {
     QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1: {
       fetchCommentIpfsTimeSeconds: 1.304,
-      resolvingSubplebbitAddressTimeSeconds: 2.029,
+      resolvingCommunityAddressTimeSeconds: 2.029,
       fetchingCommentUpdateTimeSeconds: 3.401
     },
     QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs: {
       fetchCommentIpfsTimeSeconds: 1.303,
-      resolvingSubplebbitAddressTimeSeconds: 2.028,
+      resolvingCommunityAddressTimeSeconds: 2.028,
       fetchingCommentUpdateTimeSeconds: 3.385
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.303,
-      resolvingSubplebbitAddressTimeSeconds: 2.027,
+      resolvingCommunityAddressTimeSeconds: 2.027,
       fetchingCommentUpdateTimeSeconds: 3.21
     },
     Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps: {
       fetchCommentIpfsTimeSeconds: 1.303,
-      resolvingSubplebbitAddressTimeSeconds: 2.027,
+      resolvingCommunityAddressTimeSeconds: 2.027,
       fetchingCommentUpdateTimeSeconds: 3.208
     },
     QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma: {
       fetchCommentIpfsTimeSeconds: 1.302,
-      resolvingSubplebbitAddressTimeSeconds: 2.026,
+      resolvingCommunityAddressTimeSeconds: 2.026,
       fetchingCommentUpdateTimeSeconds: 3.402
     },
     QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.027,
+      resolvingCommunityAddressTimeSeconds: 2.027,
       fetchingCommentUpdateTimeSeconds: 3.409
     },
     QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.026,
+      resolvingCommunityAddressTimeSeconds: 2.026,
       fetchingCommentUpdateTimeSeconds: 3.415
     },
     QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.025,
+      resolvingCommunityAddressTimeSeconds: 2.025,
       fetchingCommentUpdateTimeSeconds: 3.404
     },
     QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.025,
+      resolvingCommunityAddressTimeSeconds: 2.025,
       fetchingCommentUpdateTimeSeconds: 3.41
     },
     QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.023,
+      resolvingCommunityAddressTimeSeconds: 2.023,
       fetchingCommentUpdateTimeSeconds: 3.371
     }
   }
@@ -2947,52 +2947,52 @@
   comments: {
     QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61: {
       fetchCommentIpfsTimeSeconds: 1.099,
-      resolvingSubplebbitAddressTimeSeconds: 1.85,
+      resolvingCommunityAddressTimeSeconds: 1.85,
       fetchingCommentUpdateTimeSeconds: 3.414
     },
     QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci: {
       fetchCommentIpfsTimeSeconds: 1.382,
-      resolvingSubplebbitAddressTimeSeconds: 1.801,
+      resolvingCommunityAddressTimeSeconds: 1.801,
       fetchingCommentUpdateTimeSeconds: 2.718
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.349,
-      resolvingSubplebbitAddressTimeSeconds: 1.818,
+      resolvingCommunityAddressTimeSeconds: 1.818,
       fetchingCommentUpdateTimeSeconds: 3.293
     },
     QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH: {
       fetchCommentIpfsTimeSeconds: 1.314,
-      resolvingSubplebbitAddressTimeSeconds: 1.808,
+      resolvingCommunityAddressTimeSeconds: 1.808,
       fetchingCommentUpdateTimeSeconds: 2.785
     },
     QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e: {
       fetchCommentIpfsTimeSeconds: 1.396,
-      resolvingSubplebbitAddressTimeSeconds: 1.828,
+      resolvingCommunityAddressTimeSeconds: 1.828,
       fetchingCommentUpdateTimeSeconds: null
     },
     QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC: {
       fetchCommentIpfsTimeSeconds: 1.895,
-      resolvingSubplebbitAddressTimeSeconds: 2.273,
+      resolvingCommunityAddressTimeSeconds: 2.273,
       fetchingCommentUpdateTimeSeconds: 3.466
     },
     QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1: {
       fetchCommentIpfsTimeSeconds: 1.886,
-      resolvingSubplebbitAddressTimeSeconds: 2.266,
+      resolvingCommunityAddressTimeSeconds: 2.266,
       fetchingCommentUpdateTimeSeconds: 3.609
     },
     QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi: {
       fetchCommentIpfsTimeSeconds: 1.865,
-      resolvingSubplebbitAddressTimeSeconds: 2.244,
+      resolvingCommunityAddressTimeSeconds: 2.244,
       fetchingCommentUpdateTimeSeconds: 3.554
     },
     QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi: {
       fetchCommentIpfsTimeSeconds: 1.547,
-      resolvingSubplebbitAddressTimeSeconds: 1.979,
+      resolvingCommunityAddressTimeSeconds: 1.979,
       fetchingCommentUpdateTimeSeconds: 2.976
     },
     QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 1.979,
+      resolvingCommunityAddressTimeSeconds: 1.979,
       fetchingCommentUpdateTimeSeconds: 2.977
     }
   }
@@ -3005,52 +3005,52 @@
   comments: {
     QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61: {
       fetchCommentIpfsTimeSeconds: 1.68,
-      resolvingSubplebbitAddressTimeSeconds: 2.096,
+      resolvingCommunityAddressTimeSeconds: 2.096,
       fetchingCommentUpdateTimeSeconds: 3.518
     },
     QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci: {
       fetchCommentIpfsTimeSeconds: 1.669,
-      resolvingSubplebbitAddressTimeSeconds: 2.091,
+      resolvingCommunityAddressTimeSeconds: 2.091,
       fetchingCommentUpdateTimeSeconds: 3.348
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.306,
-      resolvingSubplebbitAddressTimeSeconds: 2.082,
+      resolvingCommunityAddressTimeSeconds: 2.082,
       fetchingCommentUpdateTimeSeconds: 3.34
     },
     QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH: {
       fetchCommentIpfsTimeSeconds: 1.72,
-      resolvingSubplebbitAddressTimeSeconds: 2.109,
+      resolvingCommunityAddressTimeSeconds: 2.109,
       fetchingCommentUpdateTimeSeconds: 3.494
     },
     QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e: {
       fetchCommentIpfsTimeSeconds: 1.729,
-      resolvingSubplebbitAddressTimeSeconds: 2.129,
+      resolvingCommunityAddressTimeSeconds: 2.129,
       fetchingCommentUpdateTimeSeconds: 3.654
     },
     QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC: {
       fetchCommentIpfsTimeSeconds: 1.81,
-      resolvingSubplebbitAddressTimeSeconds: 2.186,
+      resolvingCommunityAddressTimeSeconds: 2.186,
       fetchingCommentUpdateTimeSeconds: 3.664
     },
     QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1: {
       fetchCommentIpfsTimeSeconds: 1.827,
-      resolvingSubplebbitAddressTimeSeconds: 2.198,
+      resolvingCommunityAddressTimeSeconds: 2.198,
       fetchingCommentUpdateTimeSeconds: 3.796
     },
     QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi: {
       fetchCommentIpfsTimeSeconds: 1.824,
-      resolvingSubplebbitAddressTimeSeconds: 2.194,
+      resolvingCommunityAddressTimeSeconds: 2.194,
       fetchingCommentUpdateTimeSeconds: 3.786
     },
     QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi: {
       fetchCommentIpfsTimeSeconds: 1.816,
-      resolvingSubplebbitAddressTimeSeconds: 2.19,
+      resolvingCommunityAddressTimeSeconds: 2.19,
       fetchingCommentUpdateTimeSeconds: 3.671
     },
     QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK: {
       fetchCommentIpfsTimeSeconds: 1.816,
-      resolvingSubplebbitAddressTimeSeconds: 2.19,
+      resolvingCommunityAddressTimeSeconds: 2.19,
       fetchingCommentUpdateTimeSeconds: 3.673
     }
   }
@@ -3063,7 +3063,7 @@
   comments: {
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.581,
-      resolvingSubplebbitAddressTimeSeconds: 2.198,
+      resolvingCommunityAddressTimeSeconds: 2.198,
       fetchingCommentUpdateTimeSeconds: 4.247
     }
   }
@@ -3076,7 +3076,7 @@
   comments: {
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 3.529,
-      resolvingSubplebbitAddressTimeSeconds: 4.077,
+      resolvingCommunityAddressTimeSeconds: 4.077,
       fetchingCommentUpdateTimeSeconds: 7.894
     }
   }
@@ -3089,7 +3089,7 @@
   comments: {
     QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig: {
       fetchCommentIpfsTimeSeconds: 1.658,
-      resolvingSubplebbitAddressTimeSeconds: 2.272,
+      resolvingCommunityAddressTimeSeconds: 2.272,
       fetchingCommentUpdateTimeSeconds: 5.691
     }
   }
@@ -3102,7 +3102,7 @@
   comments: {
     QmWtN7Uue8Pw3Gg1V7csVjnsswpdJQbW3aHNk2gRfjPjig: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: null,
+      resolvingCommunityAddressTimeSeconds: null,
       fetchingCommentUpdateTimeSeconds: null
     }
   }
@@ -3115,52 +3115,52 @@
   comments: {
     QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1: {
       fetchCommentIpfsTimeSeconds: 1.624,
-      resolvingSubplebbitAddressTimeSeconds: 2.058,
+      resolvingCommunityAddressTimeSeconds: 2.058,
       fetchingCommentUpdateTimeSeconds: 5.37
     },
     QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs: {
       fetchCommentIpfsTimeSeconds: 1.622,
-      resolvingSubplebbitAddressTimeSeconds: 2.065,
+      resolvingCommunityAddressTimeSeconds: 2.065,
       fetchingCommentUpdateTimeSeconds: 5.39
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.616,
-      resolvingSubplebbitAddressTimeSeconds: 2.052,
+      resolvingCommunityAddressTimeSeconds: 2.052,
       fetchingCommentUpdateTimeSeconds: 5.501
     },
     Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps: {
       fetchCommentIpfsTimeSeconds: 1.623,
-      resolvingSubplebbitAddressTimeSeconds: 2.069,
+      resolvingCommunityAddressTimeSeconds: 2.069,
       fetchingCommentUpdateTimeSeconds: 4.374
     },
     QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma: {
       fetchCommentIpfsTimeSeconds: 1.406,
-      resolvingSubplebbitAddressTimeSeconds: 2.04,
+      resolvingCommunityAddressTimeSeconds: 2.04,
       fetchingCommentUpdateTimeSeconds: 5.421
     },
     QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.069,
+      resolvingCommunityAddressTimeSeconds: 2.069,
       fetchingCommentUpdateTimeSeconds: 5.367
     },
     QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.069,
+      resolvingCommunityAddressTimeSeconds: 2.069,
       fetchingCommentUpdateTimeSeconds: 5.387
     },
     QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.069,
+      resolvingCommunityAddressTimeSeconds: 2.069,
       fetchingCommentUpdateTimeSeconds: 5.351
     },
     QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.068,
+      resolvingCommunityAddressTimeSeconds: 2.068,
       fetchingCommentUpdateTimeSeconds: 5.5
     },
     QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 2.068,
+      resolvingCommunityAddressTimeSeconds: 2.068,
       fetchingCommentUpdateTimeSeconds: 5.352
     }
   }
@@ -3173,52 +3173,52 @@
   comments: {
     QmWuSQNZszHSPtwLmr41mS1drMnzCKfp7GLQUmdVg5aoZ1: {
       fetchCommentIpfsTimeSeconds: 4.067,
-      resolvingSubplebbitAddressTimeSeconds: 4.661,
+      resolvingCommunityAddressTimeSeconds: 4.661,
       fetchingCommentUpdateTimeSeconds: 11.039
     },
     QmXdSw2ydiKLnMjxyEHQye7ZUa5cHQKmKiSMF9yRfMLkrs: {
       fetchCommentIpfsTimeSeconds: 4.063,
-      resolvingSubplebbitAddressTimeSeconds: 4.658,
+      resolvingCommunityAddressTimeSeconds: 4.658,
       fetchingCommentUpdateTimeSeconds: 10.975
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 4.064,
-      resolvingSubplebbitAddressTimeSeconds: 4.657,
+      resolvingCommunityAddressTimeSeconds: 4.657,
       fetchingCommentUpdateTimeSeconds: 9.402
     },
     Qmaq3DgXQEdfGhusKtJCTZU3HyXrPg8TKGuQLcQrgvCgps: {
       fetchCommentIpfsTimeSeconds: 4.062,
-      resolvingSubplebbitAddressTimeSeconds: 4.656,
+      resolvingCommunityAddressTimeSeconds: 4.656,
       fetchingCommentUpdateTimeSeconds: 9.397
     },
     QmagGzGvUQDy7K1Kgc3d1H8YU8n9dYViaExZHWfFy6Krma: {
       fetchCommentIpfsTimeSeconds: 4.062,
-      resolvingSubplebbitAddressTimeSeconds: 4.655,
+      resolvingCommunityAddressTimeSeconds: 4.655,
       fetchingCommentUpdateTimeSeconds: 11.036
     },
     QmVwcGCHrviS44YBakEuBuNn8xCvgv1Z3TQswqRraq3APg: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 10.405,
+      resolvingCommunityAddressTimeSeconds: 10.405,
       fetchingCommentUpdateTimeSeconds: 10.968
     },
     QmcPc94WwdtF2xzFojDvanQp7V3S4FChNrG1vXwbxamcp3: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 10.403,
+      resolvingCommunityAddressTimeSeconds: 10.403,
       fetchingCommentUpdateTimeSeconds: 11.092
     },
     QmfRNP1TC9B1R1AgoW4ts86ZsWuPNrhShedxJ3axzHQ3h9: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 10.404,
+      resolvingCommunityAddressTimeSeconds: 10.404,
       fetchingCommentUpdateTimeSeconds: 11.111
     },
     QmbAwAApoVfmRmxmSdHuMA9uDVL8pd13LGM1TTU4hSXDUX: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 10.403,
+      resolvingCommunityAddressTimeSeconds: 10.403,
       fetchingCommentUpdateTimeSeconds: 11.106
     },
     QmZPfobp6UcroLtPiiAFgsAQX8RQh3WwfiCbzyHi22rBRR: {
       fetchCommentIpfsTimeSeconds: null,
-      resolvingSubplebbitAddressTimeSeconds: 10.402,
+      resolvingCommunityAddressTimeSeconds: 10.402,
       fetchingCommentUpdateTimeSeconds: 11.094
     }
   }
@@ -3231,52 +3231,52 @@
   comments: {
     QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61: {
       fetchCommentIpfsTimeSeconds: 1.503,
-      resolvingSubplebbitAddressTimeSeconds: 1.943,
+      resolvingCommunityAddressTimeSeconds: 1.943,
       fetchingCommentUpdateTimeSeconds: 4.143
     },
     QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci: {
       fetchCommentIpfsTimeSeconds: 1.497,
-      resolvingSubplebbitAddressTimeSeconds: 1.932,
+      resolvingCommunityAddressTimeSeconds: 1.932,
       fetchingCommentUpdateTimeSeconds: 2.977
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 1.268,
-      resolvingSubplebbitAddressTimeSeconds: 1.918,
+      resolvingCommunityAddressTimeSeconds: 1.918,
       fetchingCommentUpdateTimeSeconds: 4.168
     },
     QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH: {
       fetchCommentIpfsTimeSeconds: 1.502,
-      resolvingSubplebbitAddressTimeSeconds: 1.959,
+      resolvingCommunityAddressTimeSeconds: 1.959,
       fetchingCommentUpdateTimeSeconds: 3.209
     },
     QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e: {
       fetchCommentIpfsTimeSeconds: 1.677,
-      resolvingSubplebbitAddressTimeSeconds: 2.07,
+      resolvingCommunityAddressTimeSeconds: 2.07,
       fetchingCommentUpdateTimeSeconds: 5.631
     },
     QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC: {
       fetchCommentIpfsTimeSeconds: 1.867,
-      resolvingSubplebbitAddressTimeSeconds: 2.273,
+      resolvingCommunityAddressTimeSeconds: 2.273,
       fetchingCommentUpdateTimeSeconds: 5.47
     },
     QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1: {
       fetchCommentIpfsTimeSeconds: 1.866,
-      resolvingSubplebbitAddressTimeSeconds: 2.285,
+      resolvingCommunityAddressTimeSeconds: 2.285,
       fetchingCommentUpdateTimeSeconds: 5.483
     },
     QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi: {
       fetchCommentIpfsTimeSeconds: 1.999,
-      resolvingSubplebbitAddressTimeSeconds: 2.362,
+      resolvingCommunityAddressTimeSeconds: 2.362,
       fetchingCommentUpdateTimeSeconds: 5.652
     },
     QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi: {
       fetchCommentIpfsTimeSeconds: 1.997,
-      resolvingSubplebbitAddressTimeSeconds: 2.386,
+      resolvingCommunityAddressTimeSeconds: 2.386,
       fetchingCommentUpdateTimeSeconds: 3.917
     },
     QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK: {
       fetchCommentIpfsTimeSeconds: 1.998,
-      resolvingSubplebbitAddressTimeSeconds: 2.377,
+      resolvingCommunityAddressTimeSeconds: 2.377,
       fetchingCommentUpdateTimeSeconds: 3.908
     }
   }
@@ -3289,52 +3289,52 @@
   comments: {
     QmYZiS4uDR6S2vC65fmpktjH3mBn27gk3c4HkFEpf3SN61: {
       fetchCommentIpfsTimeSeconds: 3.714,
-      resolvingSubplebbitAddressTimeSeconds: 4.158,
+      resolvingCommunityAddressTimeSeconds: 4.158,
       fetchingCommentUpdateTimeSeconds: 72.81
     },
     QmcYV2yoSkXazG9puqHPbApfVg6FfmrHp3tSCyNz9CBLci: {
       fetchCommentIpfsTimeSeconds: 3.71,
-      resolvingSubplebbitAddressTimeSeconds: 4.164,
+      resolvingCommunityAddressTimeSeconds: 4.164,
       fetchingCommentUpdateTimeSeconds: 8.328
     },
     QmQ5iZNEiiitJmefk1zRqYxa7fAuQo4vy3XAUy3UpUMhwG: {
       fetchCommentIpfsTimeSeconds: 3.714,
-      resolvingSubplebbitAddressTimeSeconds: 4.121,
+      resolvingCommunityAddressTimeSeconds: 4.121,
       fetchingCommentUpdateTimeSeconds: 72.451
     },
     QmcGmhdCV9DnXWFnD4y6wgzhXUfexJLzgz8boG97HNL4tH: {
       fetchCommentIpfsTimeSeconds: 3.559,
-      resolvingSubplebbitAddressTimeSeconds: 4.168,
+      resolvingCommunityAddressTimeSeconds: 4.168,
       fetchingCommentUpdateTimeSeconds: 8.337
     },
     QmTLcPYzXiPZV6jwTF6CVUvUyLjMG4y15HRW3dA7z5rc7e: {
       fetchCommentIpfsTimeSeconds: 3.889,
-      resolvingSubplebbitAddressTimeSeconds: 4.308,
+      resolvingCommunityAddressTimeSeconds: 4.308,
       fetchingCommentUpdateTimeSeconds: 12.682
     },
     QmbmhVWWw2fWZ1EgeUK7Q4bMGa7ngpSGdgJmCWfSLJsthC: {
       fetchCommentIpfsTimeSeconds: 4.608,
-      resolvingSubplebbitAddressTimeSeconds: 5.003,
+      resolvingCommunityAddressTimeSeconds: 5.003,
       fetchingCommentUpdateTimeSeconds: 11.331
     },
     QmNoNxFkEgM65ATGsL38cufuuNJx5UdNawmMAudkdwjhf1: {
       fetchCommentIpfsTimeSeconds: 4.605,
-      resolvingSubplebbitAddressTimeSeconds: 4.995,
+      resolvingCommunityAddressTimeSeconds: 4.995,
       fetchingCommentUpdateTimeSeconds: 11.317
     },
     QmaaGTw5WzTFz4SMc4C4CdK7FDtaAT9yFUYekHErELXdgi: {
       fetchCommentIpfsTimeSeconds: 4.603,
-      resolvingSubplebbitAddressTimeSeconds: 4.968,
+      resolvingCommunityAddressTimeSeconds: 4.968,
       fetchingCommentUpdateTimeSeconds: 11.351
     },
     QmPfjpbDqo9kEWe5gBpL9BeYUPU5GBVp17W763zyuz8JMi: {
       fetchCommentIpfsTimeSeconds: 5.225,
-      resolvingSubplebbitAddressTimeSeconds: 5.593,
+      resolvingCommunityAddressTimeSeconds: 5.593,
       fetchingCommentUpdateTimeSeconds: 11.3
     },
     QmUTCSKiiTunWECvLRiJfxotUmNfanJyjRR8Tjq5pr1YLK: {
       fetchCommentIpfsTimeSeconds: 5.224,
-      resolvingSubplebbitAddressTimeSeconds: 5.592,
+      resolvingCommunityAddressTimeSeconds: 5.592,
       fetchingCommentUpdateTimeSeconds: 11.302
     }
   }
@@ -3347,59 +3347,59 @@
 │                                                            │          │                              │        │         │         │
 │ ipfsgateway.xyz (1 post)                                   │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 1.142  │ 1.142   │ '1/1'   │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 1.762  │ 1.762   │ '1/1'   │
+│                                                            │ 'node'   │ 'resolve community address' │ 1.762  │ 1.762   │ '1/1'   │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 3.334  │ 3.334   │ '1/1'   │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ 1.104  │ 1.104   │ '1/1'   │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ 1.915  │ 1.915   │ '1/1'   │
+│                                                            │ 'chrome' │ 'resolve community address' │ 1.915  │ 1.915   │ '1/1'   │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ 3.17   │ 3.17    │ '1/1'   │
 │ ipfsgateway.xyz (1 reply)                                  │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 1.538  │ 1.538   │ '1/1'   │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 2.164  │ 2.164   │ '1/1'   │
+│                                                            │ 'node'   │ 'resolve community address' │ 2.164  │ 2.164   │ '1/1'   │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 4.421  │ 4.421   │ '1/1'   │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ 1.359  │ 1.359   │ '1/1'   │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ 2.069  │ 2.069   │ '1/1'   │
+│                                                            │ 'chrome' │ 'resolve community address' │ 2.069  │ 2.069   │ '1/1'   │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ 3.423  │ 3.423   │ '1/1'   │
 │ ipfsgateway.xyz (1 sub, 5 posts, 5 replies)                │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 0.809  │ 0.809   │ '1/10'  │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 1.445  │ 1.445   │ '5/10'  │
+│                                                            │ 'node'   │ 'resolve community address' │ 1.445  │ 1.445   │ '5/10'  │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 3.605  │ 3.503   │ '10/10' │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ 1.303  │ 1.303   │ '5/10'  │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ 2.026  │ 2.026   │ '10/10' │
+│                                                            │ 'chrome' │ 'resolve community address' │ 2.026  │ 2.026   │ '10/10' │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ 3.401  │ 3.361   │ '10/10' │
 │ ipfsgateway.xyz (10 subs, 5 posts, 5 replies)              │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 1.396  │ 1.526   │ '9/10'  │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 1.915  │ 1.985   │ '10/10' │
+│                                                            │ 'node'   │ 'resolve community address' │ 1.915  │ 1.985   │ '10/10' │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 3.293  │ 3.199   │ '9/10'  │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ 1.77   │ 1.72    │ '10/10' │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ 2.157  │ 2.147   │ '10/10' │
+│                                                            │ 'chrome' │ 'resolve community address' │ 2.157  │ 2.147   │ '10/10' │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ 3.659  │ 3.594   │ '10/10' │
 │ libp2p js client (1 post)                                  │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 1.581  │ 1.581   │ '1/1'   │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 2.198  │ 2.198   │ '1/1'   │
+│                                                            │ 'node'   │ 'resolve community address' │ 2.198  │ 2.198   │ '1/1'   │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 4.247  │ 4.247   │ '1/1'   │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ 3.529  │ 3.529   │ '1/1'   │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ 4.077  │ 4.077   │ '1/1'   │
+│                                                            │ 'chrome' │ 'resolve community address' │ 4.077  │ 4.077   │ '1/1'   │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ 7.894  │ 7.894   │ '1/1'   │
 │ libp2p js client (1 reply)                                 │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 1.658  │ 1.658   │ '1/1'   │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 2.272  │ 2.272   │ '1/1'   │
+│                                                            │ 'node'   │ 'resolve community address' │ 2.272  │ 2.272   │ '1/1'   │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 5.691  │ 5.691   │ '1/1'   │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ NaN    │ NaN     │ '0/1'   │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ NaN    │ NaN     │ '0/1'   │
+│                                                            │ 'chrome' │ 'resolve community address' │ NaN    │ NaN     │ '0/1'   │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ NaN    │ NaN     │ '0/1'   │
 │ libp2p js client (1 sub, 5 posts, 5 replies)               │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 1.622  │ 1.578   │ '5/10'  │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 2.068  │ 2.063   │ '10/10' │
+│                                                            │ 'node'   │ 'resolve community address' │ 2.068  │ 2.063   │ '10/10' │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 5.378  │ 5.301   │ '10/10' │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ 4.063  │ 4.064   │ '5/10'  │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ 7.531  │ 7.53    │ '10/10' │
+│                                                            │ 'chrome' │ 'resolve community address' │ 7.531  │ 7.53    │ '10/10' │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ 11.037 │ 10.722  │ '10/10' │
 │ libp2p js client (10 subs, 5 posts, 5 replies)             │          │                              │        │         │         │
 │                                                            │ 'node'   │ 'fetch comment ipfs'         │ 1.772  │ 1.717   │ '10/10' │
-│                                                            │ 'node'   │ 'resolve subplebbit address' │ 2.171  │ 2.151   │ '10/10' │
+│                                                            │ 'node'   │ 'resolve community address' │ 2.171  │ 2.151   │ '10/10' │
 │                                                            │ 'node'   │ 'fetch comment update'       │ 4.155  │ 4.456   │ '10/10' │
 │                                                            │ 'chrome' │ 'fetch comment ipfs'         │ 4.246  │ 4.285   │ '10/10' │
-│                                                            │ 'chrome' │ 'resolve subplebbit address' │ 4.638  │ 4.707   │ '10/10' │
+│                                                            │ 'chrome' │ 'resolve community address' │ 4.638  │ 4.707   │ '10/10' │
 │                                                            │ 'chrome' │ 'fetch comment update'       │ 11.324 │ 23.121  │ '10/10' │
 └────────────────────────────────────────────────────────────┴──────────┴──────────────────────────────┴────────┴─────────┴─────────┘
 {
@@ -3407,7 +3407,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752499080941,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 1.62,
       fetchingIpnsTimeSeconds: 3.857,
@@ -3423,7 +3423,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752499179491,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.651,
       fetchingIpnsTimeSeconds: 2.273,
@@ -3439,7 +3439,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752499099287,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.666,
       fetchingIpnsTimeSeconds: 2.367,
@@ -3455,7 +3455,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752499195172,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.704,
       fetchingIpnsTimeSeconds: 2.398,
@@ -3471,7 +3471,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752499163279,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.67,
       fetchingIpnsTimeSeconds: 1.431,
@@ -3487,7 +3487,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752499260105,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.724,
       fetchingIpnsTimeSeconds: 2.786,

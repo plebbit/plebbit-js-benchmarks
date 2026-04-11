@@ -1,5 +1,5 @@
 
-> plebbit-js-benchmarks@1.0.0 report
+> pkc-js-benchmarks@1.0.0 report
 > node lib/print-report
 
 {
@@ -7,7 +7,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752445508090,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 1.711,
       fetchingIpnsTimeSeconds: 2.822,
@@ -23,7 +23,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752445680034,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.688,
       fetchingIpnsTimeSeconds: 2.042,
@@ -39,7 +39,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752445526266,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.769,
       fetchingIpnsTimeSeconds: 2.007,
@@ -55,7 +55,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752445695044,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.773,
       fetchingIpnsTimeSeconds: 2.039,
@@ -71,7 +71,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752445648575,
   runtime: 'node',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.753,
       fetchingIpnsTimeSeconds: 1.415,
@@ -88,7 +88,7 @@
   type: 'publishBenchmarkOptions',
   timestamp: 1752445818080,
   runtime: 'chrome',
-  subplebbits: {
+  communities: {
     'business-and-finance.eth': {
       resolvingAddressTimeSeconds: 0.779,
       fetchingIpnsTimeSeconds: 2.534,
